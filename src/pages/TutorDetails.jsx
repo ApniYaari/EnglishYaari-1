@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiRoundStar } from "react-icons/gi";
 import { RxArrowRight } from "react-icons/rx";
-import useWeekArray from "../customHook/UseWeekArray";
+import useWeekArray from "../../src/customHook/useWeekArray"
 import { slotTimingArray } from "../utils/Helper";
 
 function TutorDetails() {
