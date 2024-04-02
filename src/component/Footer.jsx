@@ -24,6 +24,9 @@ function Footer() {
             </p>
 
             <div className="flex mt-10">
+              <a
+              target="_blank"
+              href="https://www.facebook.com/englishyaari/">
               <svg
                 className="mr-2"
                 width="36"
@@ -41,7 +44,10 @@ function Footer() {
                   fill="white"
                 />
               </svg>
+                </a>
 
+          <a href="https://www.linkedin.com/company/englishyaari/?originalSubdomain=in"
+          target="_blank">
               <svg
                 className="mr-2"
                 width="36"
@@ -63,6 +69,7 @@ function Footer() {
                   </clipPath>
                 </defs>
               </svg>
+              </a>
 
               <svg
                 className="mr-2"
@@ -139,22 +146,22 @@ function Footer() {
                 <li class="mb-4 flex">
                   <BsTelephone />
 
-                  <p className="ml-3">310-437-2766</p>
+                  <p className="ml-3 font-normal">+91 6209848131</p>
                 </li>
 
                 <li class="mb-4 flex">
                   <FiMapPin className="text-md" />
 
                   <p className="ml-3">
-                    49Q9+QJ3, near MIT, Daudpur <br /> Kothi, Muzaffarpur,{" "}
-                    <br /> Bihar 842003{" "}
+                  CP Thakur Path, Boring Road, Patna
+                    <br />842003
                   </p>
                 </li>
 
                 <li class="mb-4 flex">
                   <HiOutlineMail className="text-md mt-1" />
 
-                  <p className="ml-3">Support@englishyaari.com</p>
+                  <p className="ml-3">help@englishyaari.com</p>
                 </li>
               </ul>
             </div>
@@ -271,11 +278,8 @@ function Footer() {
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="text-white/80 text-sm text-center">
           <span class="text-lg text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
-            <a href="https://flowbite.com/" class="hover:underline">
-              Englishyaari
-            </a>
-            . All Rights Reserved.
+          
+            © Copyright 2023, All Rights Reserved by Englishyaari.com
           </span>
         </div>
       </div>

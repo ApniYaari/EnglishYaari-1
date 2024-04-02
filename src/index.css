@@ -55,7 +55,7 @@ margin: 0px;
 
 
 .text24{
-  @apply text-base md:text-2xl lg:text-[20px] 2xll:text-2xl 3xxl:text-[24px]
+  @apply text-base md:text-2xl lg:text-[20px] 2xll:text-base 3xxl:text-[20px]
 }
 
 .text20{

@@ -17,7 +17,7 @@ function NumberMatter() {
             bgg={`bg-[#DBF4EC]`}
             circleBg={"bg-[#B8EBDB]"}
             subTittle={"Sessions Conducted"}
-            value={"50,000+"}
+            value={"1,50,000+"}
             icon={ChalkboardTeacher}
           />
           <Card

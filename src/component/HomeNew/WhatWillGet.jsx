@@ -22,7 +22,7 @@ function WhatWillGet() {
         }
         bg={"bg-[#EBEEFC]"}
         decription={
-          "Lorem ipsum dolor sit amet consectetur. Nec tortor gravida praesent eu sagittis potenti sit ultricies sit.praesent eu sagittis potenti sit ultricies sit."
+          "Enhance your spoken English with expert guidance. With subscription, get access to 100+ certified tutors, receive tailored support to enhance fluency and confidence."
         }
       />
 
@@ -37,7 +37,7 @@ function WhatWillGet() {
         }
         bg={"bg-[#F9F3E3]"}
         decription={
-          "Lorem ipsum dolor sit amet consectetur. Nec tortor gravida praesent eu sagittis potenti sit ultricies sit.praesent eu sagittis potenti sit ultricies sit."
+          `Embark on a fun and engaging English learning journey with Gamified features. Earn points as you learn,allowing you to track your progress and improvement.`
         }
       />
 
@@ -46,13 +46,13 @@ function WhatWillGet() {
         img={Notes}
         tittle={
           <p className="text text40 font-extrabold">
-            Access to <span className="text-purpleShade"> 100+ </span> Expert
-            Tutors
+            <span className="text-purpleShade"> 500+ </span> Curriculum Notes
+            
           </p>
         }
         bg={"bg-[#E9F8D8]"}
         decription={
-          "Lorem ipsum dolor sit amet consectetur. Nec tortor gravida praesent eu sagittis potenti sit ultricies sit.praesent eu sagittis potenti sit ultricies sit."
+          `Session notes provide a complete solution for effective speech, focusing on mastering grammar, building vocabulary and improving fluency.`
         }
       />
 
@@ -61,13 +61,14 @@ function WhatWillGet() {
         img={Experience}
         tittle={
           <p className="text text40 font-extrabold">
-            Access to <span className="text-purpleShade"> 100+ </span> Expert
-            Tutors
+             <span className="text-purpleShade"> Progress </span> Report
+            
           </p>
         }
         bg={"bg-[#EBEEFC]"}
         decription={
-          "Lorem ipsum dolor sit amet consectetur. Nec tortor gravida praesent eu sagittis potenti sit ultricies sit.praesent eu sagittis potenti sit ultricies sit."
+          `Track your progress effectively with daily session feedback and recordings, allowing you to work towards improvement.
+          `
         }
       />
     </div>

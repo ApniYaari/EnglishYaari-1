@@ -18,9 +18,9 @@ const EnglishYaariWork = () => {
   const data = [
 
     {
-      tittle: "Choose a tutor",
+      tittle: "Choose date and time",
       subTitle:
-        "We bring you certified trainers who will Identify your problems, rectify your mistakes & give you instant feedback",
+        "Book sessions anytime between 6 am to 12 midnight. EnglishYaari offers flexible scheduling for your Convenience.",
       bg: Frame2,
       icon: (
 <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,9 +32,9 @@ const EnglishYaariWork = () => {
       ),
     },
     {
-      tittle: "Get into live classes",
+      tittle: "Choose a Tutor",
       subTitle:
-        "Ace your Spoken English Journey. Our classes provide a personalized building space for rapid language acquisition.",
+        "We bring you certified trainers who will Identify your problems, rectify your mistakes & give you instant feedback",
       bg:Frame3,
       icon: (
         <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,9 +45,9 @@ const EnglishYaariWork = () => {
       ),
     },
     {
-      tittle: "Session reports",
+      tittle: "Get into live classes",
       subTitle:
-        "After the successful completion of your session, get descriptive feedback along with the roadmap to reach your goal.",
+        "Ace your Spoken English Journey. Our classes provide a personalized building space for rapid language acquisition.",
       bg:Frame4,
       icon: (
         <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@ export default EnglishYaariWork;
 
 const Card = ({ item }) => {
   return (
-    <div className=" flex flex-wrap w-full lg:min-w-[700px]   mx-3 bg-white rounded-2xl overflow-hidden mt-10 lg:mr-20">
+    <div className=" flex flex-wrap w-full lg:min-w-[700px]   mx-3 pl-4 bg-white rounded-3xl overflow-hidden mt-10 lg:mr-10">
       <div className="w-full lg:w-[50%]  flex flex-col px-4 justify-center gap-y-4  lg:h-full">
       {item?.icon}
 
