@@ -45,6 +45,7 @@ export function NavbarDefault() {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 font-urbanist">
       <Typography
+      onClick={()=>setOpenNav(false)}
         as="li"
         variant="h6"
         color={scrolling?'white':'blue-gray'}
@@ -79,6 +80,7 @@ export function NavbarDefault() {
         </a>
       </Typography> */}
       <Typography
+      onClick={()=>setOpenNav(false)}
         as="li"
         variant="h6"
         color={scrolling?'white':'blue-gray'}
@@ -86,7 +88,7 @@ export function NavbarDefault() {
       >
 
         <NavLink to={'/plan-and-pricing'} className="flex items-center">
-        Plans and Pricing
+        Plans and Pricing ss
         </NavLink>
       </Typography>
     </ul>

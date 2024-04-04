@@ -328,7 +328,7 @@ export const PlanAndPricing = (props) => {
                         setRecommended(ind + 1);
                       }}
                       key={ind}
-                      className={` border p-3 px-5  mx-2 mt-4 rounded-lg relative ${
+                      className={` border p-3 px-4  mx-1 mt-4 rounded-lg relative ${
                         planPrice?.planType == ele?.planType
                           ? "border-theme text-theme bg-lightPurpule"
                           : "border-stroke_Color text-secondry"
