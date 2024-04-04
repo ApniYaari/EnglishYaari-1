@@ -150,7 +150,7 @@ export const PlanAndPricing = (props) => {
 
           <div className="bg-white shadow-xl p-6 lg:px-10 flex-wrap-reverse rounded-2xl flex justify-between mt-10">
             {/* MObile View */}
-            <div className="w-full lg:w-[48%] ">
+            <div className="w-full hidden lg:block lg:w-[48%] ">
               <p className="text24 font-bold">Select Number of Months</p>
               {planList.map((ele, ind) => {
                 return (
