@@ -68,9 +68,7 @@ const StudentCard = ({ item,setVedioModal,setLink }) => {
       setVedioModal(true);
     }}
      className="min-w-[24rem] ml-4   mt-6 rounded-lg  relative overflow-hidden">
-      <p className="text24 font-semibold  m-0 p-0">
-        “I saw progress in just {item?.months} month after joining EnglishYaari”
-      </p>
+    
 
       <video className="w-full rounded-lg" autoPlay={false}>
           <source src={item?.url} type="video/mp4" className="object-cover" />

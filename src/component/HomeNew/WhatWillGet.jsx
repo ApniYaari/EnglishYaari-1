@@ -31,7 +31,7 @@ function WhatWillGet() {
         img={Gaming}
         tittle={
           <p className="text text40 font-extrabold">
-            <span className="text-purpleShade"> Gamified </span> Gamified
+            <span className="text-purpleShade"> Gamified </span>
             Learning Experience
           </p>
         }

@@ -314,7 +314,7 @@
 //                 </svg>
 
 //                 <div className="ml-4 font-medium">
-//                   <p>+91 8787836546</p>
+//                   <p>+91 6209848131</p>
 //                   <p className="text-secondry font-medium font-inter">
 //                     Support Number
 //                   </p>
@@ -567,7 +567,7 @@ export default function Home() {
                 </svg>
 
                 <div className="ml-4 font-medium">
-                  <p>+91 8787836546</p>
+                  <p>+91 6209848131</p>
                   <p className="text-secondry font-medium font-inter">
                     Support Number
                   </p>
@@ -596,9 +596,9 @@ export default function Home() {
                 </svg>
 
                 <a
-                href="mailto:contactus@englishyaari.com?body=My custom mail body"
+                href="mailto:help@englishyaari.com?body=My custom mail body"
                  className="ml-4 font-medium">
-                  <p>contactus@englishyaari.com</p>
+                  <p>help@englishyaari.com</p>
                   <p className="text-secondry font-medium font-inter">
                     Support Email
                   </p>

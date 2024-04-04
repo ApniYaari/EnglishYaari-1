@@ -32,7 +32,7 @@ export default function App() {
           element={<HomeComponent backgroundStyle={backgroundStyle} />}
         />
         <Route
-          path="/PlanAndPricing"
+          path="/plan-and-pricing"
           element={<PlanAndPricing backgroundStyle={backgroundStyle} />}
         />
         <Route path="/AllTutorList" element={<AllTutorList />} />

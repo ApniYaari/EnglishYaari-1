@@ -52,11 +52,11 @@ export function NavbarDefault() {
       >
 
  
-        <a href="#" className="flex items-center">
+        <NavLink to={'/'} className="flex items-center">
         Home
-        </a>
+        </NavLink>
       </Typography>
-      <Typography
+      {/* <Typography
         as="li"
         variant="h6"
         color={scrolling?'white':'blue-gray'}
@@ -66,8 +66,8 @@ export function NavbarDefault() {
         <a href="#" className="flex items-center">
         Our tutors
         </a>
-      </Typography>
-      <Typography
+      </Typography> */}
+      {/* <Typography
         as="li"
         variant="h6"
         color={scrolling?'white':'blue-gray'}
@@ -77,7 +77,7 @@ export function NavbarDefault() {
         <a href="#" className="flex items-center">
         Become a tutor
         </a>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="h6"
@@ -85,9 +85,9 @@ export function NavbarDefault() {
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
-        <a href="#" className="flex items-center">
-        Plans and pricing
-        </a>
+        <NavLink to={'/plan-and-pricing'} className="flex items-center">
+        Plans and Pricing
+        </NavLink>
       </Typography>
     </ul>
   );

@@ -284,7 +284,7 @@ function Footer() {
         </div>
       </div>
       <div className="container mx-auto">
-        <img src={footer} />
+        <img className="h-24 mx-auto" src={footer} />
       </div>
     </footer>
   );

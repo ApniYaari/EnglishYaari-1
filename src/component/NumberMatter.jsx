@@ -1,6 +1,5 @@
 import React from "react";
 import ChalkboardTeacher from "../assets/icon/ChalkboardTeacher.png";
-import ChalkboardTeacher from "../assets/icon/ChalkboardTeacher.png";
 import Page from "../assets/icon/Page.png";
 import Simile from "../assets/icon/Simile.png";
 
