@@ -88,7 +88,7 @@ export function NavbarDefault() {
       >
 
         <NavLink to={'/plan-and-pricing'} className="flex items-center">
-        Plans and Pricing ss
+        Plans and Pricing
         </NavLink>
       </Typography>
     </ul>

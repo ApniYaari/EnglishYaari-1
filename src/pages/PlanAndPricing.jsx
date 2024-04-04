@@ -101,10 +101,10 @@ export const PlanAndPricing = (props) => {
   };
 
   const scrollToBottom = () => {
-    // window.scrollTo({
-    //   top: 140,
-    //   behavior: "smooth", // Optional: adds smooth scrolling behavior
-    // });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: adds smooth scrolling behavior
+    });
   };
 
 
@@ -462,7 +462,7 @@ const Card = ({ status, item, recommendedPlan, index, navigateHandler,planPrice 
           </p>
 
           <p className="font-medium text28 mt-2">
-            @₹{afterDistcountPrice(item)}
+            ₹{afterDistcountPrice(item)}
             <span
               style={myStyle}
               className="text28 font-normal text-secondry  ml-3"
