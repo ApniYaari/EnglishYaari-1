@@ -14,6 +14,9 @@ import { GoArrowRight } from "react-icons/go";
 import india from './assets/india.png'
 import { NavLink } from "react-router-dom";
 import phoneView from './assets/phoneView.png'
+import TermsAndConditions from "./pages/TermAndCondition";
+import ScrollToTop from "./customHook/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 export default function App() {
 
   const width=window.innerWidth
@@ -26,6 +29,7 @@ export default function App() {
   return (
     <div className="w-screen overflow-hidden">
       <NavbarDefault />
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
@@ -37,6 +41,12 @@ export default function App() {
         />
         <Route path="/AllTutorList" element={<AllTutorList />} />
         <Route path="/TutorDetails" element={<TutorDetails />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+
+        
+
       </Routes>
       <Footer />
     </div>

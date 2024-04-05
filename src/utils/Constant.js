@@ -1,3 +1,14 @@
+import EY_logo from '../assets/EY_logo.png'
+
+import WhiteLogo from '../assets/WhiteLogo.png'
+
+
+export const LOGO = EY_logo
+
+export const WHITELOGO = WhiteLogo
+
+
+
 export let planList= [
     {
         "planType": 1,

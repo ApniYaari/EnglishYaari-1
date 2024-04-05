@@ -3,6 +3,8 @@ import footer from "../assets/footer.png";
 import { BsTelephone } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
+import { WHITELOGO } from "../utils/Constant";
 
 function Footer() {
   return (
@@ -10,9 +12,9 @@ function Footer() {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex  ">
           <div class="mb-6 md:mb-0  w-auto lg:w-[30%] px-0 lg:px-5 ">
-            <p class="self-center text-lg font-semibold whitespace-nowrap !text-white">
-              Englishyaari
-            </p>
+            {
+              <img className="h-8" src={WHITELOGO}/>
+            }
 
             <p className="text-white/80 font-thin mt-5 text-xs md:text-base">
               EnglishYaari is a dynamic language learning platform that offers a
@@ -171,14 +173,15 @@ function Footer() {
               </h2>
               <ul class="text-white font-medium text-xs md:text-base">
                 <li class="mb-2">
-                  <a
+                  <NavLink
+                  to={'/'}
                     // href="https://github.com/themesberg/flowbite"
                     class="hover:underline "
                   >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
-                <li class="mb-2">
+                {/* <li class="mb-2">
                   <a
                     // href="https://discord.gg/4eeurUVvTy"
                     class="hover:underline"
@@ -194,25 +197,36 @@ function Footer() {
                   >
                     Become a tutor
                   </a>
-                </li>
+                </li> */}
 
                 <li class="mb-2">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
+                  <NavLink
+                    to="plan-and-pricing"
                     class="hover:underline"
                   >
                     Plans and pricing
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="mb-2">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
+                  <NavLink
+                    to={'terms-and-conditions'}
                     class="hover:underline"
                   >
-                    Blog
-                  </a>
+                    Terms & Conditions
+                  </NavLink>
                 </li>
+
+                <li class="mb-2">
+                  <NavLink
+                    to={'privacy-policy'}
+                    class="hover:underline"
+                  >
+                    Privacy Policy
+                  </NavLink>
+                </li>
+
+                
               </ul>
             </div>
             <div>

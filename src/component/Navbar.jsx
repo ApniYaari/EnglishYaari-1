@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
+import { LOGO, WHITELOGO } from "../utils/Constant";
  
 export function NavbarDefault() {
   const [openNav, setOpenNav] = useState(false);
@@ -100,12 +101,13 @@ export function NavbarDefault() {
     // style={{background:scrolling?'white':''}}
      className={` ${scrolling?'bg-theme':'bg-white'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
       <div className="   flex items-center justify-between ">
+        <img src={scrolling?WHITELOGO:LOGO} className=" h-6 lg:h-10"/>
         <Typography
           as="a"
           href="#"
           className={`mr-4 cursor-pointer py-1.5 font-bold text-2xl font-urbanist ${scrolling?'text-white':'text-theme'}`}
         >
-          EnglishYaari
+          {/* EnglishYaari */}
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className=" items-center gap-x-1 hidden lg:flex ">
