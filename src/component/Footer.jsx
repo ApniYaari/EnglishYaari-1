@@ -225,6 +225,7 @@ function Footer() {
                     Privacy Policy
                   </NavLink>
                 </li>
+                
 
                 
               </ul>
