@@ -391,8 +391,11 @@ import OurAppNow from "../component/OurAppNow";
 import { FAQ } from "../component/PlanPricing/FAQ";
 import OurStudent from "../component/OurStudent";
 import { NavLink } from "react-router-dom";
+import useDocumentTitle from "../customHook/useDocumentTitle";
 
 export default function Home() {
+  useDocumentTitle("EnglishYaari: 1-on-1 Online Spoken English Tutor")
+
   const data = [
     {
       icon: bookClass,
@@ -616,12 +619,12 @@ export default function Home() {
 
             <div className="w-full lg:w-[70%] ">
               <FAQ
-                question={"Q1.What is EnglishYaari?"}
+                question={"What is EnglishYaari?"}
                 answer={`EnglishYaari is a dynamic language learning platform that offers a unique blend of learning and interactive practice, making it an effective tool for mastering spoken English.
               Our focus on fun activities foster a friendly Environment , ensuring that acquiring spoken English skills becomes an enjoyable journey for our learners.`}
               />
               <FAQ
-                question={"Q2. How to book a trial? "}
+                question={"How to book a trial? "}
                 answer={`To Book a Trial session, visit the EnglishYaari home page, and Click on “Book A Trial”
 
               Complete your signup & Make a payment for trial

@@ -38,6 +38,18 @@ function TermAndCondition() {
     
     <p className='leading-[35px] text-base font-inter text-[#000] font-semibold'>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
     
+
+
+
+ <h3 className=' text-3xl py-8 lg:text-4xl text-center'><strong>Refund Policy</strong></h3>
+    
+    <p className='leading-[35px] text-base font-inter text-[#000] font-semibold'> EnglishYaari's subscriptions are non-refundable, and we are committed to ensuring your satisfaction with our service. If you encounter any challenges or concerns related to your subscription plan, our dedicated support team is here to assist you promptly and work together to find a solution that meets your needs. Your contentment is our priority.</p>
+    
+    
+
+
+
+
     <h3 className=' text-3xl py-8 lg:text-4xl text-center'><strong>License</strong></h3>
     
     <p className='leading-[35px] text-base font-inter text-[#000] font-semibold'>Unless otherwise stated, APNI YAARI EDUCATION PRIVATE LIMITED and/or its licensors own the intellectual property rights for all material on EnglishYaari. All intellectual property rights are reserved. You may access this from EnglishYaari for your own personal use subjected to restrictions set in these terms and conditions.</p>

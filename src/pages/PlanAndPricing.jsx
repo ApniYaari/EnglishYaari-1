@@ -12,6 +12,7 @@ import bank from '../../src/assets/bank.png'
 import face from '../../src/assets/face.png';
 
 import { planList, tempData } from "../utils/Constant";
+import useDocumentTitle from "../customHook/useDocumentTitle";
 
 const monthlyDiscount = {
   2: "15",
@@ -29,17 +30,19 @@ const planType = {
 };
 
 export const PlanAndPricing = (props) => {
+    useDocumentTitle("Affordable Plan And Pricing For Spoken English")
+
   const staticAarray = [
-    "25 Minutes Live 1-on-1 Classes",
+    "25 Minutes Live 1-on-1 Sessions",
     "Access to 500+ expert tutors",
-    "Flexible Class Timings",
-    "500+ Curriculum notes",
+    "Flexible session timings",
+    // "500+ Curriculum notes",
   ];
 
   const whyConsiderUse = [
     "1-on-1 sessions with certified tutors, each lasting  25 minutes.",
-    "Flexibility to choose your preferred tutor for each.",
-    "Take classes from 6AM to 12AM midnight, seven days a week. ",
+    "Flexibility to choose your preferred tutor for each session.",
+    "Take sessions from 6AM to 12AM midnight, seven days a week. ",
   ];
   const [planPrice, setPlanPrice] = useState(null);
   let planData=[1]
@@ -168,7 +171,7 @@ export const PlanAndPricing = (props) => {
                   >
                     <span className=" "> {planType[ele.planType]}</span>
                     {recmended == ind && (
-                      <p className="absolute -top-3 bg-lightPurpule text-sm font-semibold text-theme px-1 rounded-full ">
+                      <p className="absolute -top-3 bg-purpleShade text-sm font-semibold text-white px-1 rounded-full ">
                         Save {monthlyDiscount[ele.planType]}%
                       </p>
                     )}
@@ -254,7 +257,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Customized notes</p>
                     <p className="text18 text-secondry">
-                      Get access to customized notes <br /> after every sessions
+                      Get access to customized notes <br /> for every sessions
                     </p>
                   </div>
 
@@ -292,7 +295,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Session Recording</p>
                     <p className="text18 text-secondry">
-                    ccess privately saved session recordings to track your progress.
+                    access privately saved session recordings to track your progress.
                     </p>
                   </div>
                 </div>
@@ -336,7 +339,7 @@ export const PlanAndPricing = (props) => {
                     >
                       <span className=" "> {planType[ele.planType]}</span>
                       {recmended == ind && (
-                        <p className="absolute -top-3 bg-lightPurpule text-sm font-semibold text-theme px-1 rounded-full ">
+                        <p className="absolute -top-3 bg-purpleShade text-sm  font-semibold text-white px-1 rounded-full ">
                           Save {monthlyDiscount[ele.planType]}%
                         </p>
                       )}
@@ -476,7 +479,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Customized notes</p>
                     <p className="text18 text-secondry">
-                      Get access to customized notes <br /> after every sessions
+                      Get access to customized notes <br /> for every sessions
                     </p>
                   </div>
 
@@ -514,7 +517,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Session Recording</p>
                     <p className="text18 text-secondry">
-                    ccess privately saved session recordings to track your progress.
+                    access privately saved session recordings to track your progress.
                     </p>
                   </div>
                 </div>
@@ -589,10 +592,10 @@ const Card = ({ status, item, recommendedPlan, index, navigateHandler,planPrice 
     >
       <div className="flex items-center ">
         <>
-          {true ? (
+          { recommendedPlan == index  ? (
             <IoIosCheckmarkCircleOutline className="text-3xl lg:text-4xl text-theme" />
           ) : (
-            <FaRegCircle className="text-3xl lg:text-4xl text-secondry" />
+            <FaRegCircle className="text-3xl lg:text-2xl text-secondry" />
           )}
         </>
 
@@ -620,7 +623,7 @@ const Card = ({ status, item, recommendedPlan, index, navigateHandler,planPrice 
           <p className="text24 font-bold text-theme">
             ₹{perClasssPrice(item)}
             <span className="text-secondry font-extralight ml-2 ">
-              Per class
+              Per session
             </span>
           </p>
         </div>

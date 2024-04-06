@@ -38,7 +38,7 @@ function Faq() {
           className="font-urbanist text-black"
           onClick={() => handleOpen(1)}
         >
-          Q1.What is EnglishYaari??
+        sss  What is EnglishYaari?
         </AccordionHeader>
         <AccordionBody className="font-normal font-urbanist text-base text-black">
           We&apos;re not always in the position that we want to be at.
@@ -52,7 +52,7 @@ function Faq() {
           className="font-urbanist text-black"
           onClick={() => handleOpen(2)}
         >
-          Q2. How to book a trial? 
+         How to book a trial? 
         </AccordionHeader>
         <AccordionBody className="font-normal font-urbanist text-base text-black">
           We&apos;re not always in the position that we want to be at.
@@ -70,7 +70,7 @@ function Faq() {
           className="font-urbanist text-black py-3"
           onClick={() => handleOpen(3)}
         >
-          Q3. What is included in the subscription plan?
+           What is included in the subscription plan?
         </AccordionHeader>
         <AccordionBody className="font-normal font-urbanist text-base text-black">
           We&apos;re not always in the position that we want to be at.
@@ -89,7 +89,7 @@ function Faq() {
           className="font-urbanist text-black"
           onClick={() => handleOpen(4)}
         >
-          Q4. How to book regular Classes at EnglishYaari?
+          How to book regular Classes at EnglishYaari?
         </AccordionHeader>
         <AccordionBody className="font-normal font-urbanist text-base text-black">
           We&apos;re not always in the position that we want to be at.
@@ -108,7 +108,7 @@ function Faq() {
           className="font-urbanist text-black"
           onClick={() => handleOpen(5)}
         >
-          Q5. How many sessions can I book  in a day / week? 
+           How many sessions can I book  in a day / week? 
         </AccordionHeader>
         <AccordionBody className="font-normal font-urbanist text-base text-black">
           We&apos;re not always in the position that we want to be at.

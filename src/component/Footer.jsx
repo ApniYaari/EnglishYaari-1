@@ -16,7 +16,7 @@ function Footer() {
               <img className="h-8" src={WHITELOGO}/>
             }
 
-            <p className="text-white/80 font-thin mt-5 text-xs md:text-base">
+            <p className="text-white font-normal mt-5 text-xs md:text-base">
               EnglishYaari is a dynamic language learning platform that offers a
               unique blend of learning and interactive practice, making it an
               effective tool for mastering spoken English. Our focus on fun
@@ -73,6 +73,7 @@ function Footer() {
               </svg>
               </a>
 
+<a href="https://www.youtube.com/ENGLISHYAARI">
               <svg
                 className="mr-2"
                 width="36"
@@ -91,7 +92,9 @@ function Footer() {
                   fill="#FF0000"
                 />
               </svg>
+              </a>
 
+              <a href="https://www.instagram.com/englishyaari/">
               <svg
                 className="mr-2"
                 width="36"
@@ -122,7 +125,9 @@ function Footer() {
                   </radialGradient>
                 </defs>
               </svg>
+              </a>
 
+            <a href="https://twitter.com/EnglishYaari">
               <svg
                 className="mr-2"
                 width="36"
@@ -137,6 +142,7 @@ function Footer() {
                   fill="white"
                 />
               </svg>
+              </a>
             </div>
           </div>
           <div class="grid   grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:w-[70%]">
@@ -155,7 +161,7 @@ function Footer() {
                   <FiMapPin className="text-md" />
 
                   <p className="ml-3">
-                  CP Thakur Path, Boring Road, Patna
+                   Boring Road, Patna
                     <br />842003
                   </p>
                 </li>
@@ -294,7 +300,7 @@ function Footer() {
         <div class="text-white/80 text-sm text-center">
           <span class="text-lg text-gray-500 sm:text-center dark:text-gray-400">
           
-            © Copyright 2023, All Rights Reserved by Englishyaari.com
+            © Copyright 2023, All Rights Reserved by APNI YAARI EDUCATION PRIVATE LIMITED
           </span>
         </div>
       </div>
