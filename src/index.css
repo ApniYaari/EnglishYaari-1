@@ -40,6 +40,11 @@ margin: 0px;
   @apply  text-2xl md:text-4xl lg:text-3xl 2xll:text-[35px] 3xxl:text-[40px]
 }
 
+
+.text48{
+  @apply  text-2xl md:text-4xl lg:text-4xl 2xll:text-[40px] 3xxl:text-[48px]
+}
+
 .text26{
   @apply text-xl lg:text-[26px]
 }

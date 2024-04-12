@@ -9,10 +9,10 @@ import {
 import { NavLink } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import { LOGO, WHITELOGO } from "../utils/Constant";
- 
+
 export function NavbarDefault() {
   const [openNav, setOpenNav] = useState(false);
- 
+
   // useEffect(() => {
   //   window.addEventListener(
   //     "resize",
@@ -42,54 +42,57 @@ export function NavbarDefault() {
     };
   }, []);
 
- 
+
   const navList = (
     <ul className="mt-2 mb-4  flex  flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2 font-urbanist">
       <Typography
-      onClick={()=>setOpenNav(false)}
+        onClick={() => setOpenNav(false)}
         as="li"
         variant="h6"
-        color={scrolling?'white':'blue-gray'}
+        color={scrolling ? 'white' : 'blue-gray'}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
- 
+
         <NavLink to={'/'} className="flex items-center">
-        Home
+          Home
         </NavLink>
       </Typography>
       <Typography
         as="li"
         variant="h6"
-        color={scrolling?'white':'blue-gray'}
+        color={scrolling ? 'white' : 'blue-gray'}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
         <a href="#" className="flex items-center">
-        {/* Our tutors */}
+          {/* Our tutors */}
         </a>
       </Typography>
-       <Typography
+      <Typography
         as="li"
         variant="h6"
-        color={scrolling?'white':'blue-gray'}
+        color={scrolling ? 'white' : 'blue-gray'}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
+        <NavLink to={'/become-a-tutor'} className="flex items-center">
+          Become a tutor
+        </NavLink>
         <a href="#" className="flex items-center">
-        {/* Become a tutor */}
+          {/* Become a tutor */}
         </a>
-      </Typography> 
+      </Typography>
       <Typography
-      onClick={()=>setOpenNav(false)}
+        onClick={() => setOpenNav(false)}
         as="li"
         variant="h6"
-        color={scrolling?'white':'blue-gray'}
+        color={scrolling ? 'white' : 'blue-gray'}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
         <NavLink to={'/plan-and-pricing'} className="flex items-center">
-        Plans and Pricing
+          Plans and Pricing
         </NavLink>
       </Typography>
     </ul>
@@ -98,25 +101,25 @@ export function NavbarDefault() {
 
   return (
     <div
-    // style={{background:scrolling?'white':''}}
-     className={` ${scrolling?'bg-theme':'bg-white'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
+      // style={{background:scrolling?'white':''}}
+      className={` ${scrolling ? 'bg-theme' : 'bg-white'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
       <div className="   flex items-center justify-between ">
-        <img src={scrolling?WHITELOGO:LOGO} className={`${scrolling?'h-10':'h-8'}`}/>
-   
+        <img src={scrolling ? WHITELOGO : LOGO} className={`${scrolling ? 'h-10' : 'h-8'}`} />
+
         <div className="hidden lg:block ">{navList}</div>
         <div className=" items-center gap-x-1 hidden lg:flex ">
-    
 
-        <NavLink className={`flex p-2.5 px-5 font-semibold rounded-full ${scrolling?'bg-white text-theme':'  text-black '}`} to={'https://user.englishyaari.com/Login'}>
+
+          <NavLink className={`flex p-2.5 px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Login'}>
             <span>Log In</span>
-            </NavLink>
+          </NavLink>
           <div
-           
-            className={`hidden lg:inline-block bg-theme  rounded-full ${scrolling?'bg-white text-theme':'bg-theme'}`}
+
+            className={`hidden lg:inline-block bg-theme  rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme'}`}
           >
-            <NavLink className={`flex p-2.5 px-5 rounded-full ${scrolling?'bg-white text-theme':'bg-theme text-white '}`} to={'https://user.englishyaari.com/Register?public=true'}>
-            <span>Get started</span>
-            <GoArrowRight className="text-2xl"/>
+            <NavLink className={`flex p-2.5 px-5 rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme text-white '}`} to={'https://user.englishyaari.com/Register?public=true'}>
+              <span>Get started</span>
+              <GoArrowRight className="text-2xl" />
             </NavLink>
           </div>
         </div>
@@ -163,20 +166,20 @@ export function NavbarDefault() {
           {navList}
 
           <div>
-          <NavLink className={`flex p-2.5 border px-5 font-semibold rounded-full ${scrolling?'bg-white text-theme':'  text-black '}`} to={'https://user.englishyaari.com/Login'}>
-            <span>Log In</span>
+            <NavLink className={`flex p-2.5 border px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Login'}>
+              <span>Log In</span>
             </NavLink>
 
 
-            <NavLink className={`flex p-2.5 px-5  border mt-3 font-semibold rounded-full ${scrolling?'bg-white text-theme':'  text-black '}`} to={'https://user.englishyaari.com/Register'}>
-            <span>Get started</span>
+            <NavLink className={`flex p-2.5 px-5  border mt-3 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Register'}>
+              <span>Get started</span>
             </NavLink>
-          <div
-           
-            className={`hidden lg:inline-block bg-theme  rounded-full ${scrolling?'bg-white text-theme':'bg-theme'}`}
-          >
-        
-          </div>
+            <div
+
+              className={`hidden lg:inline-block bg-theme  rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme'}`}
+            >
+
+            </div>
           </div>
         </div>
       </MobileNav>

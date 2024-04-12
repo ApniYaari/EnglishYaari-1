@@ -17,6 +17,7 @@ import phoneView from './assets/phoneView.png'
 import TermsAndConditions from "./pages/TermAndCondition";
 import ScrollToTop from "./customHook/ScrollToTop";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import BecomeATutor from "./pages/BecomeATutor";
 export default function App() {
 
   const width=window.innerWidth
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
+        <Route path="/become-a-tutor" element={<BecomeATutor />} />
 
         
 
