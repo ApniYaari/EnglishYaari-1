@@ -8,134 +8,134 @@ import { PiClockCountdown, PiCoins } from 'react-icons/pi'
 import { CiGlobe } from 'react-icons/ci'
 import { HiOutlineEmojiHappy } from 'react-icons/hi'
 function BecomeATutor() {
-    return (
-        <div className='bg-background'>
-            <div className=" w-full lg:w-[90vw]  2xll:w-[90%] 3xxl:w-[90%]  !mt-20 mx-auto px-4 lg:px-10  ">
-                <div className='pb-10 pt-10 flex flex-wrap-reverse'>
-                    <div className='w-full lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>
-                        <p className='text48 font-semibold leading-loose pt:10 lg:pt-0'>Become a tutor</p>
-                        <p className='text-secondry font-medium mt-0 lg:mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
+  return (
+    <div className='bg-background'>
+      <div className=" w-full lg:w-[90vw]  2xll:w-[90%] 3xxl:w-[90%]  !mt-20 mx-auto px-4 lg:px-10  ">
+        <div className='pb-10 pt-10 flex flex-wrap-reverse'>
+          <div className='w-full lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>
+            <p className='text48 font-semibold leading-loose pt:10 lg:pt-0'>Become a tutor</p>
+            <p className='text-secondry font-medium mt-3 mt-0 lg:mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
 
-                        <NavLink
-                        to={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
-                        target='_blank'
-                         className='bg-theme w-[200px] justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-6'>
-                            Apply Now <FaArrowRight />
-                        </NavLink>
-                    </div>
-                    <div className='w-full lg:w-[50%]  flex items-end justify-end'>
-                        <img className=' h-auto lg:h-80' src={becomeATutor} />
-                    </div>
-                </div>
-
-
-                <p className='text36 font-bold text-center'>Teach English online with EnglishYaari</p>
-
-                <div className='my-20  w-full bg-white shadow-2xl relative lg:px-10'>
-
-                    <div className='absolute flex items-center justify-center  left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background w-24 h-24 rounded-full'>
-                        <div className='h-16 w-16 bg-lightPurpule rounded-full items-center justify-center flex'>
-                            <img className='h-10 w-10' src={ChalkboardTeacher} />
-                        </div>
-                    </div>
+            <NavLink
+              to={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
+              target='_blank'
+              className='bg-theme w-[200px] justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-6'>
+              Apply Now <FaArrowRight />
+            </NavLink>
+          </div>
+          <div className='w-full lg:w-[50%]  flex items-end justify-end'>
+            <img className=' h-auto lg:h-80' src={becomeATutor} />
+          </div>
+        </div>
 
 
-                    <div className='pb-10 flex flex-wrap justify-between'>
+        <p className='text36 font-bold text-center'>Teach English online with EnglishYaari</p>
 
-                    <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
-                            <div className='bg-[#DCF3E5] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
-                            <PiClockCountdown className=' text-2xl lg:text-3xl' />
+        <div className='my-20  w-full bg-white shadow-2xl relative lg:px-10'>
 
-
-                            </div>
-
-                            <div className=' w-[80%]'>
-                                <p className='text20 font-semibold'>Flexible work schedule</p>
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' /> Decide your own hours
-                                </div>
-
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' />Work as much or as little as you want
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
-                            <div className='bg-[#E2D8EF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
-                            <CiGlobe className=' text-2xl lg:text-3xl' />
-
-
-
-                            </div>
-
-                            <div className=' w-[80%]'>
-                                <p className='text20 font-semibold'>Work from anywhere</p>
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' /> Teach from the comfort of your home
-                                </div>
-
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' /> Avoid traffic and long commutes
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
-                            <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
-                             <HiOutlineEmojiHappy className=' text-2xl lg:text-3xl'/>
-
-                            </div>
-
-                            <div className=' w-[80%]'>
-                                <p className='text20 font-semibold'>Stress free tutoring</p>
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' /> We provide each lesson plan
-                                </div>
-
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' />24/7 support system
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
-                            <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
-                             <PiCoins className=' text-2xl lg:text-3xl'/>
-
-
-
-                            </div>
-
-                            <div className=' w-[80%]'>
-                                <p className='text20 font-semibold'>Get paid monthly</p>
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' /> Earn upto ₹350/hour
-                                </div>
-
-                                <div className='text-secondry font-medium flex items-center gap-2'>
-                                    <FaCircle className='text-[6px] text-secondry font-medium' />Get paid via bank transfer on 10th of every month
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <NavLink
-                        to={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
-                        target='_blank'
-                         className='bg-theme w-[200px] flex text-white items-center justify-center gap-3 p-2.5 rounded-full px-8 mt-6'>
-                            Apply Now <FaArrowRight />
-                        </NavLink>
-
-
+          <div className='absolute flex items-center justify-center  left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background w-24 h-24 rounded-full'>
+            <div className='h-16 w-16 bg-lightPurpule rounded-full items-center justify-center flex'>
+              <img className='h-10 w-10' src={ChalkboardTeacher} />
             </div>
+          </div>
+
+
+          <div className='pb-10 flex flex-wrap justify-between'>
+
+            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+              <div className='bg-[#DCF3E5] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
+                <PiClockCountdown className=' text-2xl lg:text-3xl' />
+
+
+              </div>
+
+              <div className=' w-[80%]'>
+                <p className='text20 font-semibold'>Flexible work schedule</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Decide your own hours
+                </div>
+
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />Work as much or as little as you want
+                </div>
+              </div>
+            </div>
+
+
+            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+              <div className='bg-[#E2D8EF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
+                <CiGlobe className=' text-2xl lg:text-3xl' />
+
+
+
+              </div>
+
+              <div className=' w-[80%]'>
+                <p className='text20 font-semibold'>Work from anywhere</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Teach from the comfort of your home
+                </div>
+
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Avoid traffic and long commutes
+                </div>
+              </div>
+            </div>
+
+
+            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+              <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
+                <HiOutlineEmojiHappy className=' text-2xl lg:text-3xl' />
+
+              </div>
+
+              <div className=' w-[80%]'>
+                <p className='text20 font-semibold'>Stress free tutoring</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> We provide each lesson plan
+                </div>
+
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />24/7 support system
+                </div>
+              </div>
+            </div>
+
+
+            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+              <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
+                <PiCoins className=' text-2xl lg:text-3xl' />
+
+
+
+              </div>
+
+              <div className=' w-[80%]'>
+                <p className='text20 font-semibold'>Get paid monthly</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Earn upto ₹350/hour
+                </div>
+
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />Get paid via bank transfer on 10th of every month
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <NavLink
+          to={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
+          target='_blank'
+          className='bg-theme w-[200px] mx-auto flex text-white items-center justify-center gap-3 p-2.5 rounded-full px-8 mt-6'>
+          Apply Now <FaArrowRight />
+        </NavLink>
+
+
+      </div>
 
 
       <div className="my-20">
@@ -174,8 +174,8 @@ function BecomeATutor() {
                 </svg>
 
                 <div className="ml-4 font-medium">
-                  <p>+91 6209848131</p>
-                  <p className="text-secondry font-medium font-inter">
+                  <p>+91 9798286015</p>
+                  <p className="text-secondry font-medium mt-3 font-inter">
                     Support Number
                   </p>
                 </div>
@@ -203,83 +203,147 @@ function BecomeATutor() {
                 </svg>
 
                 <a
-                href="mailto:help@englishyaari.com?body=My custom mail body"
-                 className="ml-4 font-medium">
+                  href="mailto:help@englishyaari.com?body=My custom mail body"
+                  className="ml-4 font-medium">
                   <p>help@englishyaari.com</p>
-                  <p className="text-secondry font-medium font-inter">
+                  <p className="text-secondry font-medium mt-3 font-inter">
                     Support Email
                   </p>
                 </a>
               </div>
 
               <button className="bg-sucess text-white text-base items-center font-semibold flex px-8 rounded-full py-2 mt-8">
-                <NavLink  className={'flex items-center'} to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
-                <FaWhatsapp className="mr-3" />
-                WhatsApp us
+                <NavLink className={'flex items-center'} to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
+                  <FaWhatsapp className="mr-3" />
+                  WhatsApp us
                 </NavLink>
-              
+
               </button>
             </div>
 
             <div className="w-full lg:w-[70%] ">
               <FAQ
-                question={"What is EnglishYaari?"}
-                answer={`EnglishYaari is a dynamic language learning platform that offers a unique blend of learning and interactive practice, making it an effective tool for mastering spoken English.
-              Our focus on fun activities foster a friendly Environment , ensuring that acquiring spoken English skills becomes an enjoyable journey for our learners.`}
+                question={"How EnglishYaari works?"}
+                answer={<div>
+                  <p className='text-secondry font-medium mt-3'>
+                    (a) 1-on-1 Live classes : we provide 25 minute calls to our learners to enhance their spoken English skills and provide personalised learning experience.
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (b) Personalised tutors : learners get connected with expert tutors like you to attain fluency .
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (c) Personalised lesson plan : We provide customised lesson plans to tutors as well as learners for better learning.
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (d) Progress report: By the end of every session ,tutors provide constructive feedback to the learners.
+                  </p>
+
+                  <p className='text-secondry font-medium mt-3'>
+                    (e) Recorded Sessions: All sessions are recorded for our learners so that they can revise what they have learnt in the previous session .
+                  </p>
+                </div>}
               />
               <FAQ
-                question={"How to book a trial? "}
-                answer={`To Book a Trial session, visit the EnglishYaari home page, and Click on “Book A Trial”
+                question={"Who can apply to become a tutor at EnglishYaari? "}
+                answer={<div>
+                  <p className='text-secondry font-medium mt-3'>
+                    We are seeking for passionate tutors who can dedicate their teaching methodologies in their classes to help learners achieve their learning Goal.
+                  </p>
 
-              Complete your signup & Make a payment for trial
-              
-              Select a date and time & Meet your tutor at the session time
-              
-              “If you find value in your trial session and wish to continue your learning journey with EnglishYaari ,simply subscribe to our plan and schedule your personalised 1-on-1 session with us,”`}
-              />
-
-              <FAQ
-                question={"What comes with our subscription plan?"}
-                answer={`
-                With our subscription plan at EnglishYaari, you’ll enjoy a personalized learning experience.
-
-1. You’ll have access to expert tutors who will provide constructive feedback during the sessions.
-
-2. Tailored session notes can help you significantly improve your speech.
-
-3. We offer you session flexibility, you can book your session based on your availability.
-
-4. Plus, you can take multiple sessions in a day by choosing your preferred tutor.
-
-5. Get access to session recordings for your convenience and track your progress.`}
-              />
-
-              <FAQ
-                question={"How can EnglishYaari help me in my career? "}
-                answer={`At EnglishYaari, we understand that strong communication skills are essential for career success. By joining us, you'll not only enhance your spoken English but also gain confidence in expressing yourself fluently. This skill is invaluable in job interviews, presentations, and daily workplace interactions. Moreover, our personalised lesson plans are tailored to address your specific needs, ensuring your professional growth. Our 1-on-1 sessions and constructive feedback from our expert tutors will empower you to excel in your career by mastering this vital language."`}
+                  <p className='text-secondry font-medium mt-3'>
+                    Tutors can be educators, graduate/postgraduate College Students, or even working professionals With any language certification (like CELTA, TEFL/ TESOL) .
+                  </p>
+                </div>}
               />
 
               <FAQ
-                question={"How to book your regular Sessions at EnglishYaari? "}
-                answer={`Once you've taken a subscription, you can book your EnglishYaari Sessions according to your availability.
+                question={"What qualities do you need to become a tutor at EnglishYaari ?"}
+                answer={<div>
+                  <p className='text-secondry font-medium mt-3'>
+                  We are seeking dedicated individuals to join our team at EnglishYaari as tutors. Here are some qualities which can help you become a perfect fit .
+                  </p>
 
-                Steps To Book Your Session
-                
-                >> Login to your dashboard
-                
-                >> Click on "Book a session" present on your dashboard
-                
-                >> Select the time interval and date, You will get the list of available tutors in your selected time interval.
-                
-                >> select the available time slots and click on the "Book Now" button. Your session will be reserved and can be found in the "My Sessions" section."`}
+
+                  <p className='text-secondry font-medium mt-3'>
+                    (a) Exceptional Spoken English Skills
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (b) Passion for teaching
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (c) Open to Learning and new Experience.
+                  </p>
+                  <p className='text-secondry font-medium mt-3'>
+                    (d)  Ability to empathise with learner’s challenges and tailor instructions accordingly.
+                  </p>
+
+                  <p className='text-secondry font-medium mt-3'>
+                    (e) Capability to motivate and inspire learners to communicate confidently in English .
+                  </p>
+
+                </div>}
+              />
+
+              <FAQ
+                question={"What age group of learners should I be teaching?"}
+                answer={
+                  <div>
+                  <p className='text-secondry font-medium mt-3'>
+                    At EnglishYaari , we offer spoken English courses tailored for a diverse range of learners ,including housewives,working professionals ,kids,college students ,entrepreneurs,business owners,employees,and individuals of all age groups.”
+                    </p>
+                  </div>
+                }
+              />
+
+              <FAQ
+                question={"What is the procedure of becoming a tutor at EnglishYaari?"}
+                answer={<div>
+                  <p className='my-3'>
+                    (a) Application Submission :
+                    <p>
+                    Start by submitting your application through our official website .
+                    </p>
+                  </p>
+
+                  <p className='my-3'>
+                    (b) Application Assessment :
+                    <p>
+                    Our recruitment team will review your application within 7 working days and revert via Email.
+                    </p>
+                  </p>
+
+
+                  <p  className='my-3'>
+                    (c) Interview and Evaluation :
+                    <p>
+                    If your application meets our criteria , you will be invited for an interview and assessment to gauge your teaching skills (excellent Communication & conversational skills)
+                    </p>
+                  </p>
+
+
+                  <p className='my-3'>
+                    (a) Feedback and Training :
+                    <p>
+                    After successful evaluation, you will receive feedback and necessary training to align your teaching approach with our methodologies.
+                    </p>
+                  </p>
+
+
+                  <p className='my-3'>
+                    (a)  Onboarding :
+                    <p>
+                    Finally, once you’ve completed the above steps ,you will officially join us as a tutor, now you are ready to empower learners with improved spoken English skills.
+                    </p>
+                  </p>
+                </div>}
               />
             </div>
           </div>
         </div>
       </div>
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default BecomeATutor

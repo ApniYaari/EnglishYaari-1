@@ -9,9 +9,11 @@ import {
 import { NavLink } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import { LOGO, WHITELOGO } from "../utils/Constant";
+import { useLocation } from 'react-router-dom';
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = useState(false);
+  
 
   // useEffect(() => {
   //   window.addEventListener(
@@ -23,25 +25,45 @@ export function NavbarDefault() {
 
   const [scrolling, setScrolling] = useState(false);
 
+  const location = useLocation();
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 600) {
-        console.log(window.scrollY);
-        setScrolling(true);
-      } else {
-        console.log(window.scrollY)
-        setScrolling(false);
-      }
-    };
+    if (location.pathname === '/') {
+      const handleScroll = () => {
+        if (window.scrollY > 600) {
+          setScrolling(true);
+        } else {
+          setScrolling(false);
+        }
+      };
 
-    console.log(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [location.pathname]);
 
+
+  const showColor=()=>{
+    if (location.pathname === '/') {
+     return scrolling ? 'white' : 'blue-gray'
+    }
+    else{
+    return  'white'
+    }
+  }
+
+
+  const showImage=()=>{
+    if (location.pathname === '/') {
+     return scrolling ? WHITELOGO : LOGO
+    }
+    else{
+    return  WHITELOGO
+    }
+  }
 
   const navList = (
     <ul className="mt-2 mb-4  flex  flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2 font-urbanist">
@@ -49,7 +71,7 @@ export function NavbarDefault() {
         onClick={() => setOpenNav(false)}
         as="li"
         variant="h6"
-        color={scrolling ? 'white' : 'blue-gray'}
+        color={showColor()}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
@@ -61,7 +83,7 @@ export function NavbarDefault() {
       <Typography
         as="li"
         variant="h6"
-        color={scrolling ? 'white' : 'blue-gray'}
+        color={showColor()}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
@@ -69,10 +91,25 @@ export function NavbarDefault() {
           {/* Our tutors */}
         </a>
       </Typography>
+    
+      <Typography
+        onClick={() => setOpenNav(false)}
+        as="li"
+        variant="h6"
+        color={showColor()}
+        className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
+      >
+
+        <NavLink to={'/plan-and-pricing'} className="flex items-center">
+          Plans and Pricing
+        </NavLink>
+      </Typography>
+
+
       <Typography
         as="li"
         variant="h6"
-        color={scrolling ? 'white' : 'blue-gray'}
+        color={showColor()}
         className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
       >
 
@@ -83,18 +120,6 @@ export function NavbarDefault() {
           {/* Become a tutor */}
         </a>
       </Typography>
-      <Typography
-        onClick={() => setOpenNav(false)}
-        as="li"
-        variant="h6"
-        color={scrolling ? 'white' : 'blue-gray'}
-        className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
-      >
-
-        <NavLink to={'/plan-and-pricing'} className="flex items-center">
-          Plans and Pricing
-        </NavLink>
-      </Typography>
     </ul>
   );
   //  <div className=" fixed top-0 left-1/2 transform -translate-x-1/2  !bg-white rounded-t-none lg:rounded-b-[32px] overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]">
@@ -102,22 +127,22 @@ export function NavbarDefault() {
   return (
     <div
       // style={{background:scrolling?'white':''}}
-      className={` ${scrolling ? 'bg-theme' : 'bg-white'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
+      className={` ${scrolling  ? 'bg-theme' : 'bg-white'} ${location.pathname !=='/' && '!bg-theme'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
       <div className="   flex items-center justify-between ">
-        <img src={scrolling ? WHITELOGO : LOGO} className={`${scrolling ? 'h-10' : 'h-8'}`} />
+        <img src={showImage()} className={`${scrolling ? 'h-10' : 'h-8'}`} />
 
         <div className="hidden lg:block ">{navList}</div>
         <div className=" items-center gap-x-1 hidden lg:flex ">
 
 
-          <NavLink className={`flex p-2.5 px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Login'}>
+          <NavLink className={`flex p-2.5 px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '} ${location.pathname !=='/' && '!text-white'} `} to={'https://user.englishyaari.com/Login'}>
             <span>Log In</span>
           </NavLink>
           <div
 
             className={`hidden lg:inline-block bg-theme  rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme'}`}
           >
-            <NavLink className={`flex p-2.5 px-5 rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme text-white '}`} to={'https://user.englishyaari.com/Register?public=true'}>
+            <NavLink className={`flex p-2.5 px-5 rounded-full ${scrolling ? 'bg-white text-theme' : 'bg-theme text-white '} ${location.pathname !=='/' && '!bg-white !text-theme'}`} to={'https://user.englishyaari.com/Register?public=true'}>
               <span>Get started</span>
               <GoArrowRight className="text-2xl" />
             </NavLink>
@@ -166,12 +191,12 @@ export function NavbarDefault() {
           {navList}
 
           <div>
-            <NavLink className={`flex p-2.5 border px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Login'}>
+            <NavLink className={`flex p-2.5 border px-5 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '} ${location.pathname !=='/' && '!text-white'}`} to={'https://user.englishyaari.com/Login'}>
               <span>Log In</span>
             </NavLink>
 
 
-            <NavLink className={`flex p-2.5 px-5  border mt-3 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '}`} to={'https://user.englishyaari.com/Register'}>
+            <NavLink className={`flex p-2.5 px-5  border mt-3 font-semibold rounded-full ${scrolling ? 'bg-white text-theme' : '  text-black '} ${location.pathname !=='/' && '!text-white'}`} to={'https://user.englishyaari.com/Register'}>
               <span>Get started</span>
             </NavLink>
             <div

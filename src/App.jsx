@@ -73,7 +73,7 @@ const HomeComponent = ({ backgroundStyle }) => {
               </span>
 
               with
-              <br /> 1-on-1 live English classes
+              <br /> 1-on-1 live English session
             </p>
 
           <div className="justify-start  items-start px-3 ">
@@ -123,7 +123,7 @@ const HomeComponent = ({ backgroundStyle }) => {
               </span>
 
               with
-              <br /> 1-on-1 live English classes
+              <br /> 1-on-1 live English session
             </p>
 
           <div className="justify-start  items-start px-3 ">

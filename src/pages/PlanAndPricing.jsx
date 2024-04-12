@@ -34,7 +34,7 @@ export const PlanAndPricing = (props) => {
 
   const staticAarray = [
     "25 Minutes Live 1-on-1 Sessions",
-    "Access to 500+ expert tutors",
+    "Access to 100+ expert tutors",
     "Flexible session timings",
     // "500+ Curriculum notes",
   ];
@@ -42,7 +42,7 @@ export const PlanAndPricing = (props) => {
   const whyConsiderUse = [
     "1-on-1 sessions with certified tutors, each lasting  25 minutes.",
     "Flexibility to choose your preferred tutor for each session.",
-    "Take sessions from 6AM to 12AM midnight, seven days a week. ",
+    "Schedule sessions from 6AM to 12AM midnight, seven days a week. ",
   ];
   const [planPrice, setPlanPrice] = useState(null);
   let planData=[1]
@@ -127,9 +127,9 @@ export const PlanAndPricing = (props) => {
       </div> */}
 
       {/* Select Plan */}
-      <div className="container mx-auto ">
-          <p className="font-bold text36 text-start lg:text-center">
-            Choose a plans that suits your budget & schedule
+      <div className="container mx-auto  ">
+          <p className="font-bold text36 text-start lg:text-center pt-10">
+            Choose a plan that suits your budget & schedule
           </p>
 
           <div className="flex lg:justify-center mt-8 flex-wrap">
@@ -154,7 +154,7 @@ export const PlanAndPricing = (props) => {
           <div className="bg-white shadow-xl p-6 lg:px-10 flex-wrap-reverse rounded-2xl flex justify-between mt-10">
             {/* MObile View */}
             <div className="w-full hidden lg:block lg:w-[48%] ">
-              <p className="text24 font-bold">Select Number of Months</p>
+              <p className="text24 font-bold">Select Number of Month</p>
               {planList.map((ele, ind) => {
                 return (
                   <button
@@ -180,7 +180,7 @@ export const PlanAndPricing = (props) => {
               })}
 
               <div className="mt-7 w-full">
-                <p className="text24 font-bold">Why you should consider us?</p>
+                <p className="text24 font-bold">Spoken English Classes for Professionals</p>
 
                 <div className="flex flex-col items-start">
                   {whyConsiderUse.map((item, index) => {
@@ -295,7 +295,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Session Recording</p>
                     <p className="text18 text-secondry">
-                    access privately saved session recordings to track your progress.
+                   Get access privately saved session recordings to track your progress.
                     </p>
                   </div>
                 </div>
@@ -305,10 +305,10 @@ export const PlanAndPricing = (props) => {
                     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-lightPurpule mr-4">
                       <img  className="h-8 w-8" src={face}/>
                     </div>
-                    Not sure about which subscription <br /> plan to choose?
+                    Not sure, which subscription <br /> plan to choose?
                   </div>
 
-                  <div className="bg-lightPurpule p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
+                  <div className="bg-lightPurpule border-purpleShade border p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
                     <NavLink 
                     to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
                     <p className="font-semibold text-theme">
@@ -348,9 +348,9 @@ export const PlanAndPricing = (props) => {
                 })}
               </div>
 
-              <p className="text24 font-bold">Select Number of classes</p>
+              <p className="text24 font-bold">Select Number of session</p>
               <p className="text20 font-normal text-secondry">
-                You can take as many classes as you want in a week.
+                You can take as many sessions as you want in a week.
               </p>
 
               <div>
@@ -402,7 +402,7 @@ export const PlanAndPricing = (props) => {
 
           <div className=" lg:hidden mb-10">
           <div className="mt-7 w-full">
-                <p className="text24 font-bold">Why you should consider us?</p>
+                <p className="text24 font-bold">Spoken English Classes for Professionals</p>
 
                 <div className="flex flex-col items-start">
                   {whyConsiderUse.map((item, index) => {
@@ -517,7 +517,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text20 font-medium mt-4">Session Recording</p>
                     <p className="text18 text-secondry">
-                    access privately saved session recordings to track your progress.
+                   Get access privately saved session recordings to track your progress.
                     </p>
                   </div>
                 </div>
@@ -527,10 +527,10 @@ export const PlanAndPricing = (props) => {
                     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-lightPurpule mr-4">
                       <img  className="h-8 w-8" src={face}/>
                     </div>
-                    Not sure about which subscription <br /> plan to choose?
+                    Not sure, which subscription plan to choose?
                   </div>
 
-                  <div className="bg-lightPurpule p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
+                  <div className="bg-lightPurpule mx-auto border border-purpleShade p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
                     <NavLink 
                     to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
                     <p className="font-semibold text-theme">

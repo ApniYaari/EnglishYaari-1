@@ -148,13 +148,19 @@ function Footer() {
           <div class="grid   grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:w-[70%]">
             <div>
               <h2 class="mb-6 text-lg font-semibold text-gray-900  !text-white">
-                About us
+                Contact us
               </h2>
               <ul class="text-white font-medium text-xs md:text-base">
                 <li class="mb-4 flex">
                   <BsTelephone />
 
                   <p className="ml-3 font-normal">+91 6209848131</p>
+                </li>
+
+                <li class="mb-4 flex">
+                  <HiOutlineMail className="text-md mt-1" />
+
+                  <p className="ml-3">help@englishyaari.com</p>
                 </li>
 
                 <li class="mb-4 flex">
@@ -166,16 +172,12 @@ function Footer() {
                   </p>
                 </li>
 
-                <li class="mb-4 flex">
-                  <HiOutlineMail className="text-md mt-1" />
-
-                  <p className="ml-3">help@englishyaari.com</p>
-                </li>
+           
               </ul>
             </div>
             <div className="mx-10">
               <h2 class="mb-6 capitalize text-lg font-semibold text-gray-900  !text-white">
-                Pages
+                Usefull links
               </h2>
               <ul class="text-white font-medium text-xs md:text-base">
                 <li class="mb-2">
@@ -211,6 +213,15 @@ function Footer() {
                     class="hover:underline"
                   >
                     Plans and pricing
+                  </NavLink>
+                </li>
+
+                <li class="mb-2">
+                  <NavLink
+                    to={'become-a-tutor'}
+                    class="hover:underline"
+                  >
+                    Become a tutor
                   </NavLink>
                 </li>
 
@@ -304,9 +315,9 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div className="container mx-auto">
+      {/* <div className="container mx-auto">
         <img className="h-24 mx-auto" src={footer} />
-      </div>
+      </div> */}
     </footer>
   );
 }
