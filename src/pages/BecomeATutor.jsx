@@ -7,9 +7,17 @@ import { NavLink } from 'react-router-dom'
 import { PiClockCountdown, PiCoins } from 'react-icons/pi'
 import { CiGlobe } from 'react-icons/ci'
 import { HiOutlineEmojiHappy } from 'react-icons/hi'
+import { Helmet } from 'react-helmet'
 function BecomeATutor() {
   return (
     <div className='bg-background'>
+              <Helmet>
+                
+        <meta charSet='utf-8'/>
+        <meta  name="description" content="Become an online English tutor at EnglishYaari and get paid up to INR 350 per hour" />
+        <title>Become an Online English Tutor - EnglishYaari</title>
+        <link rel="canonical" href="https://englishyaari.com/become-a-tutor" />
+      </Helmet>
       <div className=" w-full lg:w-[90vw]  2xll:w-[90%] 3xxl:w-[90%]  !mt-20 mx-auto px-4 lg:px-10  ">
         <div className='pb-10 pt-10 flex flex-wrap-reverse'>
           <div className='w-full lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>

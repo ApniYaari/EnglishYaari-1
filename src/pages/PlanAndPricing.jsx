@@ -13,6 +13,7 @@ import face from '../../src/assets/face.png';
 
 import { planList,  } from "../utils/Constant";
 import useDocumentTitle from "../customHook/useDocumentTitle";
+import { Helmet } from "react-helmet";
 
 const monthlyDiscount = {
   2: "15",
@@ -30,7 +31,6 @@ const planType = {
 };
 
 export const PlanAndPricing = (props) => {
-    useDocumentTitle("Affordable Plan And Pricing For Spoken English")
 
   const staticAarray = [
     "25 Minutes Live 1-on-1 Sessions",
@@ -119,6 +119,11 @@ export const PlanAndPricing = (props) => {
 
   return (
     <div className="sideMargin topSpace">
+           <Helmet>
+        <meta name="description" content="Flexible plan for professionals" />
+        <title>Pricing For Spoken English</title>
+        <link rel="canonical" href="https://englishyaari.com/plan-and-pricing" />
+      </Helmet>
       {/* <div className="h-40 rounded-md overflow-hidden bg-yellow-400 w-full">
         <img
           className="h-full w-full object-cover"
