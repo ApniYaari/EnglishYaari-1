@@ -11,7 +11,7 @@ import { CiCircleCheck } from "react-icons/ci";
 import bank from '../../src/assets/bank.png'
 import face from '../../src/assets/face.png';
 
-import { planList, tempData } from "../utils/Constant";
+import { planList,  } from "../utils/Constant";
 import useDocumentTitle from "../customHook/useDocumentTitle";
 
 const monthlyDiscount = {
