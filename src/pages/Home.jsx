@@ -394,7 +394,6 @@ import { NavLink } from "react-router-dom";
 import useDocumentTitle from "../customHook/useDocumentTitle";
 
 export default function Home() {
-  useDocumentTitle("EnglishYaari: 1-on-1 Online Spoken English Tutor")
 
   const data = [
     {

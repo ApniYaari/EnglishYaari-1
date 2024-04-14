@@ -129,8 +129,9 @@ export function NavbarDefault() {
       // style={{background:scrolling?'white':''}}
       className={` ${scrolling  ? 'bg-theme' : 'bg-white'} ${location.pathname !=='/' && '!bg-theme'} fixed z-50 top-0 left-1/2 transform -translate-x-1/2   rounded-t-none lg:rounded-b-[32px]  overflow-clip w-screen py-4 mx-auto px-4 lg:px-8 lg:w-[90vw]`}>
       <div className="   flex items-center justify-between ">
-        <img src={showImage()} className={`${scrolling ? 'h-10' : 'h-8'}`} />
-
+        <a href="https://englishyaari.com/">
+        <img  src={showImage()} className={`${scrolling ? 'h-10' : 'h-8'}`} />
+        </a>
         <div className="hidden lg:block ">{navList}</div>
         <div className=" items-center gap-x-1 hidden lg:flex ">
 

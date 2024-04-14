@@ -62,8 +62,8 @@ const HomeComponent = ({ backgroundStyle }) => {
     <>
       <Helmet>
         <meta name="description" content=" EnglishYaari gives you instant access to expert English tutors and helps you to speak English fluently and confidently." />
-        {/* <title></title> */}
-        <link rel="canonical" href="https://englishyaari.com/plan-and-pricing" />
+        <title>EnglishYaari: 1-on-1 Online Spoken English Tutor</title>
+        <link rel="canonical" href="https://englishyaari.com/" />
       </Helmet>
       {
         <div
