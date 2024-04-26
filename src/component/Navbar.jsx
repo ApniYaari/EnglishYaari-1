@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
+  Collapse
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
@@ -101,7 +102,7 @@ export function NavbarDefault() {
       >
 
         <NavLink to={'/plan-and-pricing'} className="flex items-center">
-          Plans and Pricing
+          Plan and Pricing
         </NavLink>
       </Typography>
 
@@ -187,7 +188,7 @@ export function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className=" mx-auto">
           {navList}
 
@@ -208,7 +209,7 @@ export function NavbarDefault() {
             </div>
           </div>
         </div>
-      </MobileNav>
+      </Collapse>
     </div>
   );
 }
