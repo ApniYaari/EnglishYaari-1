@@ -48,8 +48,23 @@ function TutorDetails() {
           <Reviews />
 
 
-          <IndExp/>
+
+
         </div>
+
+        <div>
+            <p className="text20 font-semibold mt-10">Recommended tutors</p>
+
+            <div className="flex overflow-scroll">
+            {
+              [1,1,1,1,1,1,].map((ele,ind)=>{
+                return(
+                  <RecommendedCrad key={ind}/>
+                )
+              })
+            }
+            </div>
+          </div>
       </div>
       
     </div>
@@ -253,23 +268,27 @@ const Reviews = () => {
 };
 
 
+const RecommendedCrad=()=>{
+  return(
+    <div
+    onClick={()=>{
+      // setLink(item?.url)
+      // setVedioModal(true);
+    }}
+     className="min-w-[24rem] mr-4   mt-6 rounded-lg  relative overflow-hidden">
+    
 
+      <video className="w-full rounded-lg" autoPlay={false}>
+          <source src={'https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Arundhati.mp4'} type="video/mp4" className="object-cover" />
+          Your browser does not support the video tag.
+        </video>
 
-const IndExp = () => {
-  const timeArray = slotTimingArray();
-  return (
-    <div className="bg-white w-full mt-6 p-4 shadow-2xl rounded-lg">
-      <div>
-
-      </div>
-
-      <p className="font-medium mt-4">Industry experience</p>
-
-      <div className="flex flex-wrap justify-between w-full  mb-5  lg:pr-10 h-[375px] overflow-hidden relative backdrop-blur-sm bg-white/30 ">
-
-       <TimelineWithIcon/>
-
+      <div className=" w-full text24 font-medium flex justify-between items-center mt-3">
+        Sachin
+        <div className="w-[200px]  flex justify-end gap-2">
+       
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}

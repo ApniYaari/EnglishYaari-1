@@ -81,17 +81,26 @@ export function NavbarDefault() {
           Home
         </NavLink>
       </Typography>
-      <Typography
+
+
+
+      {/* <Typography
+        onClick={() => setOpenNav(false)}
         as="li"
         variant="h6"
         color={showColor()}
-        className="flex items-center gap-x-2 p-1 font-medium font-urbanist"
+        className="flex items-center  p-1 font-medium font-urbanist"
       >
 
-        <a href="#" className="flex items-center">
-          {/* Our tutors */}
-        </a>
-      </Typography>
+
+        <NavLink to={'/AllTutorList'} className="flex items-center">
+        Our tutors
+        </NavLink>
+      </Typography> */}
+
+      
+
+    
     
       <Typography
         onClick={() => setOpenNav(false)}

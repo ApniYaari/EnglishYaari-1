@@ -64,7 +64,7 @@ margin: 0px;
 }
 
 .text20{
-  @apply text-base md:text-xl lg:text-[18px] 2xll:text-[18px] 3xxl:text-[20px]
+  @apply text-base md:text-xl lg:text-[20px] 2xll:text-[18px] 3xxl:text-[20px]
 
 }
 

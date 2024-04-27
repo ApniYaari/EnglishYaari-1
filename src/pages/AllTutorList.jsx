@@ -1,14 +1,19 @@
 import { Input } from '@material-tailwind/react'
 import React from 'react'
 import { IoSearch } from 'react-icons/io5'
-
+import Alltutor from '../assets/Alltutor.png'
 function AllTutorList() {
   return (
-    <div className='pt-20 bg-background h-screen'>
-        <div className='w-screen bg-lightPurpule py-10'>
-            <div className='container mx-auto'>
-                <p className='text40 font-bold leading-loose'>Speak confidently,<br/> succeed strongly</p>
+    <div className=' bg-background h-screen'>
+        <div className='w-screen pt-36 bg-lightPurpule py-10 flex'>
+            <div className=' mx-auto w-[40%] h-full justify-center items-center border bg-red-300'>
+                <p className='text40 font-bold leading-loose'>Better English,<br/> Better opportunity</p>
                 <p className='text-secondry font-medium mt-4 '>Unlock your potential with certified English mentors.</p>
+            </div>
+
+
+            <div className='w-[40%]'>
+                <img className='h-64' src={Alltutor}/>
             </div>
         </div>
 
