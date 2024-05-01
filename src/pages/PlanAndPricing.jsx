@@ -15,6 +15,8 @@ import { planList,  } from "../utils/Constant";
 import useDocumentTitle from "../customHook/useDocumentTitle";
 import { Helmet } from "react-helmet";
 
+import PlanDesktop from '../assets/PlanDesktop.png'
+
 const monthlyDiscount = {
   2: "15",
   3: "25",
@@ -118,18 +120,23 @@ export const PlanAndPricing = (props) => {
   }, []);
 
   return (
-    <div className="sideMargin topSpace">
+
+    <>
+    
+    <div className=" rounded-md overflow-hidden w-[95vw] mx-auto !mt-8 topSpace ">
+        <img
+          className="h-full w-full object-contain"
+          src={PlanDesktop}
+        />
+      </div>
+ 
+    <div className="sideMargin mt-6">
            <Helmet>
         <meta name="description" content="Flexible plan for professionals" />
         <title>Pricing For Spoken English</title>
         <link rel="canonical" href="https://englishyaari.com/plan-and-pricing" />
       </Helmet>
-      {/* <div className="h-40 rounded-md overflow-hidden bg-yellow-400 w-full">
-        <img
-          className="h-full w-full object-cover"
-          src="https://t4.ftcdn.net/jpg/02/18/18/55/360_F_218185587_P4zituDtWJOfClUKL6merI0BgLMIxoeC.jpg"
-        />
-      </div> */}
+
 
       {/* Select Plan */}
       <div className="container mx-auto  ">
@@ -312,15 +319,15 @@ export const PlanAndPricing = (props) => {
                     </div>
                     Not sure, which subscription <br /> plan to choose?
                   </div>
-
-                  <div className="bg-lightPurpule border-purpleShade border p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
-                    <NavLink 
+                  <NavLink 
                     to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
+                  <div className="bg-lightPurpule border-purpleShade border p-2 rounded-full w-[80%] flex items-center justify-center text20 mt-3">
+                 
                     <p className="font-semibold text-theme">
                       Talk to our counsellor
                     </p>
-                    </NavLink>
                   </div>
+                    </NavLink>
                 </div>
               </div>
             </div>
@@ -376,26 +383,26 @@ export const PlanAndPricing = (props) => {
               </div>
 
               <div className="mt-10">
+                <a  href={'https://user.englishyaari.com/Register?public=true'}>
                 <div
                 onClick={()=>{
                    navigate('');
                 }}
                  className="bg-theme flex items-center justify-center text-white w-full rounded-full p-2.5 text32 font-medium ">
-                  <a  href={'https://user.englishyaari.com/Register?public=true'}>
                   Subscribe Now
 
-                  </a>
                 </div>
+                  </a>
 
                 <div className="my-4 text-center">
                   <p>OR</p>
                 </div>
 
-                <div className="border flex justify-center items-center border-theme text-theme w-full rounded-full p-2.5 text32 font-medium ">
                 <a  href={'https://user.englishyaari.com/Register?public=true'}>
+                <div className="border flex justify-center items-center border-theme text-theme w-full rounded-full p-2.5 text32 font-medium ">
                   Book Trial @ ₹99/-
-                  </a>
                 </div>
+                  </a>
               </div>
 
               <div className="p-4 border rounded-lg mt-7 text20 font-medium text-secondry">
@@ -548,6 +555,7 @@ export const PlanAndPricing = (props) => {
           </div>
         </div>
     </div>
+    </>
   );
 };
 

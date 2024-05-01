@@ -41,8 +41,8 @@ export default function App() {
           path="/plan-and-pricing"
           element={<PlanAndPricing backgroundStyle={backgroundStyle} />}
         />
-        <Route path="/AllTutorList" element={<AllTutorList />} />
-        <Route path="/TutorDetails" element={<TutorDetails />} />
+        {/* <Route path="/AllTutorList" element={<AllTutorList />} /> */}
+        {/* <Route path="/TutorDetails" element={<TutorDetails />} />/ */}
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
