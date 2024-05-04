@@ -14,10 +14,8 @@ import DescriptionComponent from "@/component/DescriptionComponent";
 
 function TutorDetails() {
     const [tab,setTab]=useState(1)
-    let data = localStorage.getItem('item')
-    let respnse = (JSON.parse(data))
-    console.log(JSON.parse(data));
-    console.log(respnse?.introductionVideoURL);
+    let data = {}
+    let respnse ={}
     return (
         <div className="py-20 bg-background min-h-screen">
             <NavBar2 />

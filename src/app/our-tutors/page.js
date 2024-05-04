@@ -141,7 +141,7 @@ const Card = ({ item }) => {
                     <div className=' gap-4 mt-4 hidden lg:flex '>
                     <Link onClick={()=>{
                         let temp = JSON.stringify(item)
-                        localStorage.setItem('item',temp)
+                        // localStorage.setItem('item',temp)
                     }} href={{ pathname: '/tutor-infomation', query: { item:item }}}  className='bg-lightPurpule text-theme p-2 text-center rounded-full w-[50%]'>
                             View profile
                         </Link>
