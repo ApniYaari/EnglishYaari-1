@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GiRoundStar } from "react-icons/gi";
 import { RxArrowRight } from "react-icons/rx";
 import { GoStarFill } from "react-icons/go";
@@ -14,13 +14,21 @@ import DescriptionComponent from "@/component/DescriptionComponent";
 
 function TutorDetails() {
     const [tab,setTab]=useState(1)
-    let data = {}
-    let respnse ={}
+  
+
+    let data={}
+    let respnse={}
+    useEffect(() => {
+         data = localStorage.getItem('item')||{};
+         respnse = (JSON.parse(data))
+       
+    }, [])
+    
     return (
         <div className="py-20 bg-background min-h-screen">
             <NavBar2 />
-            <div className="container flex flex-wrap-reverse justify-between ">
-                <div className=" w-[90%] mx-auto lg:w-[60%]">
+            <div className="container flex flex-wrap-reverse justify-between !mt-10 ">
+                <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[60%]">
                     <Card teacherData={respnse} />
                 </div>
 
@@ -41,7 +49,7 @@ function TutorDetails() {
 
             {/* othet infotrmation */}
             <div className="container mx-auto pt-10">
-                <div className="flex ">
+                <div className="flex  ">
                     {["Availability", "Reviews",].map((ele, ind) => {
                         return (
                             <button 
@@ -55,7 +63,7 @@ function TutorDetails() {
                     })}
                 </div>
 
-                <div className=" w-[90%] mx-auto lg:w-[60%]">
+                <div className=" w-[90%]  lg:w-[60%] ">
                    {tab==1 && <Availability />}
 
                   { tab==2 && <Reviews />}
@@ -89,7 +97,7 @@ export default TutorDetails;
 const Card = ({ teacherData }) => {
     console.log(teacherData);
     return (
-        <div className="bg-white p-4 shadow-xl rounded-lg h-full">
+        <div className="bg-white p-4  rounded-lg h-full">
             <div className=" flex gap-6 ">
                 <div className=" w-40 rounded-md overflow-hidden h-20 lg:h-36 rounded-t-lg border">
                     <img className='h-full w-full' src={teacherData?.imageURL} />
@@ -163,7 +171,7 @@ const Availability = () => {
     const [selectDateIndex, setSelectedDateIndex] = useState(1);
     const timeArray = slotTimingArray();
     return (
-        <div className="bg-white w-full mt-6 p-4 relative shadow-2xl rounded-lg">
+        <div className="bg-white w-full mt-6 p-4 relative overflow-hidden  rounded-xl">
             <div>
                 {weekArray.map((day, ind) => {
                     return (
@@ -227,7 +235,7 @@ const Availability = () => {
 const Reviews = () => {
     const timeArray = slotTimingArray();
     return (
-        <div className="bg-white w-full mt-6 p-4 shadow-2xl rounded-lg">
+        <div className="bg-white w-full mt-6 p-4  rounded-lg">
             <div>
 
             </div>

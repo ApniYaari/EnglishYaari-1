@@ -28,7 +28,7 @@ const HomeNavbar = () => {
         },
         {
             name:'Become a tutor',
-            link:'/contact'
+            link:'/become-a-tutor'
         },
         {
             name:'About us',
@@ -43,33 +43,19 @@ const HomeNavbar = () => {
                 </div>
                 <nav className=''>
                     <ul className=' hidden lg:flex items-center gap-5 '>
-                        <li>
-                            <Link href="/">
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/about">
-                                Our tutors
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/plan-and-pricing">
-                                Plans and pricing
-                            </Link>
-                        </li>
 
-                        <li>
-                            <Link href="/contact">
-                                Become a tutor
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="/contact">
-                                About us
-                            </Link>
-                        </li>
+                        {
+                            navlist?.map((ele,ind)=>{
+                                return(
+                                    <li>
+                                    <Link href={ele?.link} className={twMerge(`text-lg`,pathName==ele?.link?'text-theme font-semibold':'')}>
+                                        {ele?.name}
+                                    </Link>
+                                </li>
+                                )
+                            })
+                        }
+                       
                     </ul>
                 </nav>
 

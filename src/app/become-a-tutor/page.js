@@ -26,7 +26,7 @@ function BecomeATutor() {
         <div className='pb-10 pt-10 flex flex-wrap-reverse'>
           <div className='w-full lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>
             <p className='text48 font-semibold leading-loose pt:10 lg:pt-0'>Become a tutor</p>
-            <p className='text-secondry font-medium mt-3 mt-0 lg:mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
+            <p className='text-secondry font-medium  lg:mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
 
             <Link
               href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}

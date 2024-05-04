@@ -9,7 +9,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <div style={{background:'#25232F'}}   className="bg-[#25232F]">
-      <div className="mx-auto  w-[90vw] mx-auto p-4 py-6 lg:py-8">
+      <div className="  w-[90vw] mx-auto p-4 py-6 lg:py-8">
         <div className="flex flex-wrap  w-full ">
           <div className="mb-6 md:mb-0  w-[90vw]  lg:w-[30%] px-0 lg:px-5 ">
             {
@@ -147,7 +147,7 @@ function Footer() {
           </div>
           <div className="flex justify-evenly  w-[90vw] lg:flex-nowrap flex-wrap lg:w-[70%]">
             <div className="w-[100%] lg:w-[33px] ">
-              <h2 className="mb-6 text-lg font-semibold text-gray-900  !text-white">
+              <h2 className="mb-6 text-lg font-semibold   !text-white">
                 Contact us
               </h2>
               <ul className="text-white font-medium text-sm md:text-base">
@@ -176,7 +176,7 @@ function Footer() {
               </ul>
             </div>
             <div className="w-[100%] lg:w-[33px] ">
-              <h2 className="mb-6 capitalize text-lg font-semibold text-gray-900  !text-white">
+              <h2 className="mb-6 capitalize text-lg font-semibold   !text-white">
                 Usefull links
               </h2>
               <ul className="text-white  font-medium text-sm md:text-base">
@@ -248,7 +248,7 @@ function Footer() {
               </ul>
             </div>
             <div className="w-[100%] lg:w-[33px] ">
-              <h2 className="mb-6 text-lg font-semibold text-gray-900  !text-white">
+              <h2 className="mb-6 text-lg font-semibold   !text-white">
                 Download the app
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium  w-[200px] lg:w-[200px]">
