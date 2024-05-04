@@ -145,6 +145,10 @@ background-color:"powderblue" !important;
   .buttonWidth{
     @apply w-[33px]
   }
+  .heroSection{
+    @apply h-[100vh] lg:h-[80vh] 2xll:h-[90vh] 3xxl:h-[85vh]
+
+  }
 }
 
 

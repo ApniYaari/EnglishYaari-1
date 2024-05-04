@@ -4,6 +4,10 @@
 
 import moment from "moment";
 
+export const signupLink='https://user.englishyaari.com/Register?public=true'
+
+export const loginLink='https://user.englishyaari.com/Login'
+
 export let planList= [
     {
         "planType": 1,

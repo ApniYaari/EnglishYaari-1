@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 import { FiArrowRight } from "react-icons/fi";
+import { signupLink } from '@/utils/utils';
 
 function HeroSection() {
 
@@ -18,10 +19,10 @@ function HeroSection() {
 
 
     return (
-        <div className='h-[100vh] lg:h-[75vh] relative w-screen bg-[#4D16A4] overflow-hidden flex  flex-col lg:justify-center '  >
+        <div className='heroSection relative w-screen bg-[#4D16A4] overflow-hidden flex  flex-col lg:justify-center '  >
 
-            <Image className=' h-[75vh]  top-0  absolute' src={Bg}/>
-            <div className='customContainer relative flex-wrap-reverse mx-auto flex    justify-center items-center  '>
+            <Image className=' heroSection  top-0  absolute' src={Bg}/>
+            <div className='customContainer relative flex-wrap-reverse mx-auto flex  lg:mt-10   justify-center items-center  '>
                 <div className='w-[90%] mx-auto lg:w-[50%] flex flex-col items-center lg:items-start '>
                     <div className='bg-gradient-to-r from-[#7F34DF] text-xl   to-[#FF5794] text-white text-center py-1 rounded-full mb-6 w-[250px] lg:w-[220px] !mt-10'>
                         Save upto 50%
@@ -39,7 +40,7 @@ function HeroSection() {
                     Speak in English with India’s Expert Tutors
                     </p>
 
-                    <Link className={twMerge('bg-white  font-semibold text-2xl flex  w-[100%] md:w-[386px] justify-center gap-3 items-center py-2.5 mt-8 rounded-full')} href="/">Book your trial <FiArrowRight className='text-black text-2xl' /></Link>
+                    <Link to={signupLink} className={twMerge('bg-white  font-semibold text-2xl flex  w-[100%] md:w-[386px] justify-center gap-3 items-center py-2.5 mt-8 rounded-full')} href="/">Book your trial <FiArrowRight className='text-black text-2xl' /></Link>
 
                     <div className='text-h6 text-white flex justify-center lg:justify-start gap-3 items-center mt-8'>
                         <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">

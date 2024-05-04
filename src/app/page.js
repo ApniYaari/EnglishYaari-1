@@ -25,6 +25,7 @@ import FAQ from "@/component/FAQ";
 import MobileSectionEnglishYaariWork from "./(home)/component/MobileSectionEnglishYaariWork";
 import HomeNavbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
+import Link from "next/link";
 export default function Home() {
 
 
@@ -272,10 +273,10 @@ export default function Home() {
               </div>
 
               <button className="bg-sucess text-white text-base items-center font-semibold flex px-8 rounded-full py-2 mt-8">
-                {/* <Link className={'flex items-center'} to='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'> */}
+                <Link className={'flex items-center'} href='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
                 <FaWhatsapp className="mr-3" />
                 WhatsApp us
-                {/* </Link> */}
+                </Link>
 
               </button>
             </div>

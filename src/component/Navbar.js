@@ -1,6 +1,6 @@
 // Navbar.js
 import WhiteLogo from '@/assets/WhiteLogo.png'
-import { primaryColor } from '@/utils/utils';
+import { loginLink, primaryColor, signupLink } from '@/utils/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -61,11 +61,11 @@ const HomeNavbar = () => {
 
 
                 <div className='flex items-center gap-4  '>
-                    <Link href="/contact" className='mr-4 hidden lg:flex'>
+                    <Link href={loginLink} className='mr-4 hidden lg:flex'>
                         Login
                     </Link>
 
-                    <Link href={'/'}>
+                    <Link href={signupLink}>
                         <div className={twMerge('bg-theme text-white py-3 flex justify-center items-center rounded-full w-[200px]')}>
                             Get started
                             <FaArrowRight className='text-white' />
@@ -101,7 +101,7 @@ const HomeNavbar = () => {
                         
                     </ul>
 
-                    <Link href={'/'}>
+                    <Link href={signupLink}>
                         <div className={twMerge('bg-theme text-sm text-white py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mt-4')}>
                             Get started
                             <FaArrowRight className='text-white' />
@@ -109,7 +109,7 @@ const HomeNavbar = () => {
                     </Link>
 
 
-                    <Link href={'/'}>
+                    <Link href={loginLink}>
                         <div style={{background:primaryColor[100]}}  className={twMerge(' text-base text-theme font-semibold  py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mb-4 mt-4 ',`bg-[${primaryColor[400]}]`)}>
                         Login
                         </div>
@@ -120,7 +120,7 @@ const HomeNavbar = () => {
                 <div className='flex items-center gap-3   '>
 
 
-                    <Link href={'/'}>
+                    <Link href={signupLink}>
                         <div className={twMerge('bg-theme text-sm text-white py-3 flex justify-center items-center rounded-full w-[120px]')}>
                             Get started
                             <FaArrowRight className='text-white' />
