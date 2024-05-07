@@ -106,7 +106,7 @@ function HeroSection() {
                 </div>
 
                 <div className='w-full lg:w-[50%] h-auto flex  lg:justify-end justify-center mt-24 lg:mt-16'>
-                    <Image height={0} width={0} className='w-[90%] lg:w-[80%]' src={Hero} />
+                    <Image height={0} width={0} className='w-[90%] lg:w-[80%] 2xl:[70%]' src={Hero} />
                 </div>
 
 

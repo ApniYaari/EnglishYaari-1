@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MeetTutorCard } from "./MeetTutorCard";
 import ScrollSection from "@/component/ScrollSection";
+import CustomButton from "@/component/CustomButton";
 
 
 export const MeetOutTutor = (props) => {
@@ -74,14 +75,22 @@ export const MeetOutTutor = (props) => {
       {
         //#region Introductory Video
         <div className=" margin24 overflow-hidden rounded-xl">
+          <div className="border border-[#DBDBDB] bg-white overflow-hidden rounded-2xl">
           <div
             id="slider"
-            className="flex  bg-white p-4 w-full overflow-scroll scroll rounded-3xl  whitespace-nowrap scroll-smooth border border-[#DBDBDB]"
+            className="flex  w-full overflow-scroll scroll   whitespace-nowrap scroll-smooth "
           >
-            <div className=" bg-white mx-auto pb-4 gap-x-3  rounded-3xl  flex w-full justify-around lg:justify-between  ">
+            <div className=" bg-white mx-auto  gap-x-3  rounded-3xl  flex w-full justify-around lg:justify-between  ">
               {FaqVedios.map((ele, ind) => (
                   <MeetTutorCard setVedioModal={setVedioModal} setLink={setLink} item={ele} key={ind} />
                 ))}
+
+
+            </div>
+
+            </div>
+            <div className="flex mx-auto justify-center items-center pb-4 pt-2">
+            <CustomButton name={'View all tutors'}/>
             </div>
           </div>
 

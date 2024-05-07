@@ -19,7 +19,7 @@ function Organzation() {
       <div className="flex justify-around h-full items-center bg w-full flex-wrap">
         <div className="">
           <p className="h36 font-bold">Are you an organisation?</p>
-          <p className="text-secondry mt-2 !font-normal h6">
+          <p className="text-secondry !font-normal h6 leading-8 mt-4">
             Looking to train your team to speak English fluently? <br />{" "}
             WhatsApp us your specific needs at +91-6209848131
           </p>

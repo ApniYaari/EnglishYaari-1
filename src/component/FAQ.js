@@ -1,12 +1,11 @@
+"use client"
+
 import React from "react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { CiCircleCheck } from "react-icons/ci";
-import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import { IoIosArrowDown, IoIosArrowUp, IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { LuPlus } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 

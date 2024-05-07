@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import One from '@/assets/EnglishYaari2.0_Product Design/one.png';
 import Two from '@/assets/EnglishYaari2.0_Product Design/two.png';
 import Three from '@/assets/EnglishYaari2.0_Product Design/three.png';
@@ -12,6 +12,7 @@ import Ten from '@/assets/EnglishYaari2.0_Product Design/ten.png';
 import { HorizontalSlider } from './HorizontalSlider';
 function OurLearner() {
 
+    const [speed,setSpeed]=useState(20000)
     const images = [
         One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
     ].map((image) => ({
@@ -20,10 +21,10 @@ function OurLearner() {
     }));
 
     return (
-        <div className='  relative h-[210px] md:h-[250px] '>
+        <div onMouseLeave={()=>setSpeed(20000)} onMouseEnter={()=>setSpeed(50000)}  className='  relative h-[210px] md:h-[250px] '>
                     <p className='text-center h28 font-semibold text-secondry my-5  '>Trusted by learners working at top companies</p>
 
-            <HorizontalSlider images={images} speed={10000} />
+            <HorizontalSlider images={images} speed={speed} />
 
         </div>
     )

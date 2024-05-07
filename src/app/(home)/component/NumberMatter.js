@@ -43,7 +43,7 @@ export default NumberMatter;
 const Card = ({ bgg, circleBg, subTittle, value, icon }) => {
   return (
     <div
-      className={`  flex w-[95%] text-white mx-auto lg:w-[31%] p-4 lg:p-6 rounded-2xl lg:py-8 items-center mt-2`}
+      className={`  flex w-[95%] text-white mx-auto lg:w-[31%] p-4 lg:p-6 rounded-2xl lg:py-8 items-center justify-center mt-2`}
     >
       <div
         className={`h-20 w-20 rounded-full ${circleBg} flex items-center justify-center`}

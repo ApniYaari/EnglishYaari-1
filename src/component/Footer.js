@@ -146,7 +146,7 @@ function Footer() {
             </div>
           </div>
           <div className="flex justify-evenly  w-[90vw] lg:flex-nowrap flex-wrap lg:w-[70%]">
-            <div className="w-[100%] lg:w-[33px] ">
+            <div className="w-[100%] lg:w-[33%]  lg:px-10 ">
               <h2 className="mb-6 text-lg font-semibold   !text-white">
                 Contact us
               </h2>
@@ -175,7 +175,7 @@ function Footer() {
            
               </ul>
             </div>
-            <div className="w-[100%] lg:w-[33px] ">
+            <div className="w-[100%] lg:w-[33%] ">
               <h2 className="mb-6 capitalize text-lg font-semibold   !text-white">
                 Usefull links
               </h2>
@@ -247,16 +247,16 @@ function Footer() {
                 
               </ul>
             </div>
-            <div className="w-[100%] lg:w-[33px] ">
+            <div className="w-[100%]  lg:w-[33%]">
               <h2 className="mb-6 text-lg font-semibold   !text-white">
                 Download the app
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium  w-[200px] lg:w-[200px]">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium  ">
                 <a
                 target="_blank"
                   href="https://play.google.com/store/apps/details?id=com.english_yari&hl=en&gl=US"
                   type="button"
-                  className="flex items-center justify-center   max-w-[100px] lg:w-48 text-white bg-black rounded-lg h-14"
+                  className="flex items-center justify-center   max-w-[200px] lg:w-48 text-white bg-black rounded-lg h-14"
                 >
                   <div className="mr-3">
                     <svg viewBox="30 336.7 120.9 129.2" width="30">

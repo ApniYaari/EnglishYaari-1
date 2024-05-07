@@ -79,8 +79,8 @@ const Card = ({ tittle, bg, decription, img,type }) => {
     >
       <div className="w-full lg:w-[60%] px-6 py-4 lg:p-8   flex flex-col justify-center  lg:gap-y-6  lg:text-start  lg:mt-0">
         {tittle}
-        <div className="lg:w-[80%]">
-        <p className="text-secondry text-start lg:text-start h14 mt-4 lg:mt-0">{decription}</p>
+        <div className="lg:w-[80%] 2xll:w-[50%]">
+        <p className="text-secondry text-start lg:text-start h14 mt-4 lg:mt-0 leading-8">{decription}</p>
         </div>
       </div>
 

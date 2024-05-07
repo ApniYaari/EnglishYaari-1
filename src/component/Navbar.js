@@ -48,7 +48,7 @@ const HomeNavbar = () => {
                             navlist?.map((ele,ind)=>{
                                 return(
                                     <li>
-                                    <Link href={ele?.link} className={twMerge(`text-lg`,pathName==ele?.link?'text-theme font-semibold':'')}>
+                                    <Link style={{color:pathName==ele?.link && '#4D16A4'}} href={ele?.link} className={twMerge(`text-lg`,pathName==ele?.link?'text-[#4D16A4] font-semibold':'')}>
                                         {ele?.name}
                                     </Link>
                                 </li>
@@ -66,7 +66,7 @@ const HomeNavbar = () => {
                     </Link>
 
                     <Link href={signupLink}>
-                        <div className={twMerge('bg-theme text-white py-3 flex justify-center items-center rounded-full w-[200px]')}>
+                        <div style={{background:primaryColor[500]}} className={twMerge(' text-white py-3 flex justify-center items-center rounded-full w-[200px]')}>
                             Get started
                             <FaArrowRight className='text-white' />
                         </div>
@@ -102,8 +102,8 @@ const HomeNavbar = () => {
                     </ul>
 
                     <Link href={signupLink}>
-                        <div className={twMerge('bg-theme text-sm text-white py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mt-4')}>
-                            Get started
+                        <div style={{color:primaryColor[700]}} className={twMerge(' text-sm text-white py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mt-4')}>
+                            Get starteds
                             <FaArrowRight className='text-white' />
                         </div>
                     </Link>

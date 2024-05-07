@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { FaArrowRight, FaCircle, FaWhatsapp } from 'react-icons/fa6'
 import becomeATutor from '@/assets/becomeATutor.png'
@@ -10,6 +11,7 @@ import { HiOutlineEmojiHappy } from 'react-icons/hi'
 import Link from 'next/link'
 import NavBar2 from '@/component/NavBar2'
 import Image from 'next/image'
+import FAQ from '@/component/FAQ'
 
 function BecomeATutor() {
   return (
@@ -233,7 +235,7 @@ function BecomeATutor() {
               </button>
             </div>
 
-            {/* <div className="w-full lg:w-[70%] ">
+            <div className="w-full lg:w-[70%] ">
               <FAQ
                 question={"How EnglishYaari works?"}
                 answer={<div>
@@ -349,7 +351,7 @@ function BecomeATutor() {
                   </p>
                 </div>}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

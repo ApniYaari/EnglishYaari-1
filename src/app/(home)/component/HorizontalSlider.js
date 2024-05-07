@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import '../Home.css'
 
-const HorizontalSlider = ({ images, speed = 1200000 }) => {
+const HorizontalSlider = ({ images, speed = 1000000 }) => {
     return (
       <div className="">
 
