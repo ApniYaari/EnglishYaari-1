@@ -51,7 +51,7 @@ function AllTutorList() {
     };
 
     return (
-        <div className=' bg-background h-screen overflow-scroll  pb-20'>
+        <div className=' bg-background h-screen overflow-x-hidden overflow-y-scroll  pb-20'>
             <NavBar2 />
             <div className='w-[90vw] 3xxl:container flex-wrap-reverse mx-auto   mt-24 lg:mt-36 flex'>
                 <div className=' mx-auto w-full lg:w-[50%] h-full justify-center items-center  '>

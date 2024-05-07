@@ -55,7 +55,7 @@ const NavBar2 = () => {
         <>
             <div className={twMerge('fixed top-0  shadow-3xl hidden lg:flex items-center justify-between px-8 py-3 z-[999]  left-0 right-0 mx-auto  w-[100vw] bg-[#]', `bg-[${primaryColor[700]}]`)}>
                 <div className='w-[100px] h-10 lg:w-[200px]'>
-                    <Image height={0} width={0} className='h-full w-full' src={WhiteLogo} />
+                    <Image height={0} width={0} className='h-full w-full object-contain' src={WhiteLogo} />
                 </div>
                 <nav className=''>
 

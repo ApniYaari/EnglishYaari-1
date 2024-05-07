@@ -119,7 +119,7 @@ function ScrollSection() {
             <div className=" h-screen flex flex-col justify-center" ref={triggerRef}>
 
 
-                <div style={{ position: 'absolute',  flexDirection: 'row', justifyContent: 'space-between', display: 'flex' }} className=" container items-center  top-36 2xll:top-48 z-[999] ">
+                <div style={{ position: 'absolute',  flexDirection: 'row', justifyContent: 'space-between', display: 'flex' }} className=" container items-center  top-20 z-[999] ">
                     <p className="font-semibold h3">
                         How EnglishYaari Works?
                     </p>

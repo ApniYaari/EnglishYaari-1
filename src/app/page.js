@@ -206,7 +206,7 @@ export default function Home() {
           <p className="text24 font-semibold text-center text-secondry">
             Find the answers in our FAQs
           </p>
-          <div className="container flex  flex-wrap-reverse px-4 md:px-0">
+          <div className="w-[90vw] mx-auto flex  flex-wrap-reverse px-4 md:px-0">
             <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col">
               <p className="text-theme text-lg !font-semibold">
                 For any other questions{" "}
