@@ -31,16 +31,16 @@ export default function Home() {
 
   const slideLeft = () => {
     var slider = document.getElementById("slider2");
-    slider.scrollLeft =window.innerWidth>600? slider.scrollLeft - 400:slider.scrollLeft - 300;
+    slider.scrollLeft = window.innerWidth > 600 ? slider.scrollLeft - 400 : slider.scrollLeft - 300;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider2");
-    slider.scrollLeft = window.innerWidth>600? slider.scrollLeft + 400:slider.scrollLeft + 300;
+    slider.scrollLeft = window.innerWidth > 600 ? slider.scrollLeft + 400 : slider.scrollLeft + 300;
   };
   return (
     <div className="bg-background overflow-x-hidden">
-<HomeNavbar/>
+      <HomeNavbar />
       <HeroSection />
 
 
@@ -55,7 +55,7 @@ export default function Home() {
         <div className=" w-full    mx-auto px-4 lg:px-0  ">
           <div className="flex justify-between flex-wrap items-center lg:w-[90%] mx-auto">
             <div className="h3 font-bold ">
-              <p>Courses for  <i className="text-theme">suits your needs</i> </p>
+              <p> <i className="text-theme">Specialized courses</i> for your goals </p>
 
             </div>
 
@@ -142,30 +142,30 @@ export default function Home() {
 
 
           <div className="text-6xl text-theme flex my-8 justify-center lg:hidden gap-4">
-              <button onClick={()=>{
-                slideLeft()
-                // alert('Please')
-              }}>
-                <LuArrowLeftCircle />
-              </button>
+            <button onClick={() => {
+              slideLeft()
+              // alert('Please')
+            }}>
+              <LuArrowLeftCircle />
+            </button>
 
-              <button
-              onClick={()=>{
+            <button
+              onClick={() => {
                 slideRight()
                 // alert('Please')
               }}
-              //  onClick={slideRight}
-               >
-                <LuArrowRightCircle />
-              </button>
-            </div>
+            //  onClick={slideRight}
+            >
+              <LuArrowRightCircle />
+            </button>
+          </div>
         </div>
       </div>
 
       <div className=" margin120 justify-center flex flex-col">
 
-<OurLearner/>
-</div>
+        <OurLearner />
+      </div>
 
       <div className=" hidden relative lg:flex flex-col customContainer mx-auto">
 
@@ -174,28 +174,28 @@ export default function Home() {
       </div>
       <div className="  lg:hidden flex-col customContainer mx-auto">
 
-      <MobileSectionEnglishYaariWork/>
-</div>
+        <MobileSectionEnglishYaariWork />
+      </div>
 
-<div>
-  <WhatWillGet/>
-</div>
-
-
-
-<div>
-  <OurStudent/>
-</div>
+      <div>
+        <WhatWillGet />
+      </div>
 
 
-<div className="margin120 border border-transparent">
-  <NumberMatter/>
-</div>
+
+      <div>
+        <OurStudent />
+      </div>
+
+
+      <div className="margin120 border border-transparent">
+        <NumberMatter />
+      </div>
 
 
 
       <div className="margin120">
-        <Organzation/>
+        <Organzation />
       </div>
 
       <div className="margin120">
@@ -203,11 +203,11 @@ export default function Home() {
           <p className="h1 text-black font-semibold text-center">
             Have a question?
           </p>
-          <p className="text24 font-semibold text-center text-secondry">
+          <p className="text24 font-semibold hidden lg:flex text-center text-secondry">
             Find the answers in our FAQs
           </p>
-          <div className="w-[90vw] mx-auto flex  flex-wrap-reverse px-4 md:px-0">
-            <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col">
+          <div className="w-[90vw] mx-auto  flex  flex-wrap-reverse px-4 md:px-0">
+            <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col mt-8 lg:mt-0">
               <p className="text-theme text-lg !font-semibold">
                 For any other questions{" "}
               </p>
@@ -274,8 +274,8 @@ export default function Home() {
 
               <button className="bg-sucess text-white text-base items-center font-semibold flex px-8 rounded-full py-2 mt-8">
                 <Link className={'flex items-center'} href='https://api.whatsapp.com/send/?phone=916209848131&text&type=phone_number&app_absent=0'>
-                <FaWhatsapp className="mr-3" />
-                WhatsApp us
+                  <FaWhatsapp className="mr-3" />
+                  WhatsApp us
                 </Link>
 
               </button>
@@ -334,7 +334,7 @@ export default function Home() {
               />
             </div>
 
-            
+
 
 
           </div>
@@ -347,8 +347,8 @@ export default function Home() {
 
 
 
-{/* <Footer/> */}
-      
+      {/* <Footer/> */}
+
     </div>
   );
 }

@@ -145,7 +145,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex justify-evenly  w-[90vw] lg:flex-nowrap flex-wrap lg:w-[70%]">
+          <div className="flex justify-evenly  w-[90vw] lg:flex-nowrap mt-2 lg:mt-0 flex-wrap lg:w-[70%]">
             <div className="w-[100%] lg:w-[33%]  lg:px-10 ">
               <h2 className="mb-6 text-lg font-semibold   !text-white">
                 Contact us
@@ -175,8 +175,8 @@ function Footer() {
            
               </ul>
             </div>
-            <div className="w-[100%] lg:w-[33%] ">
-              <h2 className="mb-6 capitalize text-lg font-semibold   !text-white">
+            <div className="w-[100%] mt-2 lg:mt-0 lg:w-[33%] ">
+              <h2 className="mb-4 capitalize text-lg font-semibold   !text-white">
                 Usefull links
               </h2>
               <ul className="text-white  font-medium text-sm md:text-base">
@@ -247,8 +247,8 @@ function Footer() {
                 
               </ul>
             </div>
-            <div className="w-[100%]  lg:w-[33%]">
-              <h2 className="mb-6 text-lg font-semibold   !text-white">
+            <div className="w-[100%] mt-4 lg:mt-0 lg:w-[33%]">
+              <h2 className="mb-4 text-lg font-semibold   !text-white">
                 Download the app
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium  ">

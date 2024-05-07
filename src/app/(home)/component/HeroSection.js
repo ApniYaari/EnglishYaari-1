@@ -29,11 +29,11 @@ function HeroSection() {
                     </div>
 
                     <p className='h1 text-white font-semibold text-center lg:text-start'>
-                        Boost your <span className='text-yellow-800'>confidence</span> with
+                    Master Spoken English 
                     </p>
 
                     <p className='h1 mt-2 lg:mt-6 text-white font-semibold lg:text-start text-center'>
-                        1-on-1 live English
+                    in  <span className='text-yellow-800'>live 1-on-1</span> sessions
                     </p>
 
                     <p className='h6  mt-6 text-white font-medium lg:text-start text-center'>

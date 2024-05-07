@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
-function DescriptionComponent({ item }) {
+function DescriptionComponent({ item ,type}) {
   const maxWords = 40;
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   const toggleDescription = () => {
+    if(type){
+      window.location.href='/tutor-infomation'
+      return
+    }
     setShowFullDescription(!showFullDescription);
   };
 
@@ -16,7 +20,7 @@ function DescriptionComponent({ item }) {
       <p className='font-normal text-secondry text-sm lg:text-base 2xll:text-lg'>
         {showFullDescription ? item?.description : truncatedDescription}
         {item?.description && item.description.length > maxWords ? (
-          <span className='text-theme font-semibold' onClick={toggleDescription}>
+          <span className='text-theme font-semibold cursor-pointer' onClick={toggleDescription}>
             {showFullDescription ? ' Read less' : ' Read more'}
           </span>
         ) : null}

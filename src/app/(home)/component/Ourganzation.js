@@ -16,7 +16,7 @@ function Organzation() {
       className=" w-[90vw] bg-white mx-auto  rounded-2xl overflow-hidden  flex flex-wrap lg:flex-nowrap items-center py-6 lg:p-0 px-4"
     >
       <Image  className="w-auto h-52 rounded-2xl " src={person} />
-      <div className="flex justify-around h-full items-center bg w-full flex-wrap">
+      <div className="flex justify-around h-full  items-center bg w-full flex-wrap mt-[20px]">
         <div className="">
           <p className="h36 font-bold">Are you an organisation?</p>
           <p className="text-secondry !font-normal h6 leading-8 mt-4">
@@ -25,7 +25,7 @@ function Organzation() {
           </p>
         </div>
 
-        <div>
+        <div className="w-full flex justify-start lg:w-auto">
           <button className="bg-sucess text-white text24 items-center font-semibold flex px-8 rounded-full py-2 mt-8">
             <FaWhatsapp className="mr-3" />
             WhatsApp us

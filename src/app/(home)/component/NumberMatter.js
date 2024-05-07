@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function NumberMatter() {
   return (
-    <div className="w-screen bg-gradient-to-r from-[#5C17CD] to-[#9114CC]  margin120 py-10">
+    <div className="w-screen bg-gradient-to-r from-[#5C17CD] to-[#9114CC]  pb-10  margin120 lg:py-10">
       <div className=" w-[90vw] lg:w-[90vw] mx-auto">
 
 
@@ -43,15 +43,15 @@ export default NumberMatter;
 const Card = ({ bgg, circleBg, subTittle, value, icon }) => {
   return (
     <div
-      className={`  flex w-[95%] text-white mx-auto lg:w-[31%] p-4 lg:p-6 rounded-2xl lg:py-8 items-center justify-center mt-2`}
+      className={` w-[70%] flex   text-white mx-auto lg:w-[31%]     items-center   lg:justify-center mt-8 lg:mt-2`}
     >
       <div
-        className={`h-20 w-20 rounded-full ${circleBg} flex items-center justify-center`}
+        className={`h-24 w-24 rounded-full ${circleBg} flex items-center justify-center`}
       >
         <Image className="h-12 w-12" src={icon}/>
       </div>
 
-      <div className="ml-3">
+      <div className="ml-3 w-[50%] ">
         <p className="text36 font-bold ">{value}</p>
         <p className="text24 mt-2 font-semibold">{subTittle}</p>
       </div>

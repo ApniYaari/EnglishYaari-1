@@ -16,7 +16,7 @@ const  FAQ=({question,answer})=> {
  
   return (
     <>
-      <Accordion open={open === 1} className="my-6  border-b  py-3  border-blue-gray-100 px-4">
+      <Accordion open={open === 1} className="lg:my-6  border-b  lg:py-3  border-blue-gray-100 px-4">
         <AccordionHeader
           onClick={() => handleOpen(1)}
           className={`border-b-0 transition-colors px-0 mx-0 flex justify-between  font-urbanist text18 text-secondry  open === 1 ? "text-blue-500 hover:!text-blue-700" : ""

@@ -37,7 +37,7 @@ function WhatWillGet() {
    
 
       <Card
-      type={1}
+      type={2}
         img={Notes}
         tittle={
           <p className="text h3 font-extrabold">
@@ -52,7 +52,7 @@ function WhatWillGet() {
       />
 
       <Card
-      type={2}
+      type={1}
         img={Experience}
         tittle={
           <p className="text h3 font-extrabold">
@@ -79,13 +79,13 @@ const Card = ({ tittle, bg, decription, img,type }) => {
     >
       <div className="w-full lg:w-[60%] px-6 py-4 lg:p-8   flex flex-col justify-center  lg:gap-y-6  lg:text-start  lg:mt-0">
         {tittle}
-        <div className="lg:w-[80%] 2xll:w-[50%]">
+        <div className="lg:w-[80%] 2xll:w-[50%] 3xxl:w-[90%]">
         <p className="text-secondry text-start lg:text-start h14 mt-4 lg:mt-0 leading-8">{decription}</p>
         </div>
       </div>
 
       <div className={`w-full lg:w-[40%] p-4 lg:py-8 flex ${type==1?'justify-center':'justify-center'} ${bg}`}>
-        <Image className="w-full lg:w-[80%]" src={img} />
+        <Image className="w-full lg:w-[80%] 3xxl:w-[70%]" src={img} />
       </div>
     </div>
   );

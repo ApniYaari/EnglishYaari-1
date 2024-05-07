@@ -8,6 +8,7 @@ import {
     Tooltip,
     IconButton,
   } from "@material-tailwind/react";
+import Image from "next/image";
   import React from "react";
   
   export function MeetTutorCard({ item,setLink ,setVedioModal}) {
@@ -17,12 +18,9 @@ import {
         setLink(item?.url)
         setVedioModal(true);
       }}
-       className=" w-full md:w-[48%]  min-lg:w-[24%] ">
-        <CardHeader floated={false} color="blue-gray p-0 m-0">
-          <video className="w-full" autoPlay={false}>
-            <source src={item?.url} type="video/mp4" className="object-cover" />
-            Your browser does not support the video tag.
-          </video>
+       className=" min-w-[22rem]  lg:min-w-[24rem] ">
+        <CardHeader style={{boxShadow:'none'}} floated={false} color="blue-gray shadow-none p-0 m-0">
+        <Image src={item?.img}/>
         </CardHeader>
         <CardBody className="p-2">
           <div className=" flex items-center justify-between">

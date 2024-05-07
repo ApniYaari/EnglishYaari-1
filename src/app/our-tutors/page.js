@@ -113,8 +113,8 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
             
         }}
      
-         className='w-full flex items-center justify-between mt-8'>
-            <div className='bg-white w-[50%] mx-auto p-4  rounded-2xl   '>
+         className='w-full flex cursor-pointer items-center justify-between mt-8'>
+            <div className='bg-white w-[90vw] lg:w-[50%] mx-auto p-4  rounded-2xl   '>
 
                 <div className='flex gap-5'>
                     <div className=' h-14 min-w-14 lg:min-w-[72px] lg:h-[72px] bg-red-50 rounded-full overflow-hidden  border'>
@@ -141,7 +141,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                         </div>
 
                         <div className='mt-4 hidden lg:flex items-end overflow-scroll'>
-                            <DescriptionComponent item={item} />
+                            <DescriptionComponent item={item} type={1} />
                         </div>
 
                         <div className=' gap-4 mt-4 hidden lg:flex '>
@@ -177,7 +177,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                     </div>
 
                     <div className='mt-4 flex items-end overflow-scroll '>
-                        <DescriptionComponent item={item} />
+                        <DescriptionComponent item={item} type={1} />
                     </div>
 
                     <div className=' gap-4 mt-4 flex '>
@@ -193,7 +193,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
 
             </div>
 
-            <div   className="w-[50%] h-auto flex justify-end items-end   ">
+            <div   className="w-[50%] h-auto hidden lg:flex justify-end items-end   ">
                 <div className={twMerge(index==hoverState?'flex w-[95%] ml-auto':'hidden')}>
                 <iframe
         

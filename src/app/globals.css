@@ -285,7 +285,15 @@ background-color:"powderblue" !important;
 
 
 
-
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;
+  height: 0px;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
 
 
 .horizontal-scroll-container {
