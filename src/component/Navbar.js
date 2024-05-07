@@ -97,12 +97,12 @@ const HomeNavbar = () => {
 
 
                 <div className='flex items-center gap-4  '>
-                    <Link href={loginLink} className={twMerge('mr-4 hidden lg:flex', scrolling ? 'text-white' : '')}>
+                    <Link href={loginLink} className={twMerge('mr-4 hidden font-semibold lg:flex', scrolling ? 'text-white' : '')}>
                         Login
                     </Link>
 
                     <Link href={signupLink}>
-                        <div className={twMerge(' text-white py-3 gap-2 flex justify-center items-center rounded-full w-[200px] bg-primary-500', scrolling ? 'bg-white text-primary-500' : '')}>
+                        <div className={twMerge(' text-white py-3 gap-2 font-semibold flex justify-center items-center rounded-full w-[200px] bg-primary-500', scrolling ? 'bg-white text-primary-500' : '')}>
                             Get started
                             <FaArrowRight />
                         </div>
@@ -125,7 +125,7 @@ const HomeNavbar = () => {
                             {
                                 navlist.map((ele, ind) => {
                                     return (
-                                        <li className={twMerge(`border-b pb-1 w-full  flex items-center gap-3`, pathName == ele?.link)}>
+                                        <li className={twMerge(`border-b pb-1 w-full  flex items-center gap-3`, pathName == ele?.link, ele?.name=='About us'?'border-b-0':'' )}>
                                             <div style={pathName == ele?.link ? { width: 6, borderTopRightRadius: 10, borderBottomRightRadius: 10 } : { width: 0 }} className='w-2 h-10 bg-theme rounded-tr-full rounded-br-2xl'>
 
                                             </div>
@@ -160,9 +160,9 @@ const HomeNavbar = () => {
 
 
                       {!mobileNav &&  <Link href={signupLink}>
-                            <div className={twMerge('bg-primary-500 text-sm gap-2 text-white py-2 flex justify-center items-center rounded-full w-[120px]', scrolling ? 'bg-white text-primary-500' : '')}>
+                            <div className={twMerge('bg-primary-500 font-semibold text-sm gap-2 text-white py-2 flex justify-center items-center rounded-full w-[120px]', scrolling ? 'bg-white text-primary-500' : '')}>
                                 Get started
-                                <FaArrowRight className='text-white' />
+                                <FaArrowRight  />
                             </div>
                         </Link>}
 
@@ -179,9 +179,10 @@ const HomeNavbar = () => {
                                 </defs>
                             </svg>
                         </button> : <button onClick={() => setMobileNav(!mobileNav)}>
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.2773 10.4961C18.2773 10.6235 18.2267 10.7457 18.1366 10.8358C18.0465 10.9259 17.9243 10.9766 17.7969 10.9766H3.70312C3.5757 10.9766 3.45349 10.9259 3.36338 10.8358C3.27328 10.7457 3.22266 10.6235 3.22266 10.4961C3.22266 10.3687 3.27328 10.2465 3.36338 10.1564C3.45349 10.0662 3.5757 10.0156 3.70312 10.0156H17.7969C17.9243 10.0156 18.0465 10.0662 18.1366 10.1564C18.2267 10.2465 18.2773 10.3687 18.2773 10.4961ZM3.70312 5.85156H17.7969C17.9243 5.85156 18.0465 5.80094 18.1366 5.71084C18.2267 5.62073 18.2773 5.49852 18.2773 5.37109C18.2773 5.24367 18.2267 5.12146 18.1366 5.03135C18.0465 4.94125 17.9243 4.89063 17.7969 4.89062H3.70312C3.5757 4.89063 3.45349 4.94125 3.36338 5.03135C3.27328 5.12146 3.22266 5.24367 3.22266 5.37109C3.22266 5.49852 3.27328 5.62073 3.36338 5.71084C3.45349 5.80094 3.5757 5.85156 3.70312 5.85156ZM17.7969 15.1406H3.70312C3.5757 15.1406 3.45349 15.1912 3.36338 15.2814C3.27328 15.3715 3.22266 15.4937 3.22266 15.6211C3.22266 15.7485 3.27328 15.8707 3.36338 15.9608C3.45349 16.0509 3.5757 16.1016 3.70312 16.1016H17.7969C17.9243 16.1016 18.0465 16.0509 18.1366 15.9608C18.2267 15.8707 18.2773 15.7485 18.2773 15.6211C18.2773 15.4937 18.2267 15.3715 18.1366 15.2814C18.0465 15.1912 17.9243 15.1406 17.7969 15.1406Z" fill={scrolling ? '#FFFFFF' : '#6D28D9'} />
-                            </svg>
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5551 7.288C16.6921 7.15101 16.769 6.96522 16.769 6.77148C16.769 6.57775 16.6921 6.39195 16.5551 6.25496C16.4181 6.11798 16.2323 6.04102 16.0386 6.04102H1.94482C1.75109 6.04102 1.56529 6.11798 1.42831 6.25496C1.29132 6.39195 1.21436 6.57775 1.21436 6.77148C1.21436 6.96522 1.29132 7.15101 1.4283 7.288C1.56529 7.42499 1.75109 7.50195 1.94482 7.50195H16.0386C16.2323 7.50195 16.4181 7.42499 16.5551 7.288ZM1.94482 2.37695H16.0386C16.2323 2.37695 16.4181 2.29999 16.5551 2.163C16.6921 2.02601 16.769 1.84022 16.769 1.64648C16.769 1.45275 16.6921 1.26695 16.5551 1.12996C16.4181 0.992975 16.2323 0.916016 16.0386 0.916016H1.94482C1.75109 0.916016 1.56529 0.992975 1.4283 1.12996C1.29132 1.26695 1.21436 1.45275 1.21436 1.64648C1.21436 1.84022 1.29132 2.02601 1.4283 2.163C1.56529 2.29999 1.75109 2.37695 1.94482 2.37695ZM16.0386 11.166H1.94482C1.75109 11.166 1.56529 11.243 1.4283 11.38C1.29132 11.517 1.21436 11.7028 1.21436 11.8965C1.21436 12.0902 1.29132 12.276 1.42831 12.413C1.56529 12.55 1.75109 12.627 1.94482 12.627H16.0386C16.2323 12.627 16.4181 12.55 16.5551 12.413C16.6921 12.276 16.769 12.0902 16.769 11.8965C16.769 11.7028 16.6921 11.517 16.5551 11.38C16.4181 11.243 16.2323 11.166 16.0386 11.166Z" fill={scrolling ? '#FFFFFF' : '#6D28D9'} stroke={scrolling ? '#FFFFFF' : '#6D28D9'} stroke-width="0.5"/>
+</svg>
+
                         </button>}
 
 

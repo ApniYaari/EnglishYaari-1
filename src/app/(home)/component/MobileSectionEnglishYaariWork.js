@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import Frame2 from '@/assets/EnglishYaariWork/Frame2.png';
-import Frame3 from '@/assets/EnglishYaariWork/Frame3.png';
-import Frame4 from '@/assets/EnglishYaariWork/Frame4.png';
-import Frame5 from '@/assets/EnglishYaariWork/Frame5.png';
+import Frame2 from '@/assets/EnglishYaariWork/FrameMobile3.png';
+import Frame3 from '@/assets/EnglishYaariWork/FrameMobile4.png';
+import Frame4 from '@/assets/EnglishYaariWork/FrameMobile2.png';
+import Frame5 from '@/assets/EnglishYaariWork/FrameMobile1.png';
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";

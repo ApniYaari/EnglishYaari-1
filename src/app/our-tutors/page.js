@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa6'
 import { LuBadgeCheck } from "react-icons/lu";
-import { expertisetag, vedioId } from '@/utils/utils'
+import { expertisetag, teacherInformation, vedioId } from '@/utils/utils'
 import { teacherListServices } from '@/services/services'
 import DescriptionComponent from '@/component/DescriptionComponent'
 import NavBar2 from '@/component/NavBar2'
@@ -54,9 +54,13 @@ function AllTutorList() {
         <div className=' bg-background h-screen overflow-x-hidden overflow-y-scroll  pb-20'>
             <NavBar2 />
             <div className='w-[90vw] 3xxl:container flex-wrap-reverse mx-auto   mt-24 lg:mt-36 flex'>
-                <div className=' mx-auto w-full lg:w-[50%] h-full justify-center items-center  '>
-                    <p className='h1 font-bold leading-relaxed'>Speak confidently, ,<br /> succeed strongly</p>
-                    <p className='text-secondry font-medium mt-3   h6'>Unlock your potential with certified English mentors.</p>
+                <div className=' mx-auto w-full  lg:w-[50%] h-auto flex flex-col justify-evenly items-start  py-6 '>
+                    <div>
+                    <p className='h1 font-bold '>Speak confidently</p>
+                    <p className='h1 font-bold mt-4'>succeed strongly</p>
+                    </div>
+
+                    <p className='text-secondry font-medium mt-5  h6'>Unlock your potential with certified English mentors.</p>
 
                     <Link href={'/'}>
                         <div className='bg-theme text-white flex items-center mt-6  w-[280px] justify-center py-2 rounded-full text-2xl gap-2'>
@@ -73,9 +77,9 @@ function AllTutorList() {
             </div>
 
             <div className='w-[90vw] mx-auto sticky top-0'>
-                <div className='relative border flex items-center bg-white shadow p-5 rounded-full mt-8'>
+                <div className='relative gap-3 border flex items-center bg-white shadow p-5 rounded-full mt-8'>
                     <IoSearch className='text24 text-theme' />
-                    <input className='w-[95%] outline-transparent outline-0' onChange={handleSearch} placeholder=' Search for teachers' />
+                    <input className='w-[95%] outline-transparent outline-0 text-lg' onChange={handleSearch} placeholder=' Search for teachers' />
                 </div>
 
                 <div className='lg:mt-6 flex flex-wrap'>
@@ -122,15 +126,15 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                     </div>
                     <div className='w-[80%]'>
 
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center  gap-2'>
                             <p className='text20 font-semibold'>{item?.name}</p> <LuBadgeCheck className='text-xl text-sucess' />
                         </div>
 
                         <div>
-                            <p className='text-secondry font-medium'>{item?.completedClasses}+ Sessions {hoverState}</p>
+                            <p className='text-secondry font-medium'>{item?.completedClasses}+ Sessions</p>
                         </div>
 
-                        <div className=' hidden lg:flex overflow-scroll'>
+                        <div className=' hidden lg:flex overflow-scroll '>
                             {
                                 item?.expertise?.map((ele, ind) => {
                                     return (
@@ -140,19 +144,20 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                             }
                         </div>
 
-                        <div className='mt-4 hidden lg:flex items-end overflow-scroll'>
+                        <div className='margin24 hidden lg:flex items-end overflow-scroll'>
                             <DescriptionComponent item={item} type={1} />
                         </div>
 
-                        <div className=' gap-4 mt-4 hidden lg:flex '>
+                        <div className=' gap-4 margin24 hidden lg:flex '>
                             <Link onClick={() => {
-                                let temp = JSON.stringify(item)
-                                localStorage.setItem('item', temp)
-                            }} href={{ pathname: '/tutor-infomation', query: { item: item } }} className='bg-lightPurpule text-theme p-2 text-center rounded-full w-[50%]'>
+                                teacherInformation.teacherDetails=item
+                                // let temp = JSON.stringify(item)
+                                // localStorage.setItem('item', temp)
+                            }} href={{ pathname: '/tutor-infomation', query: { item: item } }} className='bg-lightPurpule font-semibold text-theme p-2.5 text-center rounded-full w-[50%]'>
                                 View profile
                             </Link>
 
-                            <button className='bg-theme text-white p-2 rounded-full w-[50%]'>
+                            <button className='bg-theme font-semibold text-white p-2.5  rounded-full w-[50%]'>
                                 Book a class
                             </button>
                         </div>
@@ -197,7 +202,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                 <div className={twMerge(index==hoverState?'flex w-[95%] ml-auto':'hidden')}>
                 <iframe
         
-                 className="w-[100%]  h-[200px] lg:h-[280px] rounded-xl"
+                 className="w-[100%]  h-[200px] lg:h-[300px] rounded-xl"
                     src={`https://www.youtube.com/embed/${vedioId(item?.introductionVideoURL)}`}>
                 </iframe>
             </div>

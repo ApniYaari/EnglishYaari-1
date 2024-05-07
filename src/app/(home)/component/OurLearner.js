@@ -12,7 +12,7 @@ import Ten from '@/assets/EnglishYaari2.0_Product Design/ten.png';
 import { HorizontalSlider } from './HorizontalSlider';
 function OurLearner() {
 
-    const [speed,setSpeed]=useState(20000)
+    const [speed, setSpeed] = useState(20000)
     const images = [
         One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
     ].map((image) => ({
@@ -21,8 +21,8 @@ function OurLearner() {
     }));
 
     return (
-        <div onMouseLeave={()=>setSpeed(20000)} onMouseEnter={()=>setSpeed(50000)}  className='  relative h-[210px] md:h-[250px] '>
-                    <p className='text-center h28 font-semibold text-secondry my-5  '>Trusted by learners working at top companies</p>
+        <div onMouseLeave={() => setSpeed(20000)} onMouseEnter={() => setSpeed(50000)} className='  relative h-[210px] md:h-[250px] '>
+            <p className='text-center h28 font-semibold text-secondry my-5 w-[60%] mx-auto lg:w-auto '>Trusted by learners working at top companies</p>
 
             <HorizontalSlider images={images} speed={speed} />
 

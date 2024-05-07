@@ -3,7 +3,7 @@ import React from "react";
 // import Expert from "../assets/WhatWillGet/Expert.png";
 // import Notes from "../assets/WhatWillGet/Notes.png";
 
-import Experience from '@/assets/WhatWillGet/Experience.png'
+import Note2 from '@/assets/WhatWillGet/Note2.png'
 import Expert from '@/assets/WhatWillGet/Expert.png'
 import Notes from '@/assets/WhatWillGet/Notes.png'
 import Image from "next/image";
@@ -38,7 +38,7 @@ function WhatWillGet() {
 
       <Card
       type={2}
-        img={Notes}
+        img={Note2}
         tittle={
           <p className="text h3 font-extrabold">
             <span className="text-purpleShade"> 500+ </span> Curriculum Notes
@@ -53,7 +53,7 @@ function WhatWillGet() {
 
       <Card
       type={1}
-        img={Experience}
+        img={Notes}
         tittle={
           <p className="text h3 font-extrabold">
              <span className="text-purpleShade"> Progress </span> Report
@@ -80,7 +80,7 @@ const Card = ({ tittle, bg, decription, img,type }) => {
       <div className="w-full lg:w-[60%] px-6 py-4 lg:p-8   flex flex-col justify-center  lg:gap-y-6  lg:text-start  lg:mt-0">
         {tittle}
         <div className="lg:w-[80%] 2xll:w-[50%] 3xxl:w-[90%]">
-        <p className="text-secondry text-start lg:text-start h14 mt-4 lg:mt-0 leading-8">{decription}</p>
+        <p className="text-secondry font-medium text-start lg:text-start h6 mt-4 lg:mt-0 leading-9">{decription}</p>
         </div>
       </div>
 

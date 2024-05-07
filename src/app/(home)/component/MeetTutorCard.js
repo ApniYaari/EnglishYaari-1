@@ -9,20 +9,22 @@ import {
     IconButton,
   } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
   import React from "react";
+import { twMerge } from "tailwind-merge";
   
-  export function MeetTutorCard({ item,setLink ,setVedioModal}) {
+  export function MeetTutorCard({ item,setLink ,setVedioModal,buttonShow}) {
     return (
       <div
       onClick={()=>{
         setLink(item?.url)
         setVedioModal(true);
       }}
-       className=" min-w-[22rem]  lg:min-w-[24rem] ">
+       className={twMerge(" min-w-[22rem]  lg:min-w-[24rem] ",buttonShow?'bg-white p-1 rounded-xl':'')}>
         <CardHeader style={{boxShadow:'none'}} floated={false} color="blue-gray shadow-none p-0 m-0">
         <Image src={item?.img}/>
         </CardHeader>
-        <CardBody className="p-2">
+        <CardBody className="p-2 w-full">
           <div className=" flex items-center justify-between">
             <Typography
               variant="h5"
@@ -53,8 +55,15 @@ import Image from "next/image";
           <Typography className="mt-0 p-0 font-urbanist font-medium" color="gray">
             {item?.sessionTaken}+ sessions taken
           </Typography>
+
+
+        {buttonShow &&  <div className=" flex bg-primary-100 py-2.5 h14 text-primary-500 mt-3 text-center items-center justify-center rounded-full">
+          Book a class
+          </div>}
         </CardBody>
   
+
+       
       </div>
     );
   }

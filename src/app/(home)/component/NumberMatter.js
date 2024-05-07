@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function NumberMatter() {
   return (
-    <div className="w-screen bg-gradient-to-r from-[#5C17CD] to-[#9114CC]  pb-10  margin120 lg:py-10">
+    <div className="w-screen bg-gradient-to-r from-[#5C17CD] to-[#9114CC]  pb-10  mt-10 lg:py-10">
       <div className=" w-[90vw] lg:w-[90vw] mx-auto">
 
 

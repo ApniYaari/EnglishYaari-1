@@ -200,12 +200,12 @@ export default function Home() {
 
       <div className="margin120">
         <div className="bg-white py-10  w-[100vw] mx-auto">
-          <p className="h1 text-black font-semibold text-center">
+          <p className="h1 text-black font-semibold text-center mb-4 lg:mb-2">
             Have a question?
           </p>
-          <p className="text24 font-semibold hidden lg:flex text-center text-secondry">
+          {/* <p className="text24 font-semibold hidden lg:flex text-center text-secondry">
             Find the answers in our FAQs
-          </p>
+          </p> */}
           <div className="w-[90vw] mx-auto  flex  flex-wrap-reverse px-4 md:px-0">
             <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col mt-8 lg:mt-0">
               <p className="text-theme text-lg !font-semibold">
@@ -319,6 +319,7 @@ export default function Home() {
               />
 
               <FAQ
+              border={1}
                 question={"How to book your regular Sessions at EnglishYaari? "}
                 answer={`Once you've taken a subscription, you can book your EnglishYaari Sessions according to your availability.
 
