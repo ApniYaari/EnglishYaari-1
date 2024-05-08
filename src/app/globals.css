@@ -139,6 +139,8 @@ background-color:"powderblue" !important;
 
   }
 
+  
+
 
   .margin60{
     @apply mt-[40px]  lg:mt-[50px] 2xll:mt-[55px] 3xxl:mt-[60px]
@@ -153,7 +155,7 @@ background-color:"powderblue" !important;
     @apply w-[33px]
   }
   .heroSection{
-    @apply h-[100vh] lg:h-[80vh] 2xll:h-[85vh] 3xxl:h-[70vh]
+    @apply h-[90dvh] lg:h-[80vh] 2xll:h-[85vh] 3xxl:h-[70vh]
 
   }
 

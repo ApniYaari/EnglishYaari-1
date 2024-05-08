@@ -66,17 +66,14 @@ const HomeNavbar = () => {
             name: 'Become a tutor',
             link: '/become-a-tutor'
         },
-        {
-            name: 'About us',
-            link: '/contact'
-        }
+   
     ])
     return (
         <>
             {show && <div style={{ top: '24px' }} className={twMerge('fixed shadow-3xl hidden lg:flex items-center justify-between px-4 py-3 z-[999] top-10 md:top-20 left-0 right-0 mx-auto rounded-full w-[90vw] bg-white', scrolling ? 'bg-primary-500' : '',)}>
-                <div className='w-[100px] h-10 lg:w-[200px] flex items-center justify-center'>
+                <Link href={'/'} className='w-[100px] h-10 lg:w-[200px] flex items-center justify-center'>
                     <Image height={0} width={0} className='h-auto w-full object-contain' src={scrolling ? White : WhiteLogo} />
-                </div>
+                </Link>
                 <nav className=''>
                     <ul className=' hidden lg:flex items-center gap-5 '>
 
@@ -113,10 +110,10 @@ const HomeNavbar = () => {
 
             <div style={{ top: '10px' }} className={twMerge('fixed shadow-3xl flex lg:hidden items-center justify-between  z-[999] top-10 md:top-20 left-0 right-0 mx-auto rounded-full w-[90vw] bg-white', scrolling ? 'bg-primary-500' : '')}>
                 <div className='relative flex justify-between w-full py-2 px-3 items-center'>
-                    <div className='  flex justify-start'>
+                    <Link href={'/'}  className='  flex justify-start'>
                         <Image height={0} width={0} className='h-[40px] w-[150px] object-fill ' src={scrolling ? White : WhiteLogo} />
-                    </div>
-                    <nav style={{ marginTop: '580px', paddingBottom: '20px' }} className={twMerge('absolute py-6  bg-white w-full left-0 right-0  rounded-3xl  pb-6', mobileNav ? '' : 'hidden')}>
+                    </Link>
+                    <nav style={{ marginTop: '580px', paddingBottom: '20px' }} className={twMerge('absolute py-6 shadow-md bg-white w-full left-0 right-0  rounded-3xl  pb-6', mobileNav ? '' : 'hidden')}>
                         <ul className=' flex flex-col items-center gap-5 w-full px-6 '>
 
 

@@ -24,39 +24,33 @@ function BecomeATutor() {
         <title>Become an Online English Tutor - EnglishYaari</title>
         <link rel="canonical" href="https://englishyaari.com/become-a-tutor" />
       </Helmet> */}
-      <div className=" w-full lg:w-[90vw]  pt-20 2xll:w-[90%] 3xxl:w-[90%]   mx-auto px-4 lg:px-10  ">
-        <div className='pb-10 pt-10 flex flex-wrap-reverse'>
-          <div className='w-full lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>
-            <p className='text48 font-semibold leading-loose pt:10 lg:pt-0'>Become a tutor</p>
-            <p className='text-secondry font-medium  lg:mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
+      <div className=" w-full lg:w-[90vw]  pt-20 2xll:w-[90%] 3xxl:w-[70%]   mx-auto px-4 lg:px-10  ">
+        <div className=' pt-10 flex flex-wrap-reverse'>
+          <div className='w-full  lg:w-[50%] pt:10 lg:pt-0  flex flex-col justify-center'>
+            <p className='text48 font-semibold  pt:10 lg:pt-0'>Become a tutor</p>
+            <p className='text-secondry font-medium    h6 leading-8 mt-4 '>Tutoring English With EnglishYaari Is Fun And <br /> Rewarding</p>
 
             <Link
               href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
               target='_blank'
-              className='bg-theme w-[200px] justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-6'>
+              className='bg-theme w-[300px] text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-4'>
               Apply Now <FaArrowRight />
             </Link>
           </div>
           <div className='w-full lg:w-[50%]  flex items-end justify-end'>
-            <Image  className=' h-auto object-contain lg:h-80' src={becomeATutor} />
+            <Image  className=' h-auto object-contain ' src={becomeATutor} />
           </div>
         </div>
 
 
-        <p className='text36 font-bold text-center'>Teach English online with EnglishYaari</p>
+        <p className=' margin120 text36 font-bold text-center'>Teach English online with EnglishYaari</p>
 
-        <div className='my-20  w-full bg-white shadow-2xl relative lg:px-10'>
-
-          <div className='absolute flex items-center justify-center  left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background w-24 h-24 rounded-full'>
-            <div className='h-16 w-16 bg-lightPurpule rounded-full items-center justify-center flex'>
-              <Image className='h-10 w-10' src={ChalkboardTeacher} />
-            </div>
-          </div>
+        <div className=' mt-[34px]  w-full  mx-auto bg-white rounded-2xl  relative lg:px-10'>
 
 
           <div className='pb-10 flex flex-wrap justify-between'>
 
-            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+            <div className='flex  justify-between lg:justify-start items-start gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
               <div className='bg-[#DCF3E5] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
                 <PiClockCountdown className=' text-2xl lg:text-3xl' />
 
@@ -64,19 +58,19 @@ function BecomeATutor() {
               </div>
 
               <div className=' w-[80%]'>
-                <p className='text20 font-semibold'>Flexible work schedule</p>
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Decide your own hours
+                <p className='h6 font-semibold'>Flexible work schedule</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' /> Decide your own hours
                 </div>
 
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />Work as much or as little as you want
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' />Work as much or as little as you want
                 </div>
               </div>
             </div>
 
 
-            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+            <div className='flex  justify-between lg:justify-start items-start gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
               <div className='bg-[#E2D8EF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
                 <CiGlobe className=' text-2xl lg:text-3xl' />
 
@@ -85,38 +79,38 @@ function BecomeATutor() {
               </div>
 
               <div className=' w-[80%]'>
-                <p className='text20 font-semibold'>Work from anywhere</p>
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Teach from the comfort of your home
+                <p className='h6 font-semibold'>Work from anywhere</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' /> Teach from the comfort of your home
                 </div>
 
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Avoid traffic and long commutes
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' /> Avoid traffic and long commutes
                 </div>
               </div>
             </div>
 
 
-            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+            <div className='flex  justify-between lg:justify-start items-start gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
               <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
                 <HiOutlineEmojiHappy className=' text-2xl lg:text-3xl' />
 
               </div>
 
               <div className=' w-[80%]'>
-                <p className='text20 font-semibold'>Stress free tutoring</p>
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> We provide each lesson plan
+                <p className='h6 font-semibold'>Stress free tutoring</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' /> We provide each lesson plan
                 </div>
 
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />24/7 support system
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' />24/7 support system
                 </div>
               </div>
             </div>
 
 
-            <div className='flex  justify-between lg:justify-start items-center gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
+            <div className='flex  justify-between lg:justify-start items-start gap-2 px-2 lg:px-0 lg:gap-5 mt-5 w-full lg:w-[40%] pt-5'>
               <div className='bg-[#FDF6DF] lg:h-16 lg:w-16 h-12 w-12 rounded-full flex items-center justify-center'>
                 <PiCoins className=' text-2xl lg:text-3xl' />
 
@@ -125,13 +119,13 @@ function BecomeATutor() {
               </div>
 
               <div className=' w-[80%]'>
-                <p className='text20 font-semibold'>Get paid monthly</p>
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' /> Earn upto ₹350/hour
+                <p className='h6 font-semibold'>Get paid monthly</p>
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' /> Earn upto ₹350/hour
                 </div>
 
-                <div className='text-secondry font-medium mt-3 flex items-center gap-2'>
-                  <FaCircle className='text-[6px] text-secondry font-medium mt-3' />Get paid via bank transfer on 10th of every month
+                <div className='text-secondry font-medium mt-3 flex items-center gap-2 h18'>
+                  <FaCircle className='text-[6px] text-secondry font-medium mt' />Get paid via bank transfer on 10th of every month
                 </div>
               </div>
             </div>
@@ -142,11 +136,11 @@ function BecomeATutor() {
 
 
         <Link
-          href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
-          target='_blank'
-          className='bg-theme w-[200px] mx-auto flex text-white items-center justify-center gap-3 p-2.5 rounded-full px-8 mt-6'>
-          Apply Now <FaArrowRight />
-        </Link>
+              href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
+              target='_blank'
+              className='bg-theme w-[300px] mx-auto text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-10'>
+              Apply Now <FaArrowRight />
+            </Link>
 
 
       </div>
@@ -157,9 +151,7 @@ function BecomeATutor() {
           <p className="h1  text-black font-semibold text-center">
             Have a question?
           </p>
-          <p className="text24 font-semibold text-center text-secondry">
-            Find the answers in our FAQs
-          </p>
+
           <div className="container flex !mt-10 flex-wrap-reverse px-4 md:px-0">
             <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col">
               <p className="text-theme text-lg !font-semibold">

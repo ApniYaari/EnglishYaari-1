@@ -63,7 +63,7 @@ function AllTutorList() {
                     <p className='text-secondry font-medium mt-5  h6'>Unlock your potential with certified English mentors.</p>
 
                     <Link href={'/'}>
-                        <div className='bg-theme text-white flex items-center mt-6  w-[280px] justify-center py-2 rounded-full text-2xl gap-2'>
+                        <div className='bg-primary-500 text-white flex items-center mt-6  w-[280px] justify-center py-2 rounded-full text-2xl gap-2'>
                             Get Started
                             <FaArrowRight />
                         </div>
@@ -153,11 +153,11 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                                 teacherInformation.teacherDetails=item
                                 // let temp = JSON.stringify(item)
                                 // localStorage.setItem('item', temp)
-                            }} href={{ pathname: '/tutor-infomation', query: { item: item } }} className='bg-lightPurpule font-semibold text-theme p-2.5 text-center rounded-full w-[50%]'>
+                            }} href={{ pathname: '/tutor-infomation',}} className='bg-lightPurpule font-semibold text-theme p-2.5 text-center rounded-full w-[50%]'>
                                 View profile
                             </Link>
 
-                            <button className='bg-theme font-semibold text-white p-2.5  rounded-full w-[50%]'>
+                            <button className='bg-primary-500 font-semibold text-white p-2.5  rounded-full w-[50%]'>
                                 Book a class
                             </button>
                         </div>
@@ -167,9 +167,9 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
 
 
 
-                    <div>
+                    {/* <div>
                         <p>{item?.completedClasses}+ Sessions</p>
-                    </div>
+                    </div> */}
 
                     <div className=' flex overflow-scroll'>
                         {
@@ -186,11 +186,17 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                     </div>
 
                     <div className=' gap-4 mt-4 flex '>
-                        <Link href={{ pathname: '/tutor-infomation', query: { item: JSON.stringify(item) } }} className='bg-lightPurpule text-theme p-2 rounded-full w-[50%]'>
+                        <Link 
+                         onClick={() => {
+                            teacherInformation.teacherDetails=item
+                            // let temp = JSON.stringify(item)
+                            // localStorage.setItem('item', temp)
+                        }}
+                        href={{ pathname: '/tutor-infomation'}} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
                             View profile
                         </Link>
 
-                        <button className='bg-theme text-white p-2 rounded-full w-[50%]'>
+                        <button className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
                             Book a class
                         </button>
                     </div>

@@ -23,7 +23,7 @@ function TutorDetails() {
     const [tab, setTab] = useState(1)
     const [link, setLink] = useState()
     const [vedioModal, setVedioModal] = useState(false)
-    console.log(teacherInformation);
+    const [speed,setSpeed]=useState(40000)
 
     let respnse = teacherInformation?.teacherDetails
 
@@ -92,7 +92,7 @@ function TutorDetails() {
                     <Card teacherData={respnse} />
                 </div>
 
-                <div className=" hidden lg:inline-block w-full lg:w-[35%] bg-white shadow-xl  rounded-2xl overflow-hidden">
+                <div className=" hidden lg:inline-block w-full lg:w-[35%] bg-white  rounded-2xl overflow-hidden">
                     <div className="w-full  ">
                         <iframe className="w-[100%]  h-[200px] lg:h-[255px] rounded-xl"
                             src={`https://www.youtube.com/embed/${vedioId(respnse?.introductionVideoURL)}`}>
@@ -100,7 +100,7 @@ function TutorDetails() {
                     </div>
 
                     <div className="p-4 hidden lg:flex">
-                        <button className="bg-theme w-[80%] mx-auto justify-center gap-3 p-2 rounded-full text-white flex items-center">
+                        <button className="bg-primary-500 w-[80%] mx-auto justify-center gap-3 p-2 rounded-full text-white flex items-center">
                             Book a class <RxArrowRight />
                         </button>
                     </div>
@@ -109,7 +109,7 @@ function TutorDetails() {
 
             {/* othet infotrmation */}
             <div className="container mx-auto pt-10">
-                <div className="flex  ">
+                <div className="flex w-[90%]  lg:w-[60%] mx-auto lg:mx-0  ">
                     {["Availability", "Reviews",].map((ele, ind) => {
                         return (
                             <button
@@ -123,7 +123,7 @@ function TutorDetails() {
                     })}
                 </div>
 
-                <div className=" w-[90%]  lg:w-[60%] ">
+                <div className=" w-[90%]  lg:w-[60%] mx-auto lg:mx-0 ">
                     {tab == 1 && <Availability />}
 
                     {tab == 2 && <Reviews />}
@@ -133,20 +133,28 @@ function TutorDetails() {
 
                 </div>
 
-                <div>
+        
+            </div>
+
+
+            <div className=" w-screen">
                     <p className="h5 font-semibold mt-20 text-center ">Recommended tutors</p>
 
 
 
-                    <div className=" h-[400px] w-[90vw]  overflow-x-hidden  margin24">
+                    <div
+                    // onMouseLeave={()=>setSpeed(40000)}
+                    // onMouseEnter={()=>setSpeed(80000)}
+                     className=" h-[400px] w-[100vw]  overflow-x-hidden  margin24  overflow-hidden rounded-xl relative">
 
-                        <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} buttonShow={true} images={FaqVedios} speed={40000} />
+
+
+                        <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} buttonShow={true} images={FaqVedios} speed={speed} />
 
                     </div>
 
 
                 </div>
-            </div>
 
         </div>
     );
@@ -252,7 +260,7 @@ const Availability = () => {
 
             <p className="font-medium mt-4">Choose your timing</p>
 
-            <div className="flex flex-wrap w-full  mb-5  lg:pr-10 h-[175px] overflow-hidden relative ">
+            <div className="flex flex-wrap w-full  mb-5  lg:pr-10 h-[100px] lg:h-[175px] overflow-hidden relative ">
                 {timeArray.map((ele, ind) => {
                     return (
                         <button
@@ -302,7 +310,7 @@ const Reviews = () => {
 
             <p className="font-medium mt-4">What student speaks about the tutor.</p>
 
-            <div className="flex flex-wrap justify-between w-full  mb-5  lg:pr-10 h-[375px] overflow-hidden relative backdrop-blur-sm bg-white/30 ">
+            <div className="flex flex-wrap justify-between w-full  mb-5  lg:pr-10 h-[200px]  lg:h-[375px] overflow-hidden relative backdrop-blur-sm bg-white/30 ">
 
                 {
                     [1, 1, 1, 1, 1, 1].map((ele, ind) => {

@@ -5,6 +5,7 @@ import Arundhati from "@/assets/Learner/Arundhati.png"
 import Gaurav from "@/assets/Learner/Gaurav.png"
 import Sumadhur from "@/assets/Learner/Sumadhur.png"
 import Kunal from "@/assets/Learner/Kunal.png"
+import VedioModal from "@/component/VedioModal";
 
 function OurStudent() {
     const [link, setLink] = useState()
@@ -61,8 +62,11 @@ function OurStudent() {
             </p>
 
 
-            <StudentSlider setLink={setLink} setVedioModal={setVedioModal} images={teasomonail} speed={20000}  />
-
+            <StudentSlider setLink={setLink} setVedioModal={setVedioModal} images={teasomonail} speed={30000}  />
+            {vedioModal && <VedioModal
+      setVedioModal={setVedioModal}
+       link={link}
+      />}
         </div>
     );
 }

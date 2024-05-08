@@ -10,6 +10,7 @@ import Radhika from "@/assets/Tutor/Radhika.jpeg"
 import Shele from "@/assets/Tutor/Shele.jpeg"
 import VedioModal from "@/component/VedioModal";
 import { TeacherSlider } from "./TeacherSlider";
+import Link from "next/link";
 
 export const MeetOutTutor = (props) => {
   const [initialState, setInitialState] = useState({
@@ -102,7 +103,7 @@ export const MeetOutTutor = (props) => {
 
   ];
   return (
-    <div className="w-full     lg:ml-auto lg:w-[90vw] mx-auto ">
+    <div className="w-full      lg:ml-auto lg:w-[90vw] mx-auto ">
 
 
        <p className="h3 font-semibold text-black text-center   ">
@@ -111,17 +112,17 @@ export const MeetOutTutor = (props) => {
       {
         //#region Introductory Video
         <div className=" margin24 overflow-hidden rounded-xl relative ">
-          <div className="border border-[#DBDBDB] py-8 lg:py-4 bg-white overflow-hidden lg:rounded-2xl h-[420px]">
+          <div className="border border-[#DBDBDB] py-8 lg:py-4 bg-white overflow-hidden lg:rounded-2xl lg:h-[420px]">
 
-            <div className="h-[290px] lg:h-[320px]">
+            <div className="h-[250px] lg:h-[320px]">
 
             <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} images={FaqVedios} speed={40000}/>
 
         </div>
 
-            <div className="flex mx-auto mt-3 lg:mt-0 justify-center items-center pb-4 pt-2">
+            <Link href={'/our-tutors'} className="flex mx-auto mt-3 lg:mt-0 justify-center items-center pb-4 pt-2">
             <CustomButton name={'View all tutors'}/>
-            </div>
+            </Link>
 
          
           </div>

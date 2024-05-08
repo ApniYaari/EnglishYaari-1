@@ -26,6 +26,7 @@ import MobileSectionEnglishYaariWork from "./(home)/component/MobileSectionEngli
 import HomeNavbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 import Link from "next/link";
+import OurAppNow from "./(home)/component/OurAppNow";
 export default function Home() {
 
 
@@ -132,7 +133,7 @@ export default function Home() {
             <Card
               width={"w-full lg:min-w-[18rem]"}
               img={pers}
-              bg={"bg-[#FFFF]"}
+              bg={"bg-[#E9F8D8]"}
               tittle={"Personality development"}
               desc={
                 "Improve your personality with fluent English and boost your confidence to create a lasting impression."
@@ -339,12 +340,16 @@ export default function Home() {
 
 
           </div>
+
+
+        <div className="mt-20 pb-20">
+         <OurAppNow/>
+       </div>
         </div>
+
       </div>
-      {/* 
-      <div className="mt-20 pb-20">
-        <OurAppNow/>
-      </div> */}
+      
+  
 
 
 
