@@ -27,7 +27,7 @@ function OurLearner() {
     }));
 
     return (
-        <div >
+        <div onMouseLeave={() => setSpeed(20000)} onMouseEnter={() => setSpeed(20000)} className='  relative h-[210px] md:h-[250px] '>
             <p className='text-center h28 font-semibold text-secondry my-5 w-[60%] mx-auto lg:w-auto '>Trusted by learners working at top companies</p>
 
             <HorizontalSlider images={images} speed={speed} />
