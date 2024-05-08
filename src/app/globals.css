@@ -139,7 +139,11 @@ background-color:"powderblue" !important;
 
   }
 
-  
+  .margin24{
+    @apply mt-[16px]  lg:mt-[20px] 2xll:mt-[22px] 3xxl:mt-[24px]
+
+  }
+
 
 
   .margin60{

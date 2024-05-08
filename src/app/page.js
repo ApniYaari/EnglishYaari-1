@@ -1,6 +1,6 @@
 
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa6";
 import ones from "../assets/newCard/1s.png";
 import Composition from "../assets/newCard/Composition.png";
@@ -29,6 +29,10 @@ import Link from "next/link";
 import OurAppNow from "./(home)/component/OurAppNow";
 export default function Home() {
 
+
+
+
+  
 
   const slideLeft = () => {
     var slider = document.getElementById("slider2");

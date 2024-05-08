@@ -19,7 +19,7 @@ function HeroSection() {
 
 
     return (
-        <div className='heroSection relative w-screen bg-[#4D16A4] overflow-hidden flex  flex-col lg:justify-center '  >
+        <div className='heroSection relative w-screen  overflow-hidden flex  flex-col lg:justify-center '  >
 
             <Image className=' heroSection  top-0  absolute' src={Bg}/>
             <div className='customContainer relative flex-wrap-reverse mx-auto flex  lg:mt-10   justify-center items-center  '>

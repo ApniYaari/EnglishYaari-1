@@ -13,7 +13,7 @@ function MobileSectionEnglishYaariWork() {
     const data = [
 
         {
-            tittle: "Choose date and time",
+            tittle: "1. Choose date and time",
             subTitle:
                 "Book sessions anytime between 6 am to 12 midnight. EnglishYaari offers flexible scheduling for your Convenience.",
             bg: Frame2,
@@ -27,7 +27,7 @@ function MobileSectionEnglishYaariWork() {
             ),
         },
         {
-            tittle: "Choose a Tutor",
+            tittle: "2. Choose a Tutor",
             subTitle:
                 "We bring you certified trainers who will Identify your problems, rectify your mistakes & give you instant feedback",
             bg: Frame3,
@@ -40,7 +40,7 @@ function MobileSectionEnglishYaariWork() {
             ),
         },
         {
-            tittle: "Get into live classes",
+            tittle: "3. Get into live classes",
             subTitle:
                 "Ace your Spoken English Journey. Our classes provide a personalized building space for rapid language acquisition.",
             bg: Frame4,
@@ -56,7 +56,7 @@ function MobileSectionEnglishYaariWork() {
         },
 
         {
-            tittle: "Session reports",
+            tittle: "4. Session reports",
             subTitle:
                 "After the successful completion of your session, get descriptive feedback along with the roadmap to reach your goal.",
             bg: Frame5,

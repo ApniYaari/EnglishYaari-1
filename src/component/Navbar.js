@@ -107,7 +107,7 @@ const HomeNavbar = () => {
                 </div>
             </div>}
 
-
+                        
             <div style={{ top: '10px' }} className={twMerge('fixed shadow-3xl flex lg:hidden items-center justify-between  z-[999] top-10 md:top-20 left-0 right-0 mx-auto rounded-full w-[90vw] bg-white', scrolling ? 'bg-primary-500' : '')}>
                 <div className='relative flex justify-between w-full py-2 px-3 items-center'>
                     <Link href={'/'}  className='  flex justify-start'>

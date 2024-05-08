@@ -186,7 +186,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                     </div>
 
                     <div className=' gap-4 mt-4 flex '>
-                        <Link 
+                        <a 
                          onClick={() => {
                             teacherInformation.teacherDetails=item
                             // let temp = JSON.stringify(item)
@@ -194,7 +194,7 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                         }}
                         href={{ pathname: '/tutor-infomation'}} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
                             View profile
-                        </Link>
+                        </a>
 
                         <button className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
                             Book a class

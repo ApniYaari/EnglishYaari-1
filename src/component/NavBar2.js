@@ -109,7 +109,7 @@ const NavBar2 = () => {
                         </li>
 
                         <li>
-                            <Link href="/plan-and-pricing">
+                            <Link href="/become-a-tutor">
                                 Become a tutor
                             </Link>
                         </li>
@@ -140,7 +140,7 @@ const NavBar2 = () => {
                     <Link href={'/'}  className='  flex justify-start'>
                         <Image height={0} width={0} className='h-[40px] w-[150px] object-fill ' src={scrolling ? White : WhiteLogo} />
                     </Link>
-                    <nav style={{ marginTop: '580px', paddingBottom: '20px' }} className={twMerge('absolute py-6  shadow-md bg-white w-full left-0 right-0  rounded-3xl  pb-6', mobileNav ? '' : 'hidden')}>
+                    <nav style={{ marginTop: '530px', paddingBottom: '20px' }} className={twMerge('absolute py-6  shadow-md bg-white w-full left-0 right-0  rounded-3xl  pb-6', mobileNav ? '' : 'hidden')}>
                         <ul className=' flex flex-col items-center gap-5 w-full px-6 '>
 
 
