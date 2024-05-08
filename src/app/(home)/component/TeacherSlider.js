@@ -6,7 +6,7 @@ import { MeetTutorCard } from './MeetTutorCard';
 const TeacherSlider = ({ images, speed = 1200000, setLink, setVedioModal,buttonShow }) => {
 
 
-    console.log();
+    console.log(buttonShow);
     return (
         <div className="overflow-hidden">
 
@@ -26,7 +26,7 @@ const TeacherSlider = ({ images, speed = 1200000, setLink, setVedioModal,buttonS
                     {images?.map((item, index) => {
                         return (
                             <div className="ml-5" key={index}>
-                                <MeetTutorCard buttonShow setVedioModal={setVedioModal} setLink={setLink} item={item} key={index} />
+                                <MeetTutorCard buttonShow={buttonShow} setVedioModal={setVedioModal} setLink={setLink} item={item} key={index} />
 
                             </div>
                         );
@@ -38,7 +38,7 @@ const TeacherSlider = ({ images, speed = 1200000, setLink, setVedioModal,buttonS
                     {images?.map((item, index) => {
                         return (
                             <div className="ml-5" key={index}>
-                                <MeetTutorCard buttonShow setVedioModal={setVedioModal} setLink={setLink} item={item} key={index} />
+                                <MeetTutorCard buttonShow={buttonShow} setVedioModal={setVedioModal} setLink={setLink} item={item} key={index} />
 
                             </div>
                         );

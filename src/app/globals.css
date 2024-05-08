@@ -139,6 +139,12 @@ background-color:"powderblue" !important;
 
   }
 
+
+  .margin60{
+    @apply mt-[40px]  lg:mt-[50px] 2xll:mt-[55px] 3xxl:mt-[60px]
+
+  }
+
   .buttonText{
     @apply text-xl lg:text-[22px] 2xll:text-[24px] 3xxl:text-[28px]
   }
@@ -148,6 +154,23 @@ background-color:"powderblue" !important;
   }
   .heroSection{
     @apply h-[100vh] lg:h-[80vh] 2xll:h-[85vh] 3xxl:h-[70vh]
+
+  }
+
+  .padding34{
+    @apply pt-[24px] lg:pt-[30px] 2xll:pt-[34px] 3xxl:pt-[44px]
+
+  }
+
+
+  .paddingBotton34{
+    @apply pb-[24px] pb:h-[30px] 2xll:pb-[34px] 3xxl:pb-[44px]
+
+  }
+
+
+  .paddingVertically34{
+    @apply py-[24px] lg:py-[30px] 2xll:py-[34px] 3xxl:py-[44px]
 
   }
 

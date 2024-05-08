@@ -25,8 +25,10 @@ const  FAQ=({question,answer,border})=> {
         `,)}
         >
             <div className=" w-full flex justify-between  text-black  h18">
-                <div className="flex text gap-3">
+                <div className="flex font-se text gap-3">
+                  <p className="font-semibold">
           {question}
+                  </p>
                 </div>
           <>
           {

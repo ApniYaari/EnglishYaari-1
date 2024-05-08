@@ -115,7 +115,7 @@ const Card = ({ item }) => {
                     </defs>
                 </svg>
 
-                <p className="text-sm lg:text-base font-medium bg-theme/10">Classes at your convenience</p>
+                <p className="text-sm lg:text-base font-medium ">Classes at your convenience</p>
 
             </div>
         }
@@ -126,7 +126,7 @@ const Card = ({ item }) => {
                         <path d="M14.0146 0.400391H1.6416C1.31344 0.400391 0.998732 0.536913 0.766693 0.779924C0.534655 1.02294 0.404297 1.35253 0.404297 1.6962V6.45668C0.404297 13.714 6.26754 16.1218 7.44143 16.5308C7.69215 16.6201 7.96402 16.6201 8.21474 16.5308C9.39018 16.1218 15.2519 13.714 15.2519 6.45668V1.6962C15.2519 1.35253 15.1215 1.02294 14.8895 0.779924C14.6574 0.536913 14.3427 0.400391 14.0146 0.400391ZM14.0146 6.45749C14.0146 12.8086 8.88366 14.9305 7.82809 15.2998C6.7818 14.9345 1.6416 12.8142 1.6416 6.45749V1.6962H14.0146V6.45749ZM4.29715 8.63364C4.18106 8.51206 4.11585 8.34717 4.11585 8.17524C4.11585 8.00331 4.18106 7.83842 4.29715 7.71685C4.41323 7.59528 4.57067 7.52698 4.73484 7.52698C4.89901 7.52698 5.05645 7.59528 5.17254 7.71685L6.59079 9.20217L10.4836 5.12523C10.5411 5.06504 10.6094 5.01729 10.6845 4.98471C10.7596 4.95213 10.84 4.93536 10.9213 4.93536C11.0026 4.93536 11.0831 4.95213 11.1582 4.98471C11.2333 5.01729 11.3015 5.06504 11.359 5.12523C11.4165 5.18543 11.4621 5.25689 11.4932 5.33555C11.5243 5.4142 11.5403 5.49849 11.5403 5.58363C11.5403 5.66876 11.5243 5.75306 11.4932 5.83171C11.4621 5.91036 11.4165 5.98182 11.359 6.04202L7.02848 10.5774C6.97103 10.6376 6.9028 10.6854 6.82769 10.718C6.75259 10.7506 6.67209 10.7674 6.59079 10.7674C6.50949 10.7674 6.42899 10.7506 6.35388 10.718C6.27878 10.6854 6.21055 10.6376 6.15309 10.5774L4.29715 8.63364Z" fill="#262527" />
                     </svg>
 
-                    <p className="text-sm lg:text-base font-medium bg-theme/10">Classes at your convenience</p>
+                    <p className="text-sm lg:text-base font-medium ">100+ Certified Tutors</p>
 
                 </div>
             )
@@ -134,25 +134,25 @@ const Card = ({ item }) => {
 
         else if (item.tittle == 'Get into live classes') {
             return (
-                <div style={{ background: '#EB3333' }} className="flex bg-white w-[280px] justify-center items-center gap-2 py-1.5 rounded-full ">
+                <div style={{ background: '#FEE4E2' }} className="flex bg-white w-[280px] justify-center items-center gap-2 py-1.5 rounded-full ">
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_330_1738)">
-                            <path d="M15.8115 3.90625H18.2265C18.4095 3.90625 18.585 3.97894 18.7144 4.10834C18.8438 4.23774 18.9165 4.41324 18.9165 4.59624V7.01118" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M15.8115 19.0893H18.2265C18.4095 19.0893 18.585 19.0166 18.7144 18.8872C18.8438 18.7578 18.9165 18.5823 18.9165 18.3993V15.9844" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.84224 19.0893H4.42729C4.24429 19.0893 4.06879 19.0166 3.9394 18.8872C3.81 18.7578 3.7373 18.5823 3.7373 18.3993V15.9844" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.84224 3.90625H4.42729C4.24429 3.90625 4.06879 3.97894 3.9394 4.10834C3.81 4.23774 3.7373 4.41324 3.7373 4.59624V7.01118" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M11.3293 12.8793C12.8536 12.8793 14.0892 11.6436 14.0892 10.1193C14.0892 8.59504 12.8536 7.35938 11.3293 7.35938C9.805 7.35938 8.56934 8.59504 8.56934 10.1193C8.56934 11.6436 9.805 12.8793 11.3293 12.8793Z" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.18652 14.9528C7.66855 14.3101 8.29359 13.7884 9.01215 13.4291C9.73072 13.0699 10.5231 12.8828 11.3264 12.8828C12.1298 12.8828 12.9222 13.0699 13.6407 13.4291C14.3593 13.7884 14.9843 14.3101 15.4663 14.9528" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.8115 3.90625H18.2265C18.4095 3.90625 18.585 3.97894 18.7144 4.10834C18.8438 4.23774 18.9165 4.41324 18.9165 4.59624V7.01118" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.8115 19.0893H18.2265C18.4095 19.0893 18.585 19.0166 18.7144 18.8872C18.8438 18.7578 18.9165 18.5823 18.9165 18.3993V15.9844" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.84224 19.0893H4.42729C4.24429 19.0893 4.06879 19.0166 3.9394 18.8872C3.81 18.7578 3.7373 18.5823 3.7373 18.3993V15.9844" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.84224 3.90625H4.42729C4.24429 3.90625 4.06879 3.97894 3.9394 4.10834C3.81 4.23774 3.7373 4.41324 3.7373 4.59624V7.01118" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.3293 12.8793C12.8536 12.8793 14.0892 11.6436 14.0892 10.1193C14.0892 8.59504 12.8536 7.35938 11.3293 7.35938C9.805 7.35938 8.56934 8.59504 8.56934 10.1193C8.56934 11.6436 9.805 12.8793 11.3293 12.8793Z" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.18652 14.9528C7.66855 14.3101 8.29359 13.7884 9.01215 13.4291C9.73072 13.0699 10.5231 12.8828 11.3264 12.8828C12.1298 12.8828 12.9222 13.0699 13.6407 13.4291C14.3593 13.7884 14.9843 14.3101 15.4663 14.9528" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
                         </g>
                         <defs>
                             <clipPath id="clip0_330_1738">
-                                <rect width="22.0795" height="22.0795" fill="white" transform="translate(0.288086 0.460938)" />
+                                <rect width="22.0795" height="22.0795" fill="#000" transform="translate(0.288086 0.460938)" />
                             </clipPath>
                         </defs>
                     </svg>
 
 
-                    <p className="text-sm lg:text-base font-medium text-white">Get undivided attention</p>
+                    <p className="text-sm lg:text-base font-medium text-black">Get undivided attention</p>
 
                 </div>
             )
@@ -161,25 +161,25 @@ const Card = ({ item }) => {
 
         else if (item.tittle == 'Session reports') {
             return (
-                <div style={{ background: '#1648C9' }} className="flex bg-white w-[280px] justify-center items-center gap-2 py-1.5 rounded-full ">
+                <div style={{ background: '#E0E9FF' }} className="flex bg-white w-[280px] justify-center items-center gap-2 py-1.5 rounded-full ">
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_330_1738)">
-                            <path d="M15.8115 3.90625H18.2265C18.4095 3.90625 18.585 3.97894 18.7144 4.10834C18.8438 4.23774 18.9165 4.41324 18.9165 4.59624V7.01118" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M15.8115 19.0893H18.2265C18.4095 19.0893 18.585 19.0166 18.7144 18.8872C18.8438 18.7578 18.9165 18.5823 18.9165 18.3993V15.9844" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.84224 19.0893H4.42729C4.24429 19.0893 4.06879 19.0166 3.9394 18.8872C3.81 18.7578 3.7373 18.5823 3.7373 18.3993V15.9844" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.84224 3.90625H4.42729C4.24429 3.90625 4.06879 3.97894 3.9394 4.10834C3.81 4.23774 3.7373 4.41324 3.7373 4.59624V7.01118" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M11.3293 12.8793C12.8536 12.8793 14.0892 11.6436 14.0892 10.1193C14.0892 8.59504 12.8536 7.35938 11.3293 7.35938C9.805 7.35938 8.56934 8.59504 8.56934 10.1193C8.56934 11.6436 9.805 12.8793 11.3293 12.8793Z" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.18652 14.9528C7.66855 14.3101 8.29359 13.7884 9.01215 13.4291C9.73072 13.0699 10.5231 12.8828 11.3264 12.8828C12.1298 12.8828 12.9222 13.0699 13.6407 13.4291C14.3593 13.7884 14.9843 14.3101 15.4663 14.9528" stroke="white" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.8115 3.90625H18.2265C18.4095 3.90625 18.585 3.97894 18.7144 4.10834C18.8438 4.23774 18.9165 4.41324 18.9165 4.59624V7.01118" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.8115 19.0893H18.2265C18.4095 19.0893 18.585 19.0166 18.7144 18.8872C18.8438 18.7578 18.9165 18.5823 18.9165 18.3993V15.9844" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.84224 19.0893H4.42729C4.24429 19.0893 4.06879 19.0166 3.9394 18.8872C3.81 18.7578 3.7373 18.5823 3.7373 18.3993V15.9844" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.84224 3.90625H4.42729C4.24429 3.90625 4.06879 3.97894 3.9394 4.10834C3.81 4.23774 3.7373 4.41324 3.7373 4.59624V7.01118" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.3293 12.8793C12.8536 12.8793 14.0892 11.6436 14.0892 10.1193C14.0892 8.59504 12.8536 7.35938 11.3293 7.35938C9.805 7.35938 8.56934 8.59504 8.56934 10.1193C8.56934 11.6436 9.805 12.8793 11.3293 12.8793Z" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.18652 14.9528C7.66855 14.3101 8.29359 13.7884 9.01215 13.4291C9.73072 13.0699 10.5231 12.8828 11.3264 12.8828C12.1298 12.8828 12.9222 13.0699 13.6407 13.4291C14.3593 13.7884 14.9843 14.3101 15.4663 14.9528" stroke="#000" stroke-width="1.37997" stroke-linecap="round" stroke-linejoin="round" />
                         </g>
                         <defs>
                             <clipPath id="clip0_330_1738">
-                                <rect width="22.0795" height="22.0795" fill="white" transform="translate(0.288086 0.460938)" />
+                                <rect width="22.0795" height="22.0795" fill="#000" transform="translate(0.288086 0.460938)" />
                             </clipPath>
                         </defs>
                     </svg>
 
 
-                    <p className="text-sm lg:text-base font-medium text-white">Gamified Learning Experience</p>
+                    <p className="text-sm lg:text-base font-medium text-black">Improve your performance</p>
 
                 </div>
             )
@@ -190,9 +190,9 @@ const Card = ({ item }) => {
       <div className="w-full lg:w-[50%]  flex flex-col px-4  justify-center gap-y-2 mt-8 ">
         {item?.icon}
 
-        <p className=" font-semibold  text-black mt-4 text-xl">{item?.tittle}</p>
+        <p className=" font-semibold  text-black mt-2 text-xl">{item?.tittle}</p>
         <p className="text-secondry  font-medium">{item?.subTitle}</p>
-
+        <div className="mt-2"></div>
         {features()}
       </div>
       <Image className=" w-full lg:w-[50%] object-cover object-center  h-[300px] rounded-xl" src={item?.bg} />

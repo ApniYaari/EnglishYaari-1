@@ -1,12 +1,11 @@
 "use client"
-
 import React, { useEffect, useState } from "react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaRegCircle, FaWhatsapp } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
 import bank from '@/assets/bank.png'
 import face from '@/assets/face.png'
-import SatisfactionBg from '@/assets/SatisfactionBg.png'
+import SatisfactionBg from '@/assets/Offer.png'
 import { planList } from "@/utils/utils";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +13,8 @@ import NavBar2 from "@/component/NavBar2";
 import PlanPurchase from "@/assets/PlanPurchase.png"
 import { GoCheckCircle } from "react-icons/go";
 import FAQ from "@/component/FAQ";
+import Frame from "@/assets/company/Frame.png"
+import Group from "@/assets/company/Group.png"
 
 const monthlyDiscount = {
   2: "15",
@@ -124,14 +125,15 @@ export const PlanAndPricing = (props) => {
     <div className="bg-background">
                   <NavBar2/>
 
-    <div className=" rounded-md overflow-hidden w-[90vw]  mx-auto    topSpace ">
+    <div className=" rounded-md overflow-hidden w-[90vw] 3xxl:w-[80%] mx-auto  object-contain   topSpace  margin60">
         <Image 
+        alt="Plan"
           className="h-40 w-full "
           src={SatisfactionBg}
         />
       </div>
  
-    <div className="sideMargin">
+    <div className="sideMargin margin60">
            {/* <Helmet>
         <meta name="description" content="Flexible plan for professionals" />
         <title>Pricing For Spoken English</title>
@@ -141,12 +143,12 @@ export const PlanAndPricing = (props) => {
 
       {/* Select Plan */}
       <div className="container mx-auto  ">
-          <p className="font-bold h3 text-start lg:text-center pt-10">
+          <p className="font-bold h3 text-start lg:text-center lg:pt-10">
             Choose a plan that suits your budget & schedule
           </p>
 
 
-          <div className="lg:bg-white lg:shadow-xl  lg:px-10 flex-wrap-reverse rounded-2xl flex justify-between mt-10">
+          <div className="lg:bg-white lg:shadow paddingVertically34 lg:px-10 flex-wrap-reverse rounded-2xl flex justify-between lg:mt-10">
             {/* MObile View */}
             <div className="w-full hidden lg:block lg:w-[48%] ">
               <p className="h6 font-bold">Select Number of Month</p>
@@ -174,7 +176,7 @@ export const PlanAndPricing = (props) => {
                 );
               })}
 
-              <div className="mt-7 w-full">
+              <div className="margin60 w-full">
                 <p className="h6 font-bold">Spoken English Classes for Professionals</p>
 
                 <div className="flex flex-col items-start">
@@ -196,7 +198,7 @@ export const PlanAndPricing = (props) => {
                   })}
                 </div>
 
-                <div className="flex justify-between mt-16">
+                <div className="flex justify-between margin60">
                   <div>
                     <div className="h-14 w-14 rounded-full bg-purpleShade/10 flex items-center justify-center">
                       <svg
@@ -295,10 +297,11 @@ export const PlanAndPricing = (props) => {
                   </div>
                 </div>
 
-                <div className="p-4 border rounded-lg text20 font-medium text-secondry  bg-[#fafafa] mt-14">
-                  <div className="flex">
+
+                <div className="p-4 border rounded-3xl text20 font-medium text-secondry w-[70%] flex 3xxl:w-[60%] justify-center items-center  bg-[#fafafa] mt-14">
+                  <div className="flex ">
                     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-lightPurpule mr-4">
-                      <Image  className="h-8 w-8" src={face}/>
+                      <Image  className="h-8 w-8" src={face} alt="face"/>
                     </div>
                     <div className="">
                     Not sure, which subscription <br /> plan to choose?
@@ -372,10 +375,8 @@ export const PlanAndPricing = (props) => {
               <div className="mt-10">
                 <a  href={'https://user.englishyaari.com/Register?public=true'}>
                 <div
-                onClick={()=>{
-                   navigate('');
-                }}
-                 className="bg-theme flex items-center justify-center text-white w-full rounded-full p-2.5 text32 font-medium ">
+            
+                 className="bg-theme flex items-center justify-center text-white w-full rounded-full p-3 text32 font-medium ">
                   Subscribe Now
 
                 </div>
@@ -386,22 +387,23 @@ export const PlanAndPricing = (props) => {
                 </div>
 
                 <a  href={'https://user.englishyaari.com/Register?public=true'}>
-                <div className="border flex justify-center items-center border-theme text-theme w-full rounded-full p-2.5 text32 font-medium ">
+                <div className="border flex justify-center items-center border-theme text-theme w-full rounded-full p-3 text32 font-medium ">
                   Book Trial @ ₹99/-
                 </div>
                   </a>
               </div>
 
-              <div className="p-4 border rounded-lg mt-7 text20 font-medium text-secondry">
-                Tight on budget? Don’t worry! EMI option available
-                <Image className=" h-6 mt-4 lg:mt-0 lg:h-10 object-contain" src={bank} />
+              <div className="p-4 border flex flex-col   rounded-lg mt-7 text20 font-semibold text-secondry">
+                Tight on budget? Don’t worry! EMI option available<br/>
+                Start with as low as INR 100 per month. 
+                <Image className=" h-6  w-[240px] object-contain margin24 lg:h-10  mr-auto" src={bank} alt="face" />
               </div>
             </div>
           </div>
 
-          <div className=" lg:hidden mb-10">
+          <div className=" lg:hidden">
           <div className="mt-7 w-full">
-                <p className="text24 font-bold">Spoken English Classes for Professionals</p>
+                <p className="text-xl font-bold">Spoken English Classes for Professionals</p>
 
                 <div className="flex flex-col items-start">
                   {whyConsiderUse.map((item, index) => {
@@ -422,8 +424,8 @@ export const PlanAndPricing = (props) => {
                   })}
                 </div>
 
-                <div className="flex justify-between mt-16">
-                  <div className=" w-full">
+                <div className="flex justify-between mt-16 w-[90vw] flex-wrap ">
+                  <div className=" w-[90vw] ">
                     <div className="h-14 w-14 rounded-full bg-lightPurpule flex items-center justify-center">
                       <svg
                         width="28"
@@ -476,13 +478,13 @@ export const PlanAndPricing = (props) => {
                         </defs>
                       </svg>
                     </div>
-                    <p className="text20 font-medium mt-4">Customized notes</p>
-                    <p className="text18 text-secondry">
-                      Get access to customized notes <br /> for every sessions
+                    <p className="text-xl font-medium mt-4">Customized notes</p>
+                    <p className="text-lg text-secondry">
+                      Get access to customized notes  for every sessions
                     </p>
                   </div>
 
-                  <div className="w-[100%]">
+                  <div className="mt-4">
                     <div className="h-14 w-14 rounded-full bg-lightPurpule flex items-center justify-center">
                       <svg
                         width="28"
@@ -514,8 +516,8 @@ export const PlanAndPricing = (props) => {
                         </defs>
                       </svg>
                     </div>
-                    <p className="text20 font-medium mt-4">Session Recording</p>
-                    <p className="text18 text-secondry">
+                    <p className="text-xl font-medium mt-4">Session Recording</p>
+                    <p className="text-lg text-secondry">
                    Get access privately saved session recordings to track your progress.
                     </p>
                   </div>
@@ -524,7 +526,7 @@ export const PlanAndPricing = (props) => {
                 <div className="p-4 border rounded-lg text20 font-medium text-secondry  bg-background mt-14">
                   <div className="flex">
                     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-lightPurpule mr-4">
-                      <Image  className="h-8 w-8" src={face}/>
+                      <Image  className="h-8 w-8" src={face} alt="face"/>
                     </div>
                     Not sure, which subscription plan to choose?
                   </div>
@@ -546,15 +548,20 @@ export const PlanAndPricing = (props) => {
 
 
     
-    <div className="flex w-[90%] flex-wrap mx-auto bg-white rounded-2xl overflow-hidden   margin120">
-      <Image className=" w-full lg:w-[45%] h-[300px] lg:h-[500px] object-fill" src={PlanPurchase}/>
-      <div className="w-full lg:w-[55%] p-4 lg:p-8 ">
-        <p className="h3 font-semibold text-center mb-10">EnglishYaari Learning Approach</p>
+    <div className="flex w-[90%] 3xxl:w-[70%]  flex-wrap mx-auto bg-white rounded-2xl overflow-hidden   margin120">
+      <div className="w-full relative lg:w-[45%]">
+      <Image className=" w-full h-[300px] lg:h-[500px] object-fill" src={Frame} alt="face"/>
+
+      <Image className=" w-full h-[250px] z-20  absolute  lg:h-[80%]  2xll:h-[80%] object-contain -translate-x-4 top-6 lg:top-10" src={Group} alt="face"/>
+
+      </div>
+      <div className="w-full lg:w-[55%] p-4 lg:p-8 3xxl:px-16 ">
+        <p className="h3 font-semibold text-start lg:mt-8 mb-4 lg:mb-10">EnglishYaari Learning Approach</p>
 
         {
           staticAarray?.map((ele,ind)=>{
             return(
-              <div key={ind} className="flex gap-3 mt-8  font-medium ">
+              <div key={ind} className="flex gap-3 mt-5 lg:mt-8  h14 font-medium ">
                 <GoCheckCircle  className="h28 text-sucess"/>
 
                 {ele}
@@ -565,18 +572,16 @@ export const PlanAndPricing = (props) => {
       </div>
     </div>
 
-    <p className="w-full pb-20"></p>
-
-    <div className="w-full">
+    <div className="margin120">
         <div className="bg-white py-10  w-[100vw] mx-auto">
-          <p className="h1  text-black font-semibold text-center">
+          <p className="h3 text-black font-semibold text-center mb-4 lg:mb-2">
             Have a question?
           </p>
-          <p className="text24 font-semibold text-center text-secondry">
+          {/* <p className="text24 font-semibold hidden lg:flex text-center text-secondry">
             Find the answers in our FAQs
-          </p>
-          <div className="container flex !mt-10 flex-wrap-reverse px-4 md:px-0">
-            <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col">
+          </p> */}
+          <div className="w-[90vw] mx-auto  flex  flex-wrap-reverse px-4 md:px-0">
+            <div className="  w-full lg:w-[30%] px-4 flex justify-center items-start flex-col mt-8 lg:mt-0">
               <p className="text-theme text-lg !font-semibold">
                 For any other questions{" "}
               </p>
@@ -603,8 +608,8 @@ export const PlanAndPricing = (props) => {
                 </svg>
 
                 <div className="ml-4 font-medium">
-                  <p>+91 9798286015</p>
-                  <p className="text-secondry font-medium mt-3 font-inter">
+                  <p>+91 6209848131</p>
+                  <p className="text-secondry font-medium font-inter">
                     Support Number
                   </p>
                 </div>
@@ -635,7 +640,7 @@ export const PlanAndPricing = (props) => {
                   href="mailto:help@englishyaari.com?body=My custom mail body"
                   className="ml-4 font-medium">
                   <p>help@englishyaari.com</p>
-                  <p className="text-secondry font-medium mt-3 font-inter">
+                  <p className="text-secondry font-medium font-inter">
                     Support Email
                   </p>
                 </a>
@@ -649,127 +654,68 @@ export const PlanAndPricing = (props) => {
 
               </button>
             </div>
-
             <div className="w-full lg:w-[70%] ">
               <FAQ
-                question={"How EnglishYaari works?"}
-                answer={<div>
-                  <p className='text-secondry font-medium mt-3'>
-                    (a) 1-on-1 Live classes : we provide 25 minute calls to our learners to enhance their spoken English skills and provide personalised learning experience.
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (b) Personalised tutors : learners get connected with expert tutors like you to attain fluency .
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (c) Personalised lesson plan : We provide customised lesson plans to tutors as well as learners for better learning.
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (d) Progress report: By the end of every session ,tutors provide constructive feedback to the learners.
-                  </p>
-
-                  <p className='text-secondry font-medium mt-3'>
-                    (e) Recorded Sessions: All sessions are recorded for our learners so that they can revise what they have learnt in the previous session .
-                  </p>
-                </div>}
+                question={"What is EnglishYaari?"}
+                answer={`EnglishYaari is a dynamic language learning platform that offers a unique blend of learning and interactive practice, making it an effective tool for mastering spoken English.
+              Our focus on fun activities foster a friendly Environment , ensuring that acquiring spoken English skills becomes an enjoyable journey for our learners.`}
               />
               <FAQ
-                question={"Who can apply to become a tutor at EnglishYaari? "}
-                answer={<div>
-                  <p className='text-secondry font-medium mt-3'>
-                    We are seeking for passionate tutors who can dedicate their teaching methodologies in their classes to help learners achieve their learning Goal.
-                  </p>
+                question={"How to book a trial? "}
+                answer={`To Book a Trial session, visit the EnglishYaari home page, and Click on “Book A Trial”
 
-                  <p className='text-secondry font-medium mt-3'>
-                    Tutors can be educators, graduate/postgraduate College Students, or even working professionals With any language certification (like CELTA, TEFL/ TESOL) .
-                  </p>
-                </div>}
+              Complete your signup & Make a payment for trial
+              
+              Select a date and time & Meet your tutor at the session time
+              
+              “If you find value in your trial session and wish to continue your learning journey with EnglishYaari ,simply subscribe to our plan and schedule your personalised 1-on-1 session with us,”`}
               />
 
               <FAQ
-                question={"What qualities do you need to become a tutor at EnglishYaari ?"}
-                answer={<div>
-                  <p className='text-secondry font-medium mt-3'>
-                  We are seeking dedicated individuals to join our team at EnglishYaari as tutors. Here are some qualities which can help you become a perfect fit .
-                  </p>
+                question={"What comes with our subscription plan?"}
+                answer={`
+                With our subscription plan at EnglishYaari, you’ll enjoy a personalized learning experience.
 
+1. You’ll have access to expert tutors who will provide constructive feedback during the sessions.
 
-                  <p className='text-secondry font-medium mt-3'>
-                    (a) Exceptional Spoken English Skills
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (b) Passion for teaching
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (c) Open to Learning and new Experience.
-                  </p>
-                  <p className='text-secondry font-medium mt-3'>
-                    (d)  Ability to empathise with learner’s challenges and tailor instructions accordingly.
-                  </p>
+2. Tailored session notes can help you significantly improve your speech.
 
-                  <p className='text-secondry font-medium mt-3'>
-                    (e) Capability to motivate and inspire learners to communicate confidently in English .
-                  </p>
+3. We offer you session flexibility, you can book your session based on your availability.
 
-                </div>}
+4. Plus, you can take multiple sessions in a day by choosing your preferred tutor.
+
+5. Get access to session recordings for your convenience and track your progress.`}
               />
 
               <FAQ
-                question={"What age group of learners should I be teaching?"}
-                answer={
-                  <div>
-                  <p className='text-secondry font-medium mt-3'>
-                    At EnglishYaari , we offer spoken English courses tailored for a diverse range of learners ,including housewives,working professionals ,kids,college students ,entrepreneurs,business owners,employees,and individuals of all age groups.”
-                    </p>
-                  </div>
-                }
+                question={"How can EnglishYaari help me in my career? "}
+                answer={`At EnglishYaari, we understand that strong communication skills are essential for career success. By joining us, you'll not only enhance your spoken English but also gain confidence in expressing yourself fluently. This skill is invaluable in job interviews, presentations, and daily workplace interactions. Moreover, our personalised lesson plans are tailored to address your specific needs, ensuring your professional growth. Our 1-on-1 sessions and constructive feedback from our expert tutors will empower you to excel in your career by mastering this vital language."`}
               />
 
               <FAQ
-                question={"What is the procedure of becoming a tutor at EnglishYaari?"}
-                answer={<div>
-                  <p className='my-3'>
-                    (a) Application Submission :
-                    <p>
-                    Start by submitting your application through our official website .
-                    </p>
-                  </p>
+              border={1}
+                question={"How to book your regular Sessions at EnglishYaari? "}
+                answer={`Once you've taken a subscription, you can book your EnglishYaari Sessions according to your availability.
 
-                  <p className='my-3'>
-                    (b) Application Assessment :
-                    <p>
-                    Our recruitment team will review your application within 7 working days and revert via Email.
-                    </p>
-                  </p>
-
-
-                  <p  className='my-3'>
-                    (c) Interview and Evaluation :
-                    <p>
-                    If your application meets our criteria , you will be invited for an interview and assessment to gauge your teaching skills (excellent Communication & conversational skills)
-                    </p>
-                  </p>
-
-
-                  <p className='my-3'>
-                    (a) Feedback and Training :
-                    <p>
-                    After successful evaluation, you will receive feedback and necessary training to align your teaching approach with our methodologies.
-                    </p>
-                  </p>
-
-
-                  <p className='my-3'>
-                    (a)  Onboarding :
-                    <p>
-                    Finally, once you’ve completed the above steps ,you will officially join us as a tutor, now you are ready to empower learners with improved spoken English skills.
-                    </p>
-                  </p>
-                </div>}
+                Steps To Book Your Session
+                
+                >> Login to your dashboard
+                
+                >> Click on "Book a session" present on your dashboard
+                
+                >> Select the time interval and date, You will get the list of available tutors in your selected time interval.
+                
+                >> select the available time slots and click on the "Book Now" button. Your session will be reserved and can be found in the "My Sessions" section."`}
               />
             </div>
+
+
+
+
           </div>
         </div>
       </div>
+
     </div>
   );
 };
@@ -862,7 +808,7 @@ const Card = ({ status, item, recommendedPlan, index, navigateHandler,planPrice 
       </div>
 
       {item?.isRecommended && (
-        <button class="bg-[#7F34DF] text-white font-bold py-1  px-4 rounded-full absolute  text-sm -top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+        <button class="bg-[#7F34DF] text-white font-semibold py-1  px-4 rounded-full absolute  text-base 3xxl:text-lg -top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
           Recommended
         </button>
       )}

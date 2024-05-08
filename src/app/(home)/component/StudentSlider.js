@@ -2,10 +2,9 @@ import Image from 'next/image';
 import '../Home.css'
 import { GoStarFill } from 'react-icons/go';
 
-const StudentSlider = ({ images, speed = 1200000 }) => {
+const StudentSlider = ({ images, speed = 1200000,setVedioModal,setLink }) => {
 
 
-  console.log();
   return (
     <div className="">
 
@@ -35,7 +34,7 @@ const StudentSlider = ({ images, speed = 1200000 }) => {
           {images?.map((item, index) => {
             return (
               <div className="ml-5" key={index}>
-                <StudentCard item={item} />
+                <StudentCard item={item}  setVedioModal={setVedioModal} setLink={setLink}/>
               </div>
             );
           })}
@@ -55,16 +54,15 @@ const StudentCard = ({ item, setVedioModal, setLink }) => {
   return (
     <div
       onClick={() => {
-        // setLink(item?.url)
-        // setVedioModal(true);
+        setLink(item?.url)
+        setVedioModal(true);
       }}
       className=" w-[15rem] md:min-w-[24rem]    mt-6 rounded-lg  relative overflow-hidden">
 
 
-      <video className="w-full rounded-lg" autoPlay={false}>
-        <source src={item?.url} type="video/mp4" className="object-cover" />
-        Your browser does not support the video tag.
-      </video>
+      <Image src={item?.img}/>
+
+
 
       <div className=" w-full text24 font-medium flex justify-between items-center mt-3">
         {item?.name}

@@ -1,20 +1,26 @@
 import React, { useState } from 'react'
-import One from '@/assets/EnglishYaari2.0_Product Design/one.png';
-import Two from '@/assets/EnglishYaari2.0_Product Design/two.png';
-import Three from '@/assets/EnglishYaari2.0_Product Design/three.png';
-import Four from '@/assets/EnglishYaari2.0_Product Design/four.png';
-import Five from '@/assets/EnglishYaari2.0_Product Design/five.png';
-import Six from '@/assets/EnglishYaari2.0_Product Design/six.png';
-import Seven from '@/assets/EnglishYaari2.0_Product Design/seven.png';
-import Eight from '@/assets/EnglishYaari2.0_Product Design/eight.png';
-import Nine from '@/assets/EnglishYaari2.0_Product Design/nine.png';
-import Ten from '@/assets/EnglishYaari2.0_Product Design/ten.png';
+import One from '@/assets/EnglishYaari2.0_Product Design/Google.png';
+import Two from '@/assets/EnglishYaari2.0_Product Design/Tcs.png';
+import Three from '@/assets/EnglishYaari2.0_Product Design/amazon.png';
+import Four from '@/assets/EnglishYaari2.0_Product Design/Microsoft.png';
+import Five from '@/assets/EnglishYaari2.0_Product Design/congizent.png';
+import Six from '@/assets/EnglishYaari2.0_Product Design/hcl.png';
+import Seven from '@/assets/EnglishYaari2.0_Product Design/ibm.png';
+import Eight from '@/assets/EnglishYaari2.0_Product Design/infosys.png';
+import Nine from '@/assets/EnglishYaari2.0_Product Design/samsung.png';
+import Ten from '@/assets/EnglishYaari2.0_Product Design/uniliver.png';
+import Wipro from '@/assets/EnglishYaari2.0_Product Design/wipro.png';
+import ICICI from '@/assets/EnglishYaari2.0_Product Design/ICICI.png';
+
+
+
+
 import { HorizontalSlider } from './HorizontalSlider';
 function OurLearner() {
 
     const [speed, setSpeed] = useState(20000)
     const images = [
-        One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+        One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,Wipro,ICICI
     ].map((image) => ({
         id: Math.random().toString,
         image

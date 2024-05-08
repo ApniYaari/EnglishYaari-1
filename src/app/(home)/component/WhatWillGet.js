@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function WhatWillGet() {
   return (
-    <div className="w-[90vw] mx-auto ">
+    <div className="w-[90vw] 2xll:w-[80vw] mx-auto ">
       <p className="h3 font-bold text-center">
         What will i get with EnglishYaari Subscription?
       </p>
