@@ -89,7 +89,7 @@ const NavBar2 = () => {
                 <nav className=''>
 
 
-                    <ul className=' hidden lg:flex items-center gap-5 text-white '>
+                    <ul className=' hidden lg:flex items-center font-semibold gap-5 text-white '>
 
 
                         <li>
@@ -120,7 +120,7 @@ const NavBar2 = () => {
 
 
                 <div className='flex items-center gap-4  '>
-                    <Link target="_blank" href={loginLink} className='mr-4 hidden lg:flex text-white'>
+                    <Link target="_blank" href={loginLink} className='mr-4 hidden lg:flex text-white font-semibold'>
                         Login
                     </Link>
 

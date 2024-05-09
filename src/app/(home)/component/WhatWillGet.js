@@ -15,7 +15,7 @@ function WhatWillGet() {
         What will i get with EnglishYaari Subscription?
       </p>
 
-  
+
 
 
 
@@ -34,15 +34,15 @@ function WhatWillGet() {
         }
       />
 
-   
+
 
       <Card
-      type={2}
+        type={2}
         img={Note2}
         tittle={
           <p className="text h3 font-extrabold">
             <span className="text-purpleShade"> 500+ </span> Curriculum Notes
-            
+
           </p>
         }
         bg={"bg-[#E9F8D8]"}
@@ -52,12 +52,12 @@ function WhatWillGet() {
       />
 
       <Card
-      type={1}
+        type={1}
         img={Notes}
         tittle={
           <p className="text h3 font-extrabold">
-             <span className="text-purpleShade"> Progress </span> Report
-            
+            <span className="text-purpleShade"> Progress </span> Report
+
           </p>
         }
         bg={"bg-[#EBEEFC]"}
@@ -72,19 +72,19 @@ function WhatWillGet() {
 
 export default WhatWillGet;
 
-const Card = ({ tittle, bg, decription, img,type }) => {
+const Card = ({ tittle, bg, decription, img, type }) => {
   return (
     <div
-      className={`  bg-white rounded-2xl overflow-hidden flex ${type==1?'flex-row':'flex-row-reverse'} mt-10 ${type==1?'flex-wrap-reverse':'flex-wrap-reverse'}`}
+      className={`  bg-white rounded-2xl overflow-hidden flex ${type == 1 ? 'flex-row' : 'flex-row-reverse'} mt-10 ${type == 1 ? 'flex-wrap-reverse' : 'flex-wrap-reverse'}`}
     >
       <div className="w-full lg:w-[60%] px-6 py-4 lg:p-8   flex flex-col justify-center  lg:gap-y-6  lg:text-start  lg:mt-0">
         {tittle}
         <div className="lg:w-[80%] 2xll:w-[50%] 3xxl:w-[90%]">
-        <p className="text-secondry font-medium text-start lg:text-start h6 mt-4 lg:mt-0 leading-9">{decription}</p>
+          <p className="text-secondry font-medium text-start lg:text-start h6 mt-4 lg:mt-0 leading-9">{decription}</p>
         </div>
       </div>
 
-      <div className={`w-full lg:w-[40%] p-4 lg:py-8 flex ${type==1?'justify-center':'justify-center'} ${bg}`}>
+      <div className={`w-full lg:w-[40%] p-4 lg:py-8 flex ${type == 1 ? 'justify-center' : 'justify-center'} ${bg}`}>
         <Image className="w-full lg:w-[80%] 3xxl:w-[70%]" src={img} />
       </div>
     </div>

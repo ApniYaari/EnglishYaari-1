@@ -262,7 +262,7 @@ export const PlanAndPricing = (props) => {
                     </div>
                     <p className="text-xl font-medium mt-4">Customized notes</p>
                     <p className="text-lg text-secondry">
-                      Get access to customized notes <br /> for every sessions
+                      Get access to customized  <br />notes for every sessions
                     </p>
                   </div>
 
