@@ -23,13 +23,13 @@ function TutorDetails() {
     const [tab, setTab] = useState(1)
     const [link, setLink] = useState()
     const [vedioModal, setVedioModal] = useState(false)
-    const [speed,setSpeed]=useState(40000)
+    const [speed, setSpeed] = useState(40000)
 
     let respnse = teacherInformation?.teacherDetails
 
     const FaqVedios = [
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Megha.mp4",
+            url: "xbxIiH6Qugg",
             title: "How to use EnglishYaari App? How EnglishYaari works?",
             name: 'Megha Nayak',
             sessionTaken: '971',
@@ -38,7 +38,7 @@ function TutorDetails() {
         },
 
         {
-            url: "https://www.youtube.com/watch?v=z6c836gUoeo&t=6s",
+            url: "NFzJPieKlIs",
             title: "How to use EnglishYaari App? How EnglishYaari works?",
             name: 'Madhav Anand',
             sessionTaken: '1115',
@@ -47,7 +47,7 @@ function TutorDetails() {
         },
 
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Megha.mp4",
+            url: "Iv10jc5_USY",
             title: "How to use EnglishYaari App? How EnglishYaari works?",
             name: 'Moupriya Mukherjee',
             sessionTaken: '450',
@@ -56,7 +56,7 @@ function TutorDetails() {
         },
 
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Amal.mp4",
+            url: "r3rwPnMZ6lM",
             title: "How to Subscribe a Plan on EnglishYaari App?",
             name: 'Pritam Pradhan',
             sessionTaken: '950',
@@ -65,7 +65,7 @@ function TutorDetails() {
         },
 
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Sarika.mp4",
+            url: "N5IbaYKDMF0",
             title: "How to Join your upcoming Session on EnglishYaari App? ",
             name: 'Radhika Bansal',
             sessionTaken: '500',
@@ -75,13 +75,31 @@ function TutorDetails() {
 
 
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Sarika.mp4",
+            url: "yqZP3srtbHA",
             title: "How to Join your upcoming Session on EnglishYaari App? ",
-            name: 'Shailee Shah',
+            name: 'Vishnu Mehta',
             sessionTaken: '500',
             img: Shele
 
         },
+
+
+        {
+            url: "K2IIRJrbUOs",
+            title: "How to Join your upcoming Session on EnglishYaari App? ",
+            name: 'Lamika',
+            sessionTaken: '500',
+            img: Shele
+        },
+
+        {
+            url: "s-eo-NpKuCA",
+            title: "How to Join your upcoming Session on EnglishYaari App? ",
+            name: 'Nandakumar Gopalan',
+            sessionTaken: '500',
+            img: Shele
+        },
+
 
     ];
     return (
@@ -133,28 +151,28 @@ function TutorDetails() {
 
                 </div>
 
-        
+
             </div>
 
 
             <div className=" w-screen">
-                    <p className="h5 font-semibold mt-20 text-center ">Recommended tutors</p>
+                <p className="h5 font-semibold mt-20 text-center ">Recommended tutors</p>
 
 
 
-                    <div
+                <div
                     // onMouseLeave={()=>setSpeed(40000)}
                     // onMouseEnter={()=>setSpeed(80000)}
-                     className=" h-[400px] w-[100vw]  overflow-x-hidden  margin24  overflow-hidden rounded-xl relative">
+                    className=" h-[400px] w-[100vw]  overflow-x-hidden  margin24  overflow-hidden rounded-xl relative">
 
 
 
-                        <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} buttonShow={true} images={FaqVedios} speed={speed} />
-
-                    </div>
-
+                    <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} buttonShow={true} images={FaqVedios} speed={speed} />
 
                 </div>
+
+
+            </div>
 
         </div>
     );

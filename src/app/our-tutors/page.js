@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa6'
 import { LuBadgeCheck } from "react-icons/lu";
-import { expertisetag, teacherInformation, vedioId } from '@/utils/utils'
+import { expertisetag, signupLink, teacherInformation, vedioId } from '@/utils/utils'
 import { teacherListServices } from '@/services/services'
 import DescriptionComponent from '@/component/DescriptionComponent'
 import NavBar2 from '@/component/NavBar2'
@@ -62,7 +62,7 @@ function AllTutorList() {
 
                     <p className='text-secondry font-medium mt-5  h6'>Unlock your potential with certified English mentors.</p>
 
-                    <Link href={'/'}>
+                    <Link target="_blank" href={signupLink}>
                         <div className='bg-primary-500 text-white flex items-center mt-6  w-[280px] justify-center py-2 rounded-full text-2xl gap-2'>
                             Get Started
                             <FaArrowRight />
@@ -157,9 +157,15 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                                 View profile
                             </Link>
 
-                            <button className='bg-primary-500 font-semibold text-white p-2.5  rounded-full w-[50%]'>
+                            <Link
+                            onClick={() => {
+                                teacherInformation.teacherDetails=item
+                                // let temp = JSON.stringify(item)
+                                // localStorage.setItem('item', temp)
+                            }} href={{ pathname: '/tutor-infomation',}}
+                             className='bg-primary-500 text-center font-semibold text-white p-2.5  rounded-full w-[50%]'>
                                 Book a class
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -196,9 +202,15 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                             View profile
                         </a>
 
-                        <button className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
+                        <Link
+                        onClick={() => {
+                            teacherInformation.teacherDetails=item
+                            // let temp = JSON.stringify(item)
+                            // localStorage.setItem('item', temp)
+                        }} href={{ pathname: '/tutor-infomation',}}
+                         className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
                             Book a class
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

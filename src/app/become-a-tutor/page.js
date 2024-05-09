@@ -33,7 +33,7 @@ function BecomeATutor() {
             <Link
               href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
               target='_blank'
-              className='bg-theme w-[300px] text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-4'>
+              className='bg-primary-500 w-[300px] text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-4'>
               Apply Now <FaArrowRight />
             </Link>
           </div>
@@ -138,7 +138,7 @@ function BecomeATutor() {
         <Link
               href={'https://docs.google.com/forms/d/e/1FAIpQLSe3YDUZiAqTs_lLihAIW8o8XjMagA1wg8bIye-GZrkC3Zug7g/viewform'}
               target='_blank'
-              className='bg-theme w-[300px] mx-auto text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-10'>
+              className='bg-primary-500 w-[300px] mx-auto text-xl justify-center flex text-white items-center gap-3 p-2.5 rounded-full px-8 mt-10'>
               Apply Now <FaArrowRight />
             </Link>
 

@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa6";
+import { signupLink } from "@/utils/utils";
 
 function ScrollSection() {
 
@@ -124,10 +125,10 @@ function ScrollSection() {
                         How EnglishYaari Works?
                     </p>
 
-                    <div className="font-semibold justify-center gap-2 py-3 rounded-full h5 flex items-center text-white bg-primary-500 " style={{ width: '336px' }}>
+                    <Link className="font-semibold justify-center gap-2 py-3 rounded-full h5 flex items-center text-white bg-primary-500 "  href={signupLink} style={{ width: '336px' }}>
                         Begin now <FaArrowRight className='text-white' />
 
-                    </div>
+                    </Link>
                 </div>
 
 

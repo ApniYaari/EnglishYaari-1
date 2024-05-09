@@ -12,21 +12,21 @@ function OurStudent() {
     const [vedioModal, setVedioModal] = useState(false)
     const teasomonail = [
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Arundhati.mp4",
+            url: "yaFyR8f4bzI",
             title: "How to use EnglishYaari App? How EnglishYaari works?",
             name: "Arundhati Roktima",
             months: 3,
             img: Arundhati
         },
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/0918.mp4",
+            url: "DciqY0n3D4w",
             title: "How to Book a Trial Session on EnglishYaari App?",
             name: "Gaurav Anand",
             months: 6,
             img: Gaurav
         },
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Sumadhur.mp4",
+            url: "avu2n5mEzUY",
             title: "How to Subscribe a Plan on EnglishYaari App?",
             name: "Sumadhur",
             months: 3,
@@ -34,9 +34,17 @@ function OurStudent() {
         },
 
         {
-            url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Kunal.mp4",
+            url: "gLYYsBN3kik",
             title: "How to Join your upcoming Session on EnglishYaari App? ",
-            name: 'Kunal',
+            name: 'Neha',
+            months: 5,
+            img: Kunal
+        },
+
+        {
+            url: "DAW9x8j7x4Y",
+            title: "How to Join your upcoming Session on EnglishYaari App? ",
+            name: 'Shweta',
             months: 5,
             img: Kunal
         },

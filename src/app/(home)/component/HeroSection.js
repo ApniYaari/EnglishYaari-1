@@ -40,7 +40,7 @@ function HeroSection() {
                     Speak in English with India’s Expert Tutors
                     </p>
 
-                    <Link to={signupLink} className={twMerge('bg-white  font-semibold text-2xl flex  w-[100%] md:w-[386px] justify-center gap-3 items-center py-2.5 mt-8 rounded-full')} href="/">Book your trial <FiArrowRight className='text-black text-2xl' /></Link>
+                    <Link href={signupLink} className={twMerge('bg-white  font-semibold text-2xl flex  w-[100%] md:w-[386px] justify-center gap-3 items-center py-2.5 mt-8 rounded-full')} >Book your trial <FiArrowRight className='text-black text-2xl' /></Link>
 
                 
 

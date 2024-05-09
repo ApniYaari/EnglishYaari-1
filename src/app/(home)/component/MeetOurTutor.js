@@ -44,64 +44,81 @@ export const MeetOutTutor = (props) => {
 
   
 
-
   const FaqVedios = [
     {
-      url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Megha.mp4",
-      title: "How to use EnglishYaari App? How EnglishYaari works?",
-      name:'Megha Nayak',
-      sessionTaken:'971',
-      img:Megha
+        url: "xbxIiH6Qugg",
+        title: "How to use EnglishYaari App? How EnglishYaari works?",
+        name: 'Megha Nayak',
+        sessionTaken: '971',
+        img: Megha
 
     },
 
     {
-      url: "https://www.youtube.com/watch?v=z6c836gUoeo&t=6s",
-      title: "How to use EnglishYaari App? How EnglishYaari works?",
-      name:'Madhav Anand',
-      sessionTaken:'1115',
-      img:Bhaubali
+        url: "NFzJPieKlIs",
+        title: "How to use EnglishYaari App? How EnglishYaari works?",
+        name: 'Madhav Anand',
+        sessionTaken: '1115',
+        img: Bhaubali
 
     },
 
     {
-      url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Megha.mp4",
-      title: "How to use EnglishYaari App? How EnglishYaari works?",
-      name:'Moupriya Mukherjee',
-      sessionTaken:'450',
-      img:Priya
-
-    },
- 
-    {
-      url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Amal.mp4",
-      title: "How to Subscribe a Plan on EnglishYaari App?",
-      name:'Pritam Pradhan',
-      sessionTaken:'950',
-      img:Pritam
+        url: "Iv10jc5_USY",
+        title: "How to use EnglishYaari App? How EnglishYaari works?",
+        name: 'Moupriya Mukherjee',
+        sessionTaken: '450',
+        img: Priya
 
     },
 
     {
-      url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Sarika.mp4",
-      title: "How to Join your upcoming Session on EnglishYaari App? ",
-      name:'Radhika Bansal',
-      sessionTaken:'500',
-      img:Radhika
+        url: "r3rwPnMZ6lM",
+        title: "How to Subscribe a Plan on EnglishYaari App?",
+        name: 'Pritam Pradhan',
+        sessionTaken: '950',
+        img: Pritam
+
+    },
+
+    {
+        url: "N5IbaYKDMF0",
+        title: "How to Join your upcoming Session on EnglishYaari App? ",
+        name: 'Radhika Bansal',
+        sessionTaken: '500',
+        img: Radhika
 
     },
 
 
     {
-      url: "https://englishyaarilp.s3.ap-south-1.amazonaws.com/7th+Sept+Sarika.mp4",
-      title: "How to Join your upcoming Session on EnglishYaari App? ",
-      name:'Shailee Shah',
-      sessionTaken:'500',
-      img:Shele
+        url: "yqZP3srtbHA",
+        title: "How to Join your upcoming Session on EnglishYaari App? ",
+        name: 'Vishnu Mehta',
+        sessionTaken: '500',
+        img: Shele
 
     },
 
-  ];
+
+    {
+        url: "K2IIRJrbUOs",
+        title: "How to Join your upcoming Session on EnglishYaari App? ",
+        name: 'Lamika',
+        sessionTaken: '500',
+        img: Shele
+    },
+
+    {
+        url: "s-eo-NpKuCA",
+        title: "How to Join your upcoming Session on EnglishYaari App? ",
+        name: 'Nandakumar Gopalan',
+        sessionTaken: '500',
+        img: Shele
+    },
+
+
+];
   return (
     <div className="w-full      lg:ml-auto lg:w-[90vw] mx-auto ">
 
@@ -116,7 +133,7 @@ export const MeetOutTutor = (props) => {
 
             <div className="h-[250px] lg:h-[320px]">
 
-            <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} images={FaqVedios} speed={40000}/>
+            <TeacherSlider setLink={setLink} setVedioModal={setVedioModal} images={FaqVedios} speed={60000}/>
 
         </div>
 

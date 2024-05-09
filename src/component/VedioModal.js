@@ -7,6 +7,11 @@ function VedioModal({ link, setVedioModal, vedioModal }) {
     document.body.style.overflow = 'hidden';
     return () => document.body.style.overflow = 'unset';
   }, []);
+
+
+  console.log(link,'0-0-0');
+
+  let url=`https://www.youtube.com/embed/${link}`
   return (
     <div className='h-screen z-[999] flex justify-center items-center w-screen bg-black/80 fixed top-0 right-0'>
       <button onClick={() => setVedioModal(null)}>
@@ -24,7 +29,7 @@ function VedioModal({ link, setVedioModal, vedioModal }) {
 
 
         <iframe className="w-[100%]  h-[200px] lg:h-[455px] rounded-xl"
-          src={`https://www.youtube.com/embed/${'xbxIiH6Qugg'}`}>
+          src={url}>
         </iframe>
 
         <div className="w-full flex items-center justify-center ">

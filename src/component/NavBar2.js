@@ -93,7 +93,7 @@ const NavBar2 = () => {
 
 
                         <li>
-                            <Link href="/">
+                            <Link  href="/">
                                 Home
                             </Link>
                         </li>
@@ -120,11 +120,11 @@ const NavBar2 = () => {
 
 
                 <div className='flex items-center gap-4  '>
-                    <Link href={loginLink} className='mr-4 hidden lg:flex text-white'>
+                    <Link target="_blank" href={loginLink} className='mr-4 hidden lg:flex text-white'>
                         Login
                     </Link>
 
-                    <Link href={signupLink}>
+                    <Link target="_blank" href={signupLink}>
                         <div style={{color:primaryColor[700],width:'150px'}}  className={twMerge('bg-white font-semibold gap-2 py-3 flex justify-center items-center rounded-full w-[200px]')}>
                             Sign up
                             <FaArrowRight className='text-[#]' />
@@ -149,7 +149,7 @@ const NavBar2 = () => {
                             {
                                 navlist.map((ele, ind) => {
                                     return (
-                                        <li className={twMerge(`border-b pb-1 w-full  flex items-center gap-3`, pathName == ele?.link, ele?.name=='About us'?'border-b-0':'' )}>
+                                        <li  key={ind} className={twMerge(`border-b pb-1 w-full  flex items-center gap-3`, pathName == ele?.link, ele?.name=='About us'?'border-b-0':'' )}>
                                             <div style={pathName == ele?.link ? { width: 6, borderTopRightRadius: 10, borderBottomRightRadius: 10 } : { width: 0 }} className='w-2 h-10 bg-theme rounded-tr-full rounded-br-2xl'>
 
                                             </div>
@@ -164,7 +164,7 @@ const NavBar2 = () => {
 
                         </ul>
 
-                        <Link href={signupLink}>
+                        <Link target="_blank" href={signupLink}>
                             <div className={twMerge(' text-xl font-semibold gap-3 text-white py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mt-4 bg-primary-500')}>
                                 Get started
                                 <FaArrowRight className='text-white' />
@@ -172,7 +172,7 @@ const NavBar2 = () => {
                         </Link>
 
 
-                        <Link href={loginLink}>
+                        <Link target="_blank" href={loginLink}>
                             <div style={{ background: primaryColor[100] }} className={twMerge(' text-xl font-semibold   text-theme   py-3 flex justify-center items-center rounded-full w-[90%] mx-auto mb-4 mt-4 ', `bg-[${primaryColor[400]}]`)}>
                                 Login
                             </div>
@@ -183,7 +183,7 @@ const NavBar2 = () => {
                     <div className='flex items-center gap-3   '>
 
 
-                      {!mobileNav &&  <Link href={signupLink}>
+                      {!mobileNav &&  <Link target="_blank" href={signupLink}>
                             <div className={twMerge('bg-primary-500 font-semibold text-sm gap-2 text-white py-2 flex justify-center items-center rounded-full w-[120px]', scrolling ? 'bg-white text-primary-500' : '')}>
                                 Get started
                                 <FaArrowRight  />
