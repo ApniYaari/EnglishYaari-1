@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa6'
 import { LuBadgeCheck } from "react-icons/lu";
-import { expertisetag, signupLink, teacherInformation, vedioId } from '@/utils/utils'
+import { expertisetag, loginLink, signupLink, teacherInformation, vedioId } from '@/utils/utils'
 import { teacherListServices } from '@/services/services'
 import DescriptionComponent from '@/component/DescriptionComponent'
 import NavBar2 from '@/component/NavBar2'
@@ -149,20 +149,12 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                         </div>
 
                         <div className=' gap-4 margin24 hidden lg:flex '>
-                            <Link onClick={() => {
-                                teacherInformation.teacherDetails=item
-                                // let temp = JSON.stringify(item)
-                                // localStorage.setItem('item', temp)
-                            }} href={{ pathname: '/tutor-infomation',}} className='bg-lightPurpule font-semibold text-theme p-2.5 text-center rounded-full w-[50%]'>
+                            <Link href={loginLink} className='bg-lightPurpule font-semibold text-theme p-2.5 text-center rounded-full w-[50%]'>
                                 View profile
                             </Link>
 
                             <Link
-                            onClick={() => {
-                                teacherInformation.teacherDetails=item
-                                // let temp = JSON.stringify(item)
-                                // localStorage.setItem('item', temp)
-                            }} href={{ pathname: '/tutor-infomation',}}
+                            href={loginLink}
                              className='bg-primary-500 text-center font-semibold text-white p-2.5  rounded-full w-[50%]'>
                                 Book a class
                             </Link>
@@ -193,21 +185,17 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
 
                     <div className=' gap-4 mt-4 flex '>
                         <a 
-                         onClick={() => {
-                            teacherInformation.teacherDetails=item
-                            // let temp = JSON.stringify(item)
-                            // localStorage.setItem('item', temp)
-                        }}
-                        href={{ pathname: '/tutor-infomation'}} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
+                        //  onClick={() => {
+                        //     teacherInformation.teacherDetails=item
+                        //     // let temp = JSON.stringify(item)
+                        //     // localStorage.setItem('item', temp)
+                        // }}
+                        href={loginLink} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
                             View profile
                         </a>
 
                         <Link
-                        onClick={() => {
-                            teacherInformation.teacherDetails=item
-                            // let temp = JSON.stringify(item)
-                            // localStorage.setItem('item', temp)
-                        }} href={{ pathname: '/tutor-infomation',}}
+                      href={loginLink}
                          className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
                             Book a class
                         </Link>

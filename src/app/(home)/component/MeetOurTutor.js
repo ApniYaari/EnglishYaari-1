@@ -8,6 +8,12 @@ import Pritam from "@/assets/Tutor/Pritam.jpeg"
 import Priya from "@/assets/Tutor/Priya.jpeg"
 import Radhika from "@/assets/Tutor/Radhika.jpeg"
 import Shele from "@/assets/Tutor/Shele.jpeg"
+
+import nandakumar from "@/assets/Tutor/nandakumar.png"
+import Vishnu from "@/assets/Tutor/Vishnu.png"
+import lamika from "@/assets/Tutor/lamika.png"
+
+
 import VedioModal from "@/component/VedioModal";
 import { TeacherSlider } from "./TeacherSlider";
 import Link from "next/link";
@@ -96,7 +102,7 @@ export const MeetOutTutor = (props) => {
         title: "How to Join your upcoming Session on EnglishYaari App? ",
         name: 'Vishnu Mehta',
         sessionTaken: '500',
-        img: Shele
+        img: Vishnu
 
     },
 
@@ -106,7 +112,7 @@ export const MeetOutTutor = (props) => {
         title: "How to Join your upcoming Session on EnglishYaari App? ",
         name: 'Lamika',
         sessionTaken: '500',
-        img: Shele
+        img: lamika
     },
 
     {
@@ -114,7 +120,7 @@ export const MeetOutTutor = (props) => {
         title: "How to Join your upcoming Session on EnglishYaari App? ",
         name: 'Nandakumar Gopalan',
         sessionTaken: '500',
-        img: Shele
+        img: nandakumar
     },
 
 

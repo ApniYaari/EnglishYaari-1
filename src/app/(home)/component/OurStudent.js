@@ -5,6 +5,9 @@ import Arundhati from "@/assets/Learner/Arundhati.png"
 import Gaurav from "@/assets/Learner/Gaurav.png"
 import Sumadhur from "@/assets/Learner/Sumadhur.png"
 import Kunal from "@/assets/Learner/Kunal.png"
+import neha from "@/assets/Learner/neha.jpeg"
+
+import sweta from "@/assets/Learner/sweta.jpeg"
 import VedioModal from "@/component/VedioModal";
 
 function OurStudent() {
@@ -25,6 +28,16 @@ function OurStudent() {
             months: 6,
             img: Gaurav
         },
+ 
+
+        {
+            url: "gLYYsBN3kik",
+            title: "How to Join your upcoming Session on EnglishYaari App? ",
+            name: 'Neha',
+            months: 5,
+            img: neha
+        },
+
         {
             url: "avu2n5mEzUY",
             title: "How to Subscribe a Plan on EnglishYaari App?",
@@ -34,19 +47,11 @@ function OurStudent() {
         },
 
         {
-            url: "gLYYsBN3kik",
-            title: "How to Join your upcoming Session on EnglishYaari App? ",
-            name: 'Neha',
-            months: 5,
-            img: Kunal
-        },
-
-        {
             url: "DAW9x8j7x4Y",
             title: "How to Join your upcoming Session on EnglishYaari App? ",
             name: 'Shweta',
             months: 5,
-            img: Kunal
+            img: sweta
         },
     ];
 

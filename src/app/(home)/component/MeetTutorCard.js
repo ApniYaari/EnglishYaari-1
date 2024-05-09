@@ -25,7 +25,7 @@ export function MeetTutorCard({ item, setLink, setVedioModal, buttonShow }) {
 
 
       <CardHeader style={{ boxShadow: 'none' }} floated={false} colorName="blue-gray shadow-none p-0 m-0">
-        <Image src={item?.img} />
+        <Image className="min-w-[18rem]  lg:min-w-[24rem]" src={item?.img} />
 
         <div className="absolute  h-full w-full bg-black/35 flex justify-start p-3 items-end top-0">
           <svg width="50" height="50" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
