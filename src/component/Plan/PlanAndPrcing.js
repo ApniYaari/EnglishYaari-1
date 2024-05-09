@@ -176,7 +176,7 @@ export const PlanAndPricingComponent = (props) => {
                       setRecommended(ind + 1);
                     }}
                     key={ind}
-                    className={` border h14 p-3 px-5  mx-2 mt-4 rounded-lg relative ${planPrice?.planType == ele?.planType
+                    className={` border cursor-pointer h14 p-3 px-5  mx-2 mt-4 rounded-lg relative ${planPrice?.planType == ele?.planType
                       ? "border-theme text-theme bg-lightPurpule"
                       : "border-stroke_Color text-secondry"
                       }`}
@@ -313,7 +313,7 @@ export const PlanAndPricingComponent = (props) => {
                 </div>
 
 
-                <div className="p-4 border rounded-3xl text20 font-medium text-secondry w-[70%] flex 3xxl:w-[60%] justify-center items-center  bg-[#fafafa] mt-14">
+                <div className="p-4 border cursor-pointer rounded-3xl text20 font-medium text-secondry w-[70%] flex 3xxl:w-[60%] justify-center items-center  bg-[#fafafa] mt-14">
                   <div className="flex ">
                     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-lightPurpule mr-4">
                       <Image className="h-8 w-8" src={face} alt="face" />
@@ -792,7 +792,7 @@ const Card = ({ status, item, recommendedPlan, index, navigateHandler, planPrice
         }, index);
       }}
       className={`${recommendedPlan == index ? "bg-[#F5EDFF] border-theme" : "bg-white "
-        } border flex justify-between items-center p-3 lg:px-6 lg:p-6 rounded-2xl mt-5 relative`}
+        } border flex justify-between items-center p-3 lg:px-6 lg:p-6 rounded-2xl mt-5 relative cursor-pointer`}
     >
       <div className="flex items-center ">
         <>

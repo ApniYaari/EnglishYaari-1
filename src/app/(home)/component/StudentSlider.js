@@ -57,7 +57,7 @@ const StudentCard = ({ item, setVedioModal, setLink }) => {
         setLink(item?.url)
         setVedioModal(true);
       }}
-      className=" w-[15rem] md:min-w-[24rem]    mt-6 rounded-lg  relative overflow-hidden">
+      className=" w-[15rem] cursor-pointer md:min-w-[24rem]    mt-6 rounded-lg  relative overflow-hidden">
         <div className='relative'>
 <div className="absolute  h-full w-full bg-black/35 flex justify-start p-3 items-end top-0">
           <svg width="50" height="50" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">

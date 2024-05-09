@@ -20,7 +20,7 @@ export function MeetTutorCard({ item, setLink, setVedioModal, buttonShow }) {
         setLink(item?.url)
         setVedioModal(true);
       }}
-      className={twMerge(" min-w-[18rem]  relative lg:min-w-[24rem] ", buttonShow ? 'bg-white p-1 rounded-xl' : '')}>
+      className={twMerge(" min-w-[18rem] cursor-pointer  relative lg:min-w-[24rem] ", buttonShow ? 'bg-white p-1 rounded-xl' : '')}>
 
 
 

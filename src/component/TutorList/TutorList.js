@@ -16,7 +16,7 @@ function TutorList() {
 
     const [allTutorList, setAllTutorList] = useState([])
     const [tempData, setTempDate] = useState([])
-    const [hoverState,setHoverState]=useState(0)
+    const [hoverState, setHoverState] = useState(0)
 
     const teacherListFeatch = async () => {
         try {
@@ -56,8 +56,8 @@ function TutorList() {
             <div className='w-[90vw] 3xxl:container flex-wrap-reverse mx-auto   mt-24 lg:mt-36 flex'>
                 <div className=' mx-auto w-full  lg:w-[50%] h-auto flex flex-col justify-evenly items-start  py-6 '>
                     <div>
-                    <p className='h1 font-bold '>Speak confidently</p>
-                    <p className='h1 font-bold mt-4'>succeed strongly</p>
+                        <p className='h1 font-bold '>Speak confidently</p>
+                        <p className='h1 font-bold mt-4'>Succeed strongly</p>
                     </div>
 
                     <p className='text-secondry font-medium mt-5  h6'>Unlock your potential with certified English mentors.</p>
@@ -79,7 +79,7 @@ function TutorList() {
             <div className='w-[90vw] mx-auto sticky top-0'>
                 <div className='relative gap-3 border flex items-center bg-white shadow p-5 rounded-full mt-8'>
                     <IoSearch className='text24 text-theme' />
-                    <input className='w-[95%] outline-transparent outline-0 text-lg' onChange={handleSearch} placeholder=' Search for teachers' />
+                    <input className='w-[95%] outline-transparent outline-0 text-lg' onChange={handleSearch} placeholder='Search across 100+ Tutors' />
                 </div>
 
                 <div className='lg:mt-6 flex flex-wrap'>
@@ -99,7 +99,7 @@ function TutorList() {
             </div>
 
 
-                      
+
 
         </div>
     )
@@ -108,21 +108,21 @@ function TutorList() {
 export default TutorList
 
 
-const Card = ({ item,index,hoverState,setHoverState }) => {
+const Card = ({ item, index, hoverState, setHoverState }) => {
 
     return (
         <div
-        onMouseEnter={()=>{
-          setHoverState(index)
-            
-        }}
-     
-         className='w-full flex cursor-pointer items-center justify-between mt-8'>
+            onMouseEnter={() => {
+                setHoverState(index)
+
+            }}
+
+            className='w-full flex cursor-pointer items-center justify-between mt-8'>
             <div className='bg-white w-[90vw] lg:w-[50%] mx-auto p-4  rounded-2xl   '>
 
                 <div className='flex gap-5'>
                     <div className=' h-14 min-w-14 lg:min-w-[72px] lg:h-[72px] bg-red-50 rounded-full overflow-hidden  border'>
-                        <img className='h-full w-full' src={item?.imageURL} />
+                        <Image unoptimized quality={100} height={10} width={10} className='h-full w-full' src={item?.imageURL} />
                     </div>
                     <div className='w-[80%]'>
 
@@ -154,8 +154,8 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                             </Link>
 
                             <Link
-                            href={loginLink}
-                             className='bg-primary-500 text-center font-semibold text-white p-2.5  rounded-full w-[50%]'>
+                                href={loginLink}
+                                className='bg-primary-500 text-center font-semibold text-white p-2.5  rounded-full w-[50%]'>
                                 Book a class
                             </Link>
                         </div>
@@ -184,19 +184,19 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
                     </div>
 
                     <div className=' gap-4 mt-4 flex '>
-                        <a 
-                        //  onClick={() => {
-                        //     teacherInformation.teacherDetails=item
-                        //     // let temp = JSON.stringify(item)
-                        //     // localStorage.setItem('item', temp)
-                        // }}
-                        href={loginLink} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
+                        <a
+                            //  onClick={() => {
+                            //     teacherInformation.teacherDetails=item
+                            //     // let temp = JSON.stringify(item)
+                            //     // localStorage.setItem('item', temp)
+                            // }}
+                            href={loginLink} className='bg-lightPurpule text-center text-primary-500 font-semibold p-2 rounded-full w-[50%]'>
                             View profile
                         </a>
 
                         <Link
-                      href={loginLink}
-                         className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
+                            href={loginLink}
+                            className='bg-primary-500 text-white font-semibold p-2 rounded-full w-[50%]'>
                             Book a class
                         </Link>
                     </div>
@@ -204,14 +204,14 @@ const Card = ({ item,index,hoverState,setHoverState }) => {
 
             </div>
 
-            <div   className="w-[50%] h-auto hidden lg:flex justify-end items-end   ">
-                <div className={twMerge(index==hoverState?'flex w-[95%] ml-auto':'hidden')}>
-                <iframe
-        
-                 className="w-[100%]  h-[200px] lg:h-[300px] rounded-xl"
-                    src={`https://www.youtube.com/embed/${vedioId(item?.introductionVideoURL)}`}>
-                </iframe>
-            </div>
+            <div className="w-[50%] h-auto hidden lg:flex justify-end items-end   ">
+                <div className={twMerge(index == hoverState ? 'flex w-[95%] ml-auto' : 'hidden')}>
+                    <iframe
+
+                        className="w-[100%]  h-[200px] lg:h-[300px] rounded-xl"
+                        src={`https://www.youtube.com/embed/${vedioId(item?.introductionVideoURL)}`}>
+                    </iframe>
+                </div>
             </div>
         </div>
     )

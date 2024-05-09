@@ -22,7 +22,7 @@ function NumberMatter() {
             bgg={`bg-[#FFFEE2]`}
             circleBg={"bg-[#FDFABC]"}
             subTittle={"Overall Ratings"}
-            value={4.8}
+            value={'4.8/5'}
             icon={Page}
           />
           <Card

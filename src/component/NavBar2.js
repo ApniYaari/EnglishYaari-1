@@ -86,25 +86,19 @@ const NavBar2 = () => {
                 <nav className=''>
 
 
-                    <ul className=' hidden lg:flex items-center font-semibold gap-5 text-white '>
+                    <ul className={twMerge(' hidden lg:flex items-center font-semibold gap-5 text-white ','')}>
 
-
-                        <li>
-                            <Link  href="/">
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/our-tutors">
-                                Our tutors
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/plan-and-pricing">
-                                Plans and pricing
-                            </Link>
-                        </li>
-
+                    {
+                            navlist?.map((ele, ind) => {
+                                return (
+                                    <li>
+                                        <Link  key={ind} href={ele?.link} className={twMerge(`text-lg`, pathName == ele?.link ? 'text-white font-semibold' : 'text-[#B3B5BC] font-normal',)}>
+                                            {ele?.name}
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
                  
 
                   
