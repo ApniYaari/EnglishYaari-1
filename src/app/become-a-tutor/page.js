@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import { FaArrowRight, FaCircle, FaWhatsapp } from 'react-icons/fa6'
 import becomeATutor from '@/assets/becomeATutor.png'
@@ -12,6 +11,12 @@ import Link from 'next/link'
 import NavBar2 from '@/component/NavBar2'
 import Image from 'next/image'
 import FAQ from '@/component/FAQ'
+
+
+export const metadata = {
+  title: " Become an Online English Tutor",
+  description: "Become an online English tutor at EnglishYaari and get paid up to INR 350 per ",
+};
 
 function BecomeATutor() {
   return (
