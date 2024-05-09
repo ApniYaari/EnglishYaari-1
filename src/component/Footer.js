@@ -168,7 +168,7 @@ function Footer() {
 
                   <p className="ml-3">
                    Boring Road, Patna
-                    <br />842003
+                    <br />800001
                   </p>
                 </li>
 
