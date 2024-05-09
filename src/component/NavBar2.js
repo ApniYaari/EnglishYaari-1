@@ -146,7 +146,7 @@ const NavBar2 = () => {
                                             <div style={pathName == ele?.link ? { width: 6, borderTopRightRadius: 10, borderBottomRightRadius: 10 } : { width: 0 }} className='w-2 h-10 bg-theme rounded-tr-full rounded-br-2xl'>
 
                                             </div>
-                                            <Link onClick={() => setMobileNav(false)} href={ele?.link} className={twMerge(`text-lg`, pathName == ele?.link ? 'text-theme font-semibold' : '')}>
+                                            <Link onClick={() => setMobileNav(false)} href={ele?.link} className={twMerge(`text-lg w-full`, pathName == ele?.link ? 'text-theme font-semibold' : '')}>
                                                 {ele?.name}
                                             </Link>
                                         </li>
