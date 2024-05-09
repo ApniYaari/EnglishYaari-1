@@ -12,6 +12,7 @@ import DescriptionComponent from '@/component/DescriptionComponent'
 import NavBar2 from '@/component/NavBar2'
 import { twMerge } from 'tailwind-merge'
 
+
 function TutorList() {
 
     const [allTutorList, setAllTutorList] = useState([])
