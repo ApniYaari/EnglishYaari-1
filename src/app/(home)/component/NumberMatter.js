@@ -25,6 +25,7 @@ function NumberMatter() {
             value={'4.8/5'}
             icon={Page}
           />
+          
           <Card
             bgg={`bg-[#EBEEFC]`}
             circleBg={"bg-[#CED4EE]"}
@@ -37,6 +38,7 @@ function NumberMatter() {
     </div>
   );
 }
+
 
 export default NumberMatter;
 const Card = ({ bgg, circleBg, subTittle, value, icon }) => {
