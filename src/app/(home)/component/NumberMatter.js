@@ -39,7 +39,6 @@ function NumberMatter() {
 }
 
 export default NumberMatter;
-
 const Card = ({ bgg, circleBg, subTittle, value, icon }) => {
   return (
     <div
